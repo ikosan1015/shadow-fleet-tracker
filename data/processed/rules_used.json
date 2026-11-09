@@ -1,0 +1,8 @@
+{
+  "long_gap_h": 12.0,
+  "hotspot_radius_km": 50.0,
+  "terminal_radius_km": 30.0,
+  "gap_after_terminal_h": 72.0,
+  "loiter_min_h": 6.0,
+  "loiter_min_port_dist_km": 20.0
+}
