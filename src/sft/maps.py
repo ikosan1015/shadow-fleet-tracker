@@ -37,7 +37,7 @@ def _popup(row: pd.Series, flagged: dict[str, str]) -> str:
 
 
 def vessel_map(ev: pd.DataFrame, flags: pd.DataFrame, title: str,
-               partners: pd.DataFrame | None = None) -> folium.Map:
+               partners: pd.DataFrame | None = None, back: str | None = None) -> folium.Map:
     pts = ev[["lat", "lon"]].dropna()
     center = [pts["lat"].mean(), pts["lon"].mean()] if not pts.empty else [45, 20]
     m = folium.Map(location=center, zoom_start=4, tiles=None)
@@ -100,7 +100,9 @@ def vessel_map(ev: pd.DataFrame, flags: pd.DataFrame, title: str,
     folium.LayerControl(collapsed=False).add_to(m)
     m.get_root().html.add_child(folium.Element(
         f"<div style='position:fixed;bottom:8px;left:8px;z-index:9999;background:#fff;"
-        f"padding:4px 8px;font:12px sans-serif'><b>{html.escape(title)}</b> · {ATTRIBUTION}</div>"))
+        f"padding:4px 8px;font:12px sans-serif'><b>{html.escape(title)}</b> · {ATTRIBUTION}"
+        + (f" · <a href='{back}'>case file</a> · <a href='index.html'>all vessels</a>" if back else "")
+        + "</div>"))
     if not pts.empty:
         m.fit_bounds([[pts["lat"].min(), pts["lon"].min()], [pts["lat"].max(), pts["lon"].max()]])
     return m
@@ -117,8 +119,8 @@ def run(events: pd.DataFrame, flags: pd.DataFrame, vessels: pd.DataFrame,
     items = []
     for imo, ev in events.groupby("imo"):
         title = f"{names.get(imo, '')} (IMO {imo})"
-        vessel_map(ev, flags[flags["imo"] == imo], title,
-                   partners[partners["imo"] == imo]).save(out / f"{imo}.html")
+        vessel_map(ev, flags[flags["imo"] == imo], title, partners[partners["imo"] == imo],
+                   back=f"case-{imo}.html").save(out / f"{imo}.html")
         n_flags = int((flags["imo"] == imo).sum())
         items.append(f"<tr><td><a href='{imo}.html'>{html.escape(title)}</a></td>"
                      f"<td>{html.escape(str(groups.get(imo, '')))}</td>"

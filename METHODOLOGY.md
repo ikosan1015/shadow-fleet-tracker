@@ -34,6 +34,8 @@ this project. Data caveats: <https://globalfishingwatch.org/our-apis/documentati
 | `alongside_meeting` | any vessel ≤ 0.5 km away (hulls practically touching) | see 3a |
 | `colocated_with_listed` | a watchlisted vessel ≤ 5 km away, not in a crowded anchorage | see 3a |
 | `colocated_loitering` | an unlisted vessel ≤ 5 km away, not in a crowded anchorage | see 3a |
+| `suspect_long_port_visit` | GFW port visit ≥ 30 days with no end anchorage or a different one | data quality: may be several stays merged (see 3f) |
+| `unexplained_silence` | ≥ 7 days with no events while averaging < 1.5 kn in straight-line distance | data quality: the ship was somewhere GFW logged nothing |
 | `listed_nearby_in_anchorage` | a watchlisted vessel ≤ 5 km away in a crowded anchorage (weak: may just be queuing) | see 3a |
 | `unloaded_without_port_call` | draught fell ≥ 2 m between two passages, no non-Russian port stay ≥ 12 h in between | see 3b |
 | `loaded_without_port_call` | draught rose ≥ 2 m between two passages, no port stay ≥ 12 h in between | see 3b |
@@ -70,14 +72,24 @@ matched by IMO are also sent to the OpenSanctions matching API (threshold 0.8).
 Every match used in the report is checked against the original source list (EU Official
 Journal, UK Sanctions List) linked from the OpenSanctions profile.
 
-### 3b. Draught snapshots from Danish AIS (`src/sft/draught.py`)
+### 3b. Draught snapshots from Danish AIS (`src/sft/draught.py`) — PARKED
+
+**Status: not used in the current results.** The code works, but no free historical
+draught source covers the study period conveniently (checked: GFW, Danish Maritime
+Authority, Finnish Digitraffic, Norwegian Kystverket, HELCOM, US Marine Cadastre,
+commercial providers). The Danish files are the only free option on the route, at
+≈0.7 GB per day. Rung 4 of the evidence ladder is therefore marked "not obtained".
 
 Draught (how deep the hull sits) is broadcast in AIS. GFW's public API does not
 provide it, so we use the Danish Maritime Authority's free daily AIS files
 (<http://web.ais.dk/aisdata/>), which cover the Danish straits that Baltic tankers
 pass through. Each passage gives one snapshot (median reported draught that day).
-Candidate days are suggested from GFW events (calls near Denmark; 1–4 days after
-leaving or before reaching an eastern-Baltic port). Draught is entered manually by
+The days to download are found with GFW's AIS vessel presence dataset
+(`public-global-presence`, one position per vessel per hour): a daily, per-vessel
+report over a box covering Danish waters, filtered to the flags the ship used. Only
+those days are downloaded (≈0.7 GB each), unpacked and filtered while streaming. If the
+presence report is unavailable, rougher candidate days are derived from GFW events
+(calls near Denmark; 1–4 days after leaving or before reaching an eastern-Baltic port). Draught is entered manually by
 crews and can be stale, so it is graded as corroborating evidence only.
 
 ### 3c. Evidence ladder for a suspected STS transfer
@@ -90,6 +102,36 @@ crews and can be stale, so it is graded as corroborating evidence only.
 6. Independent reporting or official records
 
 Each case in the report states which rungs were reached, with graded sources.
+
+### 3e. Following the partners (`src/sft/follow.py`)
+
+For each meeting where the partner was alongside (≤ 0.5 km) or is on the watchlist,
+the partner's GFW port visits are pulled from 30 days before to 60 days after. The case
+file reports where it came from and where it went next. This supports — or undermines —
+the "cargo logic" rung: e.g. a partner arriving from a Russian terminal and next calling
+at a refinery port is *consistent with* a transfer; a partner returning straight to
+Russia is not consistent with it having taken cargo away.
+
+### 3f. Data-quality checks
+
+Two rules flag records to examine rather than behaviour to suspect:
+
+- **Suspect long port visits.** For EAGLE S, GFW records one visit "at VISTINO" from
+  21 Nov 2024 to 7 Mar 2025 with no end anchorage, while press and official sources place
+  the ship at sea on 25 Dec 2024 and detained in Finnish waters until early March 2025.
+  Long visits with no clean exit are therefore checked against independent sources.
+- **Unexplained silences.** Periods of ≥ 7 days without any GFW event, where the ship also
+  covered little straight-line distance (< 1.5 kn average). Straight-line distance
+  understates sea routes (e.g. India → Skagen via the Cape), so the threshold is low on
+  purpose; anything flagged was essentially stationary somewhere GFW logged nothing.
+
+### 3g. Outputs
+
+- `report/cases/<imo>-<name>.md` — one case file per vessel (identity, port calls, meetings,
+  partner movements, evidence ladder per strong meeting, data issues, sources). A working
+  document for the write-up; it grades nothing on its own.
+- `dashboard/site/` — static dashboard: overview, case pages with an activity timeline,
+  and one interactive map per vessel. Published to GitHub Pages via `dashboard/public/`.
 
 ## 4. Scoring against the control group
 

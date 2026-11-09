@@ -111,7 +111,11 @@ def run(events: pd.DataFrame, identities: pd.DataFrame, vessels: pd.DataFrame,
     dataset = EVENT_DATASETS["loitering"]
     cache = raw_root / date.today().isoformat() / "partners"
     cache.mkdir(parents=True, exist_ok=True)
-    own_ids = set(identities["vessel_id"].dropna()) if not identities.empty else set()
+    # each ship's OWN GFW ids, so a meeting between two studied ships is still found
+    ids_by_imo: dict[str, set[str]] = {}
+    if not identities.empty:
+        for imo, g in identities.dropna(subset=["vessel_id"]).groupby("imo"):
+            ids_by_imo[imo] = set(g["vessel_id"])
 
     lo = events[(events["type"] == "loitering") & (events["duration_h"] >= rules.min_loiter_h)]
     lo = lo.dropna(subset=["lat", "lon", "start", "end"])
@@ -127,7 +131,7 @@ def run(events: pd.DataFrame, identities: pd.DataFrame, vessels: pd.DataFrame,
             found = client.events_in_area(dataset, start, end, box(ev["lat"], ev["lon"],
                                                                    rules.search_radius_km))
             cache_file.write_text(json.dumps(found))
-        hits = candidates_for_event(ev, found, own_ids, rules)
+        hits = candidates_for_event(ev, found, ids_by_imo.get(ev["imo"], set()), rules)
         if hits:
             print(f"  {ev['start']:%Y-%m-%d} {ev['imo']}: {len(hits)} candidate(s)")
         rows += hits

@@ -1,0 +1,3100 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>ATLAS (IMO 9413573)</title><style>
+:root{--bg:#fafaf8;--fg:#1d1d1f;--muted:#6b6b70;--line:#e3e3e0;--card:#fff;--accent:#c0392b;
+--chip:#f0f0ec;--link:#1f5fa8}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ececec;--muted:#a0a0a8;--line:#2c2c30;
+--card:#1c1c1f;--chip:#26262a;--link:#7fb0ff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);
+font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--link)}main{max-width:1080px;margin:0 auto;padding:28px 16px 64px}
+header h1{font-size:28px;margin:0 0 4px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 20px}
+.note{background:var(--chip);border-left:3px solid var(--accent);padding:10px 14px;border-radius:6px;
+font-size:13.5px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:22px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.stat b{display:block;font-size:26px;font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h3{margin:0 0 2px;font-size:18px}.card .meta{color:var(--muted);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.chip{background:var(--chip);border-radius:999px;padding:2px 10px;font-size:12.5px}
+.chip.red{background:#c0392b;color:#fff}.chip.orange{background:#e67e22;color:#fff}
+.btns a{display:inline-block;margin-right:10px;font-weight:600;text-decoration:none}
+h2{font-size:20px;margin:34px 0 10px;padding-top:8px;border-top:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:8px 0 16px;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600;white-space:nowrap}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+footer{margin-top:40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+.case h1{display:none}.case ul li input{margin-right:6px}
+nav{font-size:14px;margin-bottom:14px}
+</style></head><body><main><nav><a href='index.html'>← All vessels</a></nav><header><h1>ATLAS (IMO 9413573)</h1><p class='sub'>Case file · <a href='9413573.html'>open interactive map</a></p></header><h2>Activity timeline</h2><div style="height:300px; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="c97c1f9f-f6ae-4305-b9b3-6413e59af4b7" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("c97c1f9f-f6ae-4305-b9b3-6413e59af4b7")) {                    Plotly.newPlot(                        "c97c1f9f-f6ae-4305-b9b3-6413e59af4b7",                        [{"base":["2024-01-06T08:52:20.000000","2024-01-06T18:01:16.000000","2024-01-28T13:45:27.000000","2024-01-30T00:10:08.000000","2024-02-01T21:50:29.000000","2024-02-21T11:38:07.000000","2024-03-21T01:15:06.000000","2024-03-26T01:43:30.000000","2024-04-19T08:25:08.000000","2024-05-07T10:29:03.000000","2024-05-10T17:15:32.000000","2024-05-27T04:24:18.000000","2024-06-07T21:31:50.000000","2024-06-30T01:52:37.000000","2024-08-02T17:48:51.000000","2024-08-07T08:50:26.000000","2024-08-25T02:14:29.000000","2024-08-28T18:48:01.000000","2024-09-26T04:52:36.000000","2024-10-01T02:31:19.000000","2024-10-15T06:55:14.000000","2024-12-07T08:15:36.000000","2024-12-30T06:38:01.000000","2024-12-30T16:24:27.000000","2025-01-21T18:12:52.000000","2025-01-28T10:36:29.000000","2025-03-24T09:14:02.000000","2025-03-24T17:05:36.000000","2025-04-05T08:39:09.000000","2025-05-05T05:35:55.000000","2025-06-30T07:00:27.000000","2025-07-02T22:09:20.000000","2025-07-07T11:20:15.000000","2025-07-29T22:50:37.000000","2025-07-31T17:55:10.000000","2025-08-02T04:29:43.000000","2025-08-05T07:14:36.000000","2025-08-10T11:59:33.000000","2025-08-15T05:06:52.000000","2025-08-27T04:59:27.000000","2025-08-29T02:12:49.000000","2025-09-08T11:58:37.000000","2025-09-10T08:18:44.000000","2025-09-29T15:28:53.000000","2025-09-30T14:37:38.000000","2025-10-04T19:45:11.000000","2025-11-30T22:42:34.000000","2025-12-28T11:13:12.000000"],"customdata":[["2024-01-06","2024-01-06","PORT SAID"],["2024-01-06","2024-01-07","PORT SAID"],["2024-01-28","2024-01-29","VISTINO"],["2024-01-30","2024-02-01",""],["2024-02-01","2024-02-03","VISTINO"],["2024-02-21","2024-02-22","PORT SAID"],["2024-03-21","2024-03-24","DONGJIAKOU"],["2024-03-26","2024-03-26","NINGBO"],["2024-04-19","2024-04-20","SUEZ SOUTH ANCHORAGE"],["2024-05-07","2024-05-10","VISTINO"],["2024-05-10","2024-05-10",""],["2024-05-27","2024-05-28","PORT SAID"],["2024-06-07","2024-06-18",""],["2024-06-30","2024-07-01","SUEZ SOUTH ANCHORAGE"],["2024-08-02","2024-08-07",""],["2024-08-07","2024-08-08",""],["2024-08-25","2024-08-26","PORT SAID"],["2024-08-28","2024-08-29","JEDDAH"],["2024-09-26","2024-10-01","BAYUQUAN ANCHORAGE"],["2024-10-01","2024-10-02","BAYUQUAN"],["2024-10-15","2024-11-12","ZHOUSHAN"],["2024-12-07","2024-12-08","SUEZ SOUTH ANCHORAGE"],["2024-12-30","2024-12-30","PORT SAID"],["2024-12-30","2024-12-31","PORT SAID"],["2025-01-21","2025-01-22","ALGER"],["2025-01-28","2025-01-29","PORT SAID"],["2025-03-24","2025-03-24","PORT SAID"],["2025-03-24","2025-03-25","PORT SAID"],["2025-04-05","2025-04-06","PORT SAID"],["2025-05-05","2025-05-06","PORT SAID"],["2025-06-30","2025-07-01",""],["2025-07-02","2025-07-05",""],["2025-07-07","2025-07-07","ALGER"],["2025-07-29","2025-07-31",""],["2025-07-31","2025-08-01",""],["2025-08-02","2025-08-03",""],["2025-08-05","2025-08-10",""],["2025-08-10","2025-08-15","VISTINO"],["2025-08-15","2025-08-26",""],["2025-08-27","2025-08-29",""],["2025-08-29","2025-09-06",""],["2025-09-08","2025-09-10",""],["2025-09-10","2025-09-12","UST LUGA"],["2025-09-29","2025-09-30","PORT SAID"],["2025-09-30","2025-10-01","SUEZ SOUTH ANCHORAGE"],["2025-10-04","2025-10-05","JEDDAH"],["2025-11-30","2025-12-03","SUEZ SOUTH ANCHORAGE"],["2025-12-28","2025-12-28","ORAN"]],"hovertemplate":"%{customdata[0]} \u2192 %{customdata[1]}\u003cbr\u003e%{customdata[2]}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#2c7fb8"},"name":"port visit","orientation":"h","x":{"dtype":"f8","bdata":"AAAAgJJohkEAAACA7Th4QQAAAIA9AphBAAAA4HIjq0EAAAAAsbugQQAAAECdQ4tBAAAA4HP2rkEAAABAgOyRQQAAAIDXPJFBAAAAwAxpsEEAAAAAcJl0QQAAAAASi5JBAAAAwM11ykEAAADAApqWQQAAAFDChbdBAAAAoAh0mkEAAACg93+VQQAAAABO+INBAAAAqLXZuEEAAABwEKSiQQAAALB9GuJBAAAAQBDDlEEAAAAASdiFQQAAAACgLJBBAAAAgD\u002fqlEEAAACg7GaWQQAAAEAZGIFBAAAAgJC2kEEAAACASJiXQQAAAID7d5tBAAAAIMA\u002fnEEAAABQnoWoQQAAAACKrH5BAAAAQJ40mkEAAADAi7yQQQAAAFBQvKFBAAAAmKKgukEAAADgJ4a3QQAAAFC4ts1BAAAAQI8io0EAAABwU3LFQQAAACDvt59BAAAAMHzRqEEAAACACJ2BQQAAAGBBm5hBAAAAAAwbkEEAAABQ4PeoQQAAAMALeIFB"},"y":["port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit"],"type":"bar"},{"base":["2023-12-31T23:52:41.000000","2024-01-01T19:59:18.000000","2024-01-02T07:57:49.000000","2024-01-02T18:59:27.000000","2024-01-03T11:54:17.000000","2024-01-04T09:53:07.000000","2024-01-04T18:54:29.000000","2024-01-05T11:58:39.000000","2024-01-06T00:56:26.000000","2024-02-08T10:58:16.000000","2024-03-25T12:58:15.000000","2024-06-07T05:58:13.000000","2024-09-23T15:59:56.000000","2024-09-23T19:59:20.000000","2024-09-24T00:59:02.000000","2024-10-04T08:55:44.000000","2024-10-04T13:52:46.000000","2024-10-07T14:59:29.000000","2024-10-07T23:49:12.000000","2024-10-08T17:58:08.000000","2024-10-10T07:53:29.000000","2024-10-11T02:45:11.000000","2024-10-12T10:59:38.000000","2024-10-13T08:46:38.000000","2024-10-14T01:56:07.000000","2024-11-24T08:58:26.000000","2024-12-11T17:58:30.000000","2024-12-12T15:55:18.000000","2024-12-13T11:57:16.000000","2024-12-13T22:55:46.000000","2024-12-14T05:56:18.000000","2024-12-14T18:57:05.000000","2024-12-15T07:59:01.000000","2024-12-15T17:56:09.000000","2024-12-15T22:55:56.000000","2024-12-19T12:00:12.000000","2024-12-20T07:57:23.000000","2024-12-31T12:59:06.000000","2025-01-18T22:56:19.000000","2025-01-20T18:56:00.000000","2025-01-29T14:59:02.000000","2025-02-04T19:44:53.000000","2025-02-05T22:59:05.000000","2025-03-21T08:58:04.000000","2025-03-21T14:59:13.000000","2025-03-25T14:59:15.000000","2025-03-26T07:59:00.000000","2025-03-29T02:59:51.000000","2025-04-30T08:59:32.000000","2025-04-30T20:55:12.000000","2025-10-11T11:26:17.000000","2025-10-14T09:48:45.000000","2025-10-20T21:59:16.000000","2025-11-04T16:59:13.000000","2025-11-11T02:13:21.000000"],"customdata":[["2023-12-31","2024-01-01",""],["2024-01-01","2024-01-02",""],["2024-01-02","2024-01-02",""],["2024-01-02","2024-01-03",""],["2024-01-03","2024-01-04",""],["2024-01-04","2024-01-04",""],["2024-01-04","2024-01-05",""],["2024-01-05","2024-01-05",""],["2024-01-06","2024-01-06",""],["2024-02-08","2024-02-08",""],["2024-03-25","2024-03-25",""],["2024-06-07","2024-06-07",""],["2024-09-23","2024-09-23",""],["2024-09-23","2024-09-23",""],["2024-09-24","2024-09-25",""],["2024-10-04","2024-10-04",""],["2024-10-04","2024-10-07",""],["2024-10-07","2024-10-07",""],["2024-10-07","2024-10-08",""],["2024-10-08","2024-10-10",""],["2024-10-10","2024-10-10",""],["2024-10-11","2024-10-12",""],["2024-10-12","2024-10-12",""],["2024-10-13","2024-10-13",""],["2024-10-14","2024-10-14",""],["2024-11-24","2024-11-24",""],["2024-12-11","2024-12-12",""],["2024-12-12","2024-12-13",""],["2024-12-13","2024-12-13",""],["2024-12-13","2024-12-14",""],["2024-12-14","2024-12-14",""],["2024-12-14","2024-12-15",""],["2024-12-15","2024-12-15",""],["2024-12-15","2024-12-15",""],["2024-12-15","2024-12-16",""],["2024-12-19","2024-12-19",""],["2024-12-20","2024-12-30",""],["2024-12-31","2024-12-31",""],["2025-01-18","2025-01-19",""],["2025-01-20","2025-01-21",""],["2025-01-29","2025-02-04",""],["2025-02-04","2025-02-05",""],["2025-02-05","2025-02-06",""],["2025-03-21","2025-03-21",""],["2025-03-21","2025-03-24",""],["2025-03-25","2025-03-26",""],["2025-03-26","2025-03-29",""],["2025-03-29","2025-04-05",""],["2025-04-30","2025-04-30",""],["2025-04-30","2025-05-01",""],["2025-10-11","2025-10-11",""],["2025-10-14","2025-10-14",""],["2025-10-20","2025-11-04",""],["2025-11-04","2025-11-08",""],["2025-11-11","2025-11-12",""]],"hovertemplate":"%{customdata[0]} \u2192 %{customdata[1]}\u003cbr\u003e%{customdata[2]}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#7b3294"},"name":"loitering","orientation":"h","x":{"dtype":"f8","bdata":"AAAAgECri0EAAADA5hWBQQAAAIACzX5BAAAAgH2YiUEAAADAIDaRQQAAAICX23tBAAAAwE4uiEEAAADAbMqCQQAAAABwmXRBAAAAQEvagkEAAAAAcJl0QQAAAABwmXRBAAAAAHCZdEEAAAAAcJl0QQAAAGBFU5ZBAAAAAHCZdEEAAACwLu6uQQAAAABwmXRBAAAAgJmxi0EAAADgGQueQQAAAADTMohBAAAAoAcSmUEAAAAANSOBQQAAAABn2YRBAAAAAHCZdEEAAAAAcJl0QQAAAEAj7I5BAAAAADdYhkEAAACAEZ57QQAAAABwmXRBAAAAgAHifkEAAAAAvwyBQQAAAABwmXRBAAAAAHCZdEEAAAAAKnuEQQAAAADR8XRBAAAAHGZuyUEAAAAAcJl0QQAAAABwmXRBAAAAQIhEgUEAAADAkeS+QQAAAIAVhoFBAAAAAHCZdEEAAAAAcJl0QQAAAOCRCatBAAAAgMZri0EAAABgeVCsQQAAALwmPcJBAAAAAHCZdEEAAAAAcJl0QQAAAABwmXRBAAAAAHCZdEEAAADyf\u002f3SQQAAAEDO07NBAAAAsImhoEE="},"y":["loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering"],"type":"bar"},{"hovertemplate":"%{x|%Y-%m-%d}\u003cbr\u003e%{text}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#e67e22","size":14,"symbol":"diamond"},"mode":"markers","name":"flag strength 2","text":["Days with no events while barely moving: where was it?\u003cbr\u003e43 days with no events after loitering; moved only 23 km (0.0 kn average)","A sanctioned vessel loitered nearby (\u2264 5 km), quiet area\u003cbr\u003eEAGLE-S (COK): 66.0 h overlap, 2.67 km apart; +1 other ship(s)","Days with no events while barely moving: where was it?\u003cbr\u003e24 days with no events after port visit PORT SAID; moved only 61 km (0.1 kn average)","Days with no events while barely moving: where was it?\u003cbr\u003e55 days with no events after port visit PORT SAID; moved only 2086 km (0.9 kn average)"],"x":["2025-02-06T03:59:44.000000","2025-03-26T07:59:00.000000","2025-04-06T12:08:33.000000","2025-05-06T13:36:07.000000"],"y":["flags","flags","flags","flags"],"type":"scatter"},{"hovertemplate":"%{x|%Y-%m-%d}\u003cbr\u003e%{text}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#95a5a6","size":11,"symbol":"diamond"},"mode":"markers","name":"flag strength 1","text":["Loitered \u2265 6 h away from any port\u003cbr\u003e16.1 h, 50.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e10.0 h, 60.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e9.0 h, 51.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e14.9 h, 48.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e20.1 h, 47.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e8.1 h, 40.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e14.1 h, 49.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e10.9 h, 50.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e11.0 h, 264.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e26.0 h, 207.0 km from nearest seen port","A sanctioned vessel nearby in a crowded anchorage\u003cbr\u003eVITUS BERING (BRB): 26.0 h overlap, 2.71 km apart; crowded area, 39 ships","Loitered \u2265 6 h away from any port\u003cbr\u003e72.1 h, 380.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e16.1 h, 397.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e35.0 h, 396.0 km from nearest seen port","Another vessel loitered nearby (\u2264 5 km), quiet area\u003cbr\u003eJIHUANGYUYUN05121 (CHN): 7.5 h overlap, 2.79 km apart; +3 other ship(s)","Loitered \u2265 6 h away from any port\u003cbr\u003e14.1 h, 397.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e29.2 h, 367.0 km from nearest seen port","Another vessel loitered nearby (\u2264 5 km), quiet area\u003cbr\u003eLURONGYU51269 (CHN): 7.0 h overlap, 3.57 km apart; +1 other ship(s)","Loitered \u2265 6 h away from any port\u003cbr\u003e10.0 h, 363.0 km from nearest seen port","Another vessel loitered nearby (\u2264 5 km), quiet area\u003cbr\u003e? (?): 10.0 h overlap, 3.82 km apart; +2 other ship(s)","Loitered \u2265 6 h away from any port\u003cbr\u003e12.1 h, 318.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e18.0 h, 26.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e13.0 h, 51.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e8.0 h, 37.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e9.0 h, 81.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e9.9 h, 65.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e11.9 h, 77.0 km from nearest seen port","Another vessel loitered nearby (\u2264 5 km), quiet area\u003cbr\u003eASP TREASURES (PAN): 7.9 h overlap, 3.31 km apart","Loitered \u2265 6 h away from any port\u003cbr\u003e6.1 h, 154.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e237.0 h, 29.0 km from nearest seen port","A sanctioned vessel nearby in a crowded anchorage\u003cbr\u003eLEGACY (BRB): 237.0 h overlap, 2.53 km apart; crowded area, 6 ships","Loitered \u2265 6 h away from any port\u003cbr\u003e10.1 h, 42.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e144.0 h, 29.0 km from nearest seen port","A sanctioned vessel nearby in a crowded anchorage\u003cbr\u003eRANGLER (CMR): 70.0 h overlap, 2.07 km apart; crowded area, 7 ships","Loitered \u2265 6 h away from any port\u003cbr\u003e10.2 h, 82.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e63.0 h, 30.0 km from nearest seen port","A sanctioned vessel nearby in a crowded anchorage\u003cbr\u003eTOA PAYOH (PAN): 28.0 h overlap, 2.07 km apart; crowded area, 6 ships","Loitered \u2265 6 h away from any port\u003cbr\u003e16.0 h, 29.0 km from nearest seen port","A sanctioned vessel nearby in a crowded anchorage\u003cbr\u003eEAGLE-S (COK): 16.0 h overlap, 1.38 km apart; crowded area, 8 ships","Loitered \u2265 6 h away from any port\u003cbr\u003e66.0 h, 29.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e170.0 h, 29.0 km from nearest seen port","A sanctioned vessel nearby in a crowded anchorage\u003cbr\u003eN CERNA (STP): 6.1 h overlap, 2.25 km apart; crowded area, 13 ships","Loitered \u2265 6 h away from any port\u003cbr\u003e354.0 h, 84.0 km from nearest seen port","A sanctioned vessel nearby in a crowded anchorage\u003cbr\u003eSIRIUS 1 (COM): 2.0 h overlap, 1.25 km apart; crowded area, 29 ships","Loitered \u2265 6 h away from any port\u003cbr\u003e92.4 h, 89.0 km from nearest seen port","A sanctioned vessel nearby in a crowded anchorage\u003cbr\u003eELMO (MWI): 92.4 h overlap, 1.91 km apart; crowded area, 9 ships","Loitered \u2265 6 h away from any port\u003cbr\u003e38.8 h, 98.0 km from nearest seen port","Another vessel loitered nearby (\u2264 5 km), quiet area\u003cbr\u003eKARYACAHAYAMANDIRI 3 (IDN): 2.0 h overlap, 1.67 km apart; +1 other ship(s)"],"x":["2023-12-31T23:52:41.000000","2024-01-01T19:59:18.000000","2024-01-02T07:57:49.000000","2024-01-02T18:59:27.000000","2024-01-03T11:54:17.000000","2024-01-04T09:53:07.000000","2024-01-04T18:54:29.000000","2024-01-05T11:58:39.000000","2024-02-08T10:58:16.000000","2024-09-24T00:59:02.000000","2024-09-24T00:59:02.000000","2024-10-04T13:52:46.000000","2024-10-07T23:49:12.000000","2024-10-08T17:58:08.000000","2024-10-08T17:58:08.000000","2024-10-10T07:53:29.000000","2024-10-11T02:45:11.000000","2024-10-11T02:45:11.000000","2024-10-12T10:59:38.000000","2024-10-12T10:59:38.000000","2024-10-13T08:46:38.000000","2024-12-11T17:58:30.000000","2024-12-12T15:55:18.000000","2024-12-13T11:57:16.000000","2024-12-14T05:56:18.000000","2024-12-14T18:57:05.000000","2024-12-15T22:55:56.000000","2024-12-15T22:55:56.000000","2024-12-19T12:00:12.000000","2024-12-20T07:57:23.000000","2024-12-20T07:57:23.000000","2025-01-20T18:56:00.000000","2025-01-29T14:59:02.000000","2025-01-29T14:59:02.000000","2025-02-04T19:44:53.000000","2025-03-21T14:59:13.000000","2025-03-21T14:59:13.000000","2025-03-25T14:59:15.000000","2025-03-25T14:59:15.000000","2025-03-26T07:59:00.000000","2025-03-29T02:59:51.000000","2025-03-29T02:59:51.000000","2025-10-20T21:59:16.000000","2025-10-20T21:59:16.000000","2025-11-04T16:59:13.000000","2025-11-04T16:59:13.000000","2025-11-11T02:13:21.000000","2025-11-11T02:13:21.000000"],"y":["flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags"],"type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}},"margin":{"l":10,"r":10,"t":10,"b":10},"legend":{"orientation":"h","y":-0.25},"xaxis":{"type":"date"},"font":{"family":"system-ui, sans-serif","size":12},"barmode":"overlay","height":300,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","yaxis":{"categoryorder":"array","categoryarray":["port visit","loitering","flags"]}},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div><div class='case'><h1>ATLAS (IMO 9413573)</h1>
+<p><em>Case file generated 2026-11-09 by shadow-fleet-tracker. All events are apparent events derived from AIS by Global Fishing Watch; flags are leads to verify, not findings.</em></p>
+<h2>Summary</h2>
+<ul>
+<li><strong>OpenSanctions:</strong> sanction; mare.shadow; poi — datasets: ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl</li>
+<li><strong>Study group:</strong> sanctioned; EU listed: check, UK listed: check</li>
+<li><strong>Observed:</strong> 2023-12-31 → 2025-12-28; 55 loitering, 48 port visit</li>
+<li><strong>No GFW AIS-off events.</strong> GFW only records gaps ≥ 12 h starting ≥ 50 nm offshore, so near-shore dark periods are invisible here (see METHODOLOGY).</li>
+<li><strong>Flags:</strong> 35 route, 14 meeting, 3 data quality</li>
+</ul>
+<p><strong>Strongest leads</strong> (to verify, not findings):</p>
+<ol>
+<li><strong>2025-03-26</strong> — A sanctioned vessel loitered nearby (≤ 5 km), quiet area — EAGLE-S (COK): 66.0 h overlap, 2.67 km apart; +1 other ship(s)</li>
+</ol>
+<h2>Identity history</h2>
+<table>
+<thead>
+<tr>
+<th>source</th>
+<th>name</th>
+<th>flag</th>
+<th>MMSI</th>
+<th>from</th>
+<th>to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AIS self-reported</td>
+<td>NS AFRICA</td>
+<td>LBR</td>
+<td>636014194</td>
+<td>2012-01-06 20:03</td>
+<td>2024-01-06 17:55</td>
+</tr>
+<tr>
+<td>registry:IMO</td>
+<td>NSAFRICA</td>
+<td>LBR</td>
+<td>636014194</td>
+<td>2012-01-09 00:58</td>
+<td>2024-01-06 17:40</td>
+</tr>
+<tr>
+<td>AIS self-reported</td>
+<td>NS AFRICA</td>
+<td>GAB</td>
+<td>626371000</td>
+<td>2024-01-06 17:58</td>
+<td>2024-07-24 16:11</td>
+</tr>
+<tr>
+<td>registry:TMT_OTHER</td>
+<td>ATLAS</td>
+<td>BRB</td>
+<td>314895000</td>
+<td>2024-07-25 09:01</td>
+<td>2024-12-30 15:19</td>
+</tr>
+<tr>
+<td>AIS self-reported</td>
+<td>ATLAS</td>
+<td>BRB</td>
+<td>314895000</td>
+<td>2024-07-25 11:29</td>
+<td>2024-12-30 15:21</td>
+</tr>
+<tr>
+<td>AIS self-reported</td>
+<td>ATLAS</td>
+<td>STP</td>
+<td>668116321</td>
+<td>2024-12-30 15:24</td>
+<td>2025-03-24 15:11</td>
+</tr>
+<tr>
+<td>AIS self-reported</td>
+<td>ARCADIA</td>
+<td>OMN</td>
+<td>461000247</td>
+<td>2025-03-24 15:14</td>
+<td>2026-11-07 23:59</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Changes in broadcast identity:</strong></p>
+<ul>
+<li>2024-01-06: flag LBR → GAB</li>
+<li>2024-01-06: ssvid 636014194 → 626371000</li>
+<li>2024-07-25: shipname NS AFRICA → ATLAS</li>
+<li>2024-07-25: flag GAB → BRB</li>
+<li>2024-07-25: ssvid 626371000 → 314895000</li>
+<li>2024-12-30: flag BRB → STP</li>
+<li>2024-12-30: ssvid 314895000 → 668116321</li>
+<li>2025-03-24: shipname ATLAS → ARCADIA</li>
+<li>2025-03-24: flag STP → OMN</li>
+<li>2025-03-24: ssvid 668116321 → 461000247</li>
+</ul>
+<h2>Port calls</h2>
+<table>
+<thead>
+<tr>
+<th>arrived</th>
+<th>left</th>
+<th>days</th>
+<th>port</th>
+<th>country</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-01-06 08:52</td>
+<td>2024-01-06 21:55</td>
+<td>0.5</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-01-06 18:01</td>
+<td>2024-01-07 01:04</td>
+<td>0.3</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-01-28 13:45</td>
+<td>2024-01-29 17:43</td>
+<td>1.2</td>
+<td>VISTINO</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2024-01-30 00:10</td>
+<td>2024-02-01 15:24</td>
+<td>2.6</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2024-02-01 21:50</td>
+<td>2024-02-03 12:49</td>
+<td>1.6</td>
+<td>VISTINO</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2024-02-21 11:38</td>
+<td>2024-02-22 03:31</td>
+<td>0.7</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-03-21 01:15</td>
+<td>2024-03-24 01:24</td>
+<td>3.0</td>
+<td>DONGJIAKOU</td>
+<td>CHN</td>
+</tr>
+<tr>
+<td>2024-03-26 01:43</td>
+<td>2024-03-26 22:36</td>
+<td>0.9</td>
+<td>NINGBO</td>
+<td>CHN</td>
+</tr>
+<tr>
+<td>2024-04-19 08:25</td>
+<td>2024-04-20 04:30</td>
+<td>0.8</td>
+<td>SUEZ SOUTH ANCHORAGE</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-05-07 10:29</td>
+<td>2024-05-10 14:57</td>
+<td>3.2</td>
+<td>VISTINO</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2024-05-10 17:15</td>
+<td>2024-05-10 19:22</td>
+<td>0.1</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2024-05-27 04:24</td>
+<td>2024-05-28 02:00</td>
+<td>0.9</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-06-07 21:31</td>
+<td>2024-06-18 04:09</td>
+<td>10.3</td>
+<td>(unnamed anchorage)</td>
+<td>IND</td>
+</tr>
+<tr>
+<td>2024-06-30 01:52</td>
+<td>2024-07-01 04:12</td>
+<td>1.1</td>
+<td>SUEZ SOUTH ANCHORAGE</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-08-02 17:48</td>
+<td>2024-08-07 07:26</td>
+<td>4.6</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2024-08-07 08:50</td>
+<td>2024-08-08 15:39</td>
+<td>1.3</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2024-08-25 02:14</td>
+<td>2024-08-26 03:17</td>
+<td>1.0</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-08-28 18:48</td>
+<td>2024-08-29 06:26</td>
+<td>0.5</td>
+<td>JEDDAH</td>
+<td>SAU</td>
+</tr>
+<tr>
+<td>2024-09-26 04:52</td>
+<td>2024-10-01 00:41</td>
+<td>4.8</td>
+<td>BAYUQUAN ANCHORAGE</td>
+<td>CHN</td>
+</tr>
+<tr>
+<td>2024-10-01 02:31</td>
+<td>2024-10-02 21:57</td>
+<td>1.8</td>
+<td>BAYUQUAN</td>
+<td>CHN</td>
+</tr>
+<tr>
+<td>2024-10-15 06:55</td>
+<td>2024-11-12 09:52</td>
+<td>28.1</td>
+<td>ZHOUSHAN</td>
+<td>CHN</td>
+</tr>
+<tr>
+<td>2024-12-07 08:15</td>
+<td>2024-12-08 08:26</td>
+<td>1.0</td>
+<td>SUEZ SOUTH ANCHORAGE</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-12-30 06:38</td>
+<td>2024-12-30 19:21</td>
+<td>0.5</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-12-30 16:24</td>
+<td>2024-12-31 11:15</td>
+<td>0.8</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-01-21 18:12</td>
+<td>2025-01-22 18:34</td>
+<td>1.0</td>
+<td>ALGER</td>
+<td>DZA</td>
+</tr>
+<tr>
+<td>2025-01-28 10:36</td>
+<td>2025-01-29 12:42</td>
+<td>1.1</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-03-24 09:14</td>
+<td>2025-03-24 19:11</td>
+<td>0.4</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-03-24 17:05</td>
+<td>2025-03-25 12:33</td>
+<td>0.8</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-04-05 08:39</td>
+<td>2025-04-06 12:08</td>
+<td>1.1</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-05-05 05:35</td>
+<td>2025-05-06 13:36</td>
+<td>1.3</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-06-30 07:00</td>
+<td>2025-07-01 15:55</td>
+<td>1.4</td>
+<td>(unnamed anchorage)</td>
+<td>TUN</td>
+</tr>
+<tr>
+<td>2025-07-02 22:09</td>
+<td>2025-07-05 07:17</td>
+<td>2.4</td>
+<td>(unnamed anchorage)</td>
+<td>TUN</td>
+</tr>
+<tr>
+<td>2025-07-07 11:20</td>
+<td>2025-07-07 20:16</td>
+<td>0.4</td>
+<td>ALGER</td>
+<td>DZA</td>
+</tr>
+<tr>
+<td>2025-07-29 22:50</td>
+<td>2025-07-31 05:22</td>
+<td>1.3</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-07-31 17:55</td>
+<td>2025-08-01 13:25</td>
+<td>0.8</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-08-02 04:29</td>
+<td>2025-08-03 21:49</td>
+<td>1.7</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-08-05 07:14</td>
+<td>2025-08-10 11:20</td>
+<td>5.2</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-08-10 11:59</td>
+<td>2025-08-15 01:37</td>
+<td>4.6</td>
+<td>VISTINO</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-08-15 05:06</td>
+<td>2025-08-26 18:04</td>
+<td>11.5</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-08-27 04:59</td>
+<td>2025-08-29 01:34</td>
+<td>1.9</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-08-29 02:12</td>
+<td>2025-09-06 10:06</td>
+<td>8.3</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-09-08 11:58</td>
+<td>2025-09-10 00:55</td>
+<td>1.5</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-09-10 08:18</td>
+<td>2025-09-12 18:08</td>
+<td>2.4</td>
+<td>UST LUGA</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-09-29 15:28</td>
+<td>2025-09-30 01:44</td>
+<td>0.4</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-09-30 14:37</td>
+<td>2025-10-01 19:17</td>
+<td>1.2</td>
+<td>SUEZ SOUTH ANCHORAGE</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-10-04 19:45</td>
+<td>2025-10-05 14:31</td>
+<td>0.8</td>
+<td>JEDDAH</td>
+<td>SAU</td>
+</tr>
+<tr>
+<td>2025-11-30 22:42</td>
+<td>2025-12-03 08:53</td>
+<td>2.4</td>
+<td>SUEZ SOUTH ANCHORAGE</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-12-28 11:13</td>
+<td>2025-12-28 21:23</td>
+<td>0.4</td>
+<td>ORAN</td>
+<td>DZA</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calls by country:</strong> EGY 18, RUS 17, CHN 5, DZA 3, SAU 2, TUN 2, IND 1</p>
+<h2>Meetings at sea (co-located loitering)</h2>
+<p>Other vessels loitering within 5 km during overlapping hours. 'Ships around' &gt; 4 means a crowded anchorage or queue, where proximity means little.</p>
+<table>
+<thead>
+<tr>
+<th>date</th>
+<th>lat</th>
+<th>lon</th>
+<th>partner (broadcast)</th>
+<th>flag</th>
+<th>IMO</th>
+<th>OpenSanctions name</th>
+<th>sanctioned today</th>
+<th>km</th>
+<th>overlap h</th>
+<th>alongside</th>
+<th>ships around</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOZHUANGYU25207</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.71</td>
+<td>26.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>YOU YI ZHI YUAN</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.73</td>
+<td>15.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOYINGYU26299-3-</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.82</td>
+<td>5.6</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>COSCO OCEANIA</td>
+<td>HKG</td>
+<td>9334923</td>
+<td></td>
+<td></td>
+<td>1.85</td>
+<td>9.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>4233</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.97</td>
+<td>8.9</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>DONG FANG YUAN YUAN</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.04</td>
+<td>13.1</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>YAN ZHAN 98</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.12</td>
+<td>18.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>PENG JU 11</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.51</td>
+<td>10.1</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>YIN YUAN</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.55</td>
+<td>24.2</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>ZHE NENG 5</td>
+<td>CHN</td>
+<td>9214109</td>
+<td></td>
+<td></td>
+<td>2.70</td>
+<td>26.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>VITUS BERING</td>
+<td>BRB</td>
+<td>9838840</td>
+<td></td>
+<td>yes</td>
+<td>2.71</td>
+<td>26.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>XIANGZHAN15</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.95</td>
+<td>9.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>YUN XIANG 68</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.97</td>
+<td>5.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOHUYU25130</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.18</td>
+<td>2.9</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>ZHONG CHANG 388</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.40</td>
+<td>26.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOHUYU25192</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.43</td>
+<td>3.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>CHANG SHENG TAI 6</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.60</td>
+<td>16.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>12345-29-57%</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.81</td>
+<td>4.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>12345-36-99%</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.85</td>
+<td>4.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>12345-32-32%</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.86</td>
+<td>6.8</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOYINGYU26299-1-</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.93</td>
+<td>4.9</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>GUO DIAN 32</td>
+<td>CHN</td>
+<td>9185059</td>
+<td></td>
+<td></td>
+<td>4.01</td>
+<td>26.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>DA TANG 07</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.11</td>
+<td>5.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>ZHONG GU 6</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.19</td>
+<td>26.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LI TONG 269</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.22</td>
+<td>6.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>ZHONGJIUHONGHAI</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.23</td>
+<td>9.1</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOHUYU25192-4-99%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.26</td>
+<td>2.8</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>YOU YI CHANG SHUN</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.27</td>
+<td>11.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOHUYU25192</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.28</td>
+<td>3.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOYING25076-07-07%</td>
+<td>IRL</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.34</td>
+<td>4.1</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOYINGYUYUN25076</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.34</td>
+<td>4.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOYINGYU25076-399%</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.34</td>
+<td>4.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAOYINGYU25076-290%</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.35</td>
+<td>4.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>ZHONGTIANCHANGSHENG</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.38</td>
+<td>26.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>YONG HANG FU SHENG</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.40</td>
+<td>12.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>DI HAI 12</td>
+<td>CHN</td>
+<td>8662529</td>
+<td></td>
+<td></td>
+<td>4.49</td>
+<td>2.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>MIHO PRACAT</td>
+<td>HRV</td>
+<td>9384514</td>
+<td>MIHO PRACAT</td>
+<td></td>
+<td>4.59</td>
+<td>13.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>ZHE YONG YOU 10</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.62</td>
+<td>3.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAODANYU21419</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.64</td>
+<td>5.0</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>38.316</td>
+<td>121.546</td>
+<td>LIAODANYU21419-2-63%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.89</td>
+<td>5.1</td>
+<td></td>
+<td>39</td>
+</tr>
+<tr>
+<td>2024-10-08 17:58</td>
+<td>34.183</td>
+<td>123.778</td>
+<td>JIHUANGYUYUN05121</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.79</td>
+<td>7.5</td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>2024-10-08 17:58</td>
+<td>34.183</td>
+<td>123.778</td>
+<td>LURONGYU58519</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.29</td>
+<td>14.3</td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>2024-10-08 17:58</td>
+<td>34.183</td>
+<td>123.778</td>
+<td>LUQINGXINYUYUN60032</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.35</td>
+<td>7.0</td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>2024-10-08 17:58</td>
+<td>34.183</td>
+<td>123.778</td>
+<td>HUHJK</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.72</td>
+<td>16.1</td>
+<td></td>
+<td>4</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.57</td>
+<td>7.3</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>01221-1399%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.67</td>
+<td>7.3</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.68</td>
+<td>7.3</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>01221-1493%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.68</td>
+<td>7.2</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>01221-0785%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.69</td>
+<td>7.2</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>01221-1591%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.69</td>
+<td>7.2</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>01221-0199%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.46</td>
+<td>7.2</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>12089-1788%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.57</td>
+<td>7.2</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>12065-7-89%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.90</td>
+<td>7.1</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.21</td>
+<td>7.3</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>12065-4-91%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.37</td>
+<td>7.3</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>01221-12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.51</td>
+<td>7.3</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>12065-0667%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.51</td>
+<td>7.1</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>12174-08-90%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.65</td>
+<td>7.1</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-10 07:53</td>
+<td>34.398</td>
+<td>123.887</td>
+<td>01620-04-78%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.88</td>
+<td>7.3</td>
+<td></td>
+<td>15</td>
+</tr>
+<tr>
+<td>2024-10-11 02:45</td>
+<td>34.062</td>
+<td>123.347</td>
+<td>LURONGYU51269</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.57</td>
+<td>7.0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>2024-10-11 02:45</td>
+<td>34.062</td>
+<td>123.347</td>
+<td>09615-29 40%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.59</td>
+<td>4.6</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>2024-10-12 10:59</td>
+<td>34.406</td>
+<td>123.500</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.82</td>
+<td>10.0</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>2024-10-12 10:59</td>
+<td>34.406</td>
+<td>123.500</td>
+<td>01241-1-99%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.73</td>
+<td>10.0</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>2024-10-12 10:59</td>
+<td>34.406</td>
+<td>123.500</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.80</td>
+<td>10.0</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>2024-12-15 22:55</td>
+<td>35.489</td>
+<td>15.660</td>
+<td>ASP TREASURES</td>
+<td>PAN</td>
+<td>9732242</td>
+<td></td>
+<td></td>
+<td>3.31</td>
+<td>7.9</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2024-12-20 07:57</td>
+<td>31.735</td>
+<td>32.263</td>
+<td>LEGACY</td>
+<td>BRB</td>
+<td>9339337</td>
+<td>Legacy</td>
+<td>yes</td>
+<td>2.53</td>
+<td>237.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2024-12-20 07:57</td>
+<td>31.735</td>
+<td>32.263</td>
+<td>RUBY</td>
+<td>GUY</td>
+<td>9192258</td>
+<td>BALIAR</td>
+<td>yes</td>
+<td>2.61</td>
+<td>237.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2024-12-20 07:57</td>
+<td>31.735</td>
+<td>32.263</td>
+<td>PHOSPHOR</td>
+<td>HKG</td>
+<td>9354179</td>
+<td></td>
+<td></td>
+<td>2.66</td>
+<td>78.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2024-12-20 07:57</td>
+<td>31.735</td>
+<td>32.263</td>
+<td>SIBEL J</td>
+<td>TZA</td>
+<td>7900091</td>
+<td>OMORFI</td>
+<td></td>
+<td>3.12</td>
+<td>14.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2024-12-20 07:57</td>
+<td>31.735</td>
+<td>32.263</td>
+<td>SIBEL J</td>
+<td>TZA</td>
+<td>7900091</td>
+<td>OMORFI</td>
+<td></td>
+<td>3.26</td>
+<td>7.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2024-12-20 07:57</td>
+<td>31.735</td>
+<td>32.263</td>
+<td>MUSTAFA K</td>
+<td>COM</td>
+<td>8915184</td>
+<td>SEA BREEZE</td>
+<td></td>
+<td>3.69</td>
+<td>12.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2024-12-20 07:57</td>
+<td>31.735</td>
+<td>32.263</td>
+<td>BREEZE</td>
+<td>BRB</td>
+<td>9305568</td>
+<td>Breeze</td>
+<td>yes</td>
+<td>3.77</td>
+<td>84.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>31.727</td>
+<td>32.266</td>
+<td>RANGLER</td>
+<td>CMR</td>
+<td>9206671</td>
+<td>Rangler</td>
+<td>yes</td>
+<td>2.07</td>
+<td>70.0</td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>31.727</td>
+<td>32.266</td>
+<td>GOLD PEARL</td>
+<td>VNM</td>
+<td>9292187</td>
+<td>LUNA LUSTER</td>
+<td>yes</td>
+<td>2.58</td>
+<td>144.0</td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>31.727</td>
+<td>32.266</td>
+<td>TRUST</td>
+<td>BRB</td>
+<td>9382798</td>
+<td>Trust</td>
+<td>yes</td>
+<td>2.80</td>
+<td>144.0</td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>31.727</td>
+<td>32.266</td>
+<td>ANGELO 1</td>
+<td>CMR</td>
+<td>7946942</td>
+<td></td>
+<td></td>
+<td>3.04</td>
+<td>3.0</td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>31.727</td>
+<td>32.266</td>
+<td>BATAL1</td>
+<td>EGY</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.42</td>
+<td>8.0</td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>31.727</td>
+<td>32.266</td>
+<td>OZANNO</td>
+<td>STP</td>
+<td>9394935</td>
+<td>Ozanno</td>
+<td>yes</td>
+<td>3.48</td>
+<td>16.0</td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>31.727</td>
+<td>32.266</td>
+<td>LIBERTY</td>
+<td>BRB</td>
+<td>9339325</td>
+<td>Liberty</td>
+<td>yes</td>
+<td>3.80</td>
+<td>140.0</td>
+<td></td>
+<td>7</td>
+</tr>
+<tr>
+<td>2025-03-21 14:59</td>
+<td>31.739</td>
+<td>32.272</td>
+<td>STAR ROWAYTON</td>
+<td>LBR</td>
+<td>9575216</td>
+<td></td>
+<td></td>
+<td>1.33</td>
+<td>51.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2025-03-21 14:59</td>
+<td>31.739</td>
+<td>32.272</td>
+<td>TOA PAYOH</td>
+<td>PAN</td>
+<td>9298492</td>
+<td>TOA PAYOH</td>
+<td>yes</td>
+<td>2.07</td>
+<td>28.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2025-03-21 14:59</td>
+<td>31.739</td>
+<td>32.272</td>
+<td>RINA</td>
+<td>COM</td>
+<td>9118159</td>
+<td></td>
+<td></td>
+<td>3.10</td>
+<td>10.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2025-03-21 14:59</td>
+<td>31.739</td>
+<td>32.272</td>
+<td>BREEZE</td>
+<td>LBR</td>
+<td>9455650</td>
+<td>SUN SKY</td>
+<td>yes</td>
+<td>3.66</td>
+<td>17.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2025-03-21 14:59</td>
+<td>31.739</td>
+<td>32.272</td>
+<td>LEGACY</td>
+<td>COM</td>
+<td>9339337</td>
+<td>Legacy</td>
+<td>yes</td>
+<td>3.75</td>
+<td>63.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2025-03-21 14:59</td>
+<td>31.739</td>
+<td>32.272</td>
+<td>LIBERTY</td>
+<td>BRB</td>
+<td>9339325</td>
+<td>Liberty</td>
+<td>yes</td>
+<td>4.20</td>
+<td>63.0</td>
+<td></td>
+<td>6</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>31.733</td>
+<td>32.273</td>
+<td>CHEM ABBEY</td>
+<td>LBR</td>
+<td>9937971</td>
+<td></td>
+<td></td>
+<td>1.16</td>
+<td>9.0</td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>31.733</td>
+<td>32.273</td>
+<td>EAGLE-S</td>
+<td>COK</td>
+<td>9329760</td>
+<td>MT EAGLE S</td>
+<td>yes</td>
+<td>1.38</td>
+<td>16.0</td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>31.733</td>
+<td>32.273</td>
+<td>SEA BREEZE</td>
+<td>PLW</td>
+<td>7116781</td>
+<td>AK DENISA</td>
+<td></td>
+<td>1.79</td>
+<td>2.9</td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>31.733</td>
+<td>32.273</td>
+<td>CHIOS</td>
+<td>COM</td>
+<td>7113375</td>
+<td></td>
+<td></td>
+<td>2.55</td>
+<td>16.0</td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>31.733</td>
+<td>32.273</td>
+<td>RINA</td>
+<td>COM</td>
+<td>9118159</td>
+<td></td>
+<td></td>
+<td>2.66</td>
+<td>14.0</td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>31.733</td>
+<td>32.273</td>
+<td>GEN. POLAD HASHIMOV</td>
+<td>LBR</td>
+<td>9575307</td>
+<td>GENERAL POLAD HASHIMOV</td>
+<td></td>
+<td>2.78</td>
+<td>13.0</td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>31.733</td>
+<td>32.273</td>
+<td>LEGACY</td>
+<td>COM</td>
+<td>9339337</td>
+<td>Legacy</td>
+<td>yes</td>
+<td>3.94</td>
+<td>16.0</td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>31.733</td>
+<td>32.273</td>
+<td>LIBERTY</td>
+<td>BRB</td>
+<td>9339325</td>
+<td>Liberty</td>
+<td>yes</td>
+<td>4.06</td>
+<td>11.0</td>
+<td></td>
+<td>8</td>
+</tr>
+<tr>
+<td>2025-03-26 07:59</td>
+<td>31.737</td>
+<td>32.291</td>
+<td>CHEM ABBEY</td>
+<td>LBR</td>
+<td>9937971</td>
+<td></td>
+<td></td>
+<td>2.32</td>
+<td>22.0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>2025-03-26 07:59</td>
+<td>31.737</td>
+<td>32.291</td>
+<td>EAGLE-S</td>
+<td>COK</td>
+<td>9329760</td>
+<td>MT EAGLE S</td>
+<td>yes</td>
+<td>2.67</td>
+<td>66.0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>N CERNA</td>
+<td>STP</td>
+<td>9289520</td>
+<td>N Cerna</td>
+<td>yes</td>
+<td>2.25</td>
+<td>6.1</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>MARIDIVE  601</td>
+<td>BLZ</td>
+<td>9643374</td>
+<td></td>
+<td></td>
+<td>2.77</td>
+<td>3.1</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>EAGLE-S</td>
+<td>COK</td>
+<td>9329760</td>
+<td>MT EAGLE S</td>
+<td>yes</td>
+<td>2.79</td>
+<td>104.0</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>SILVAR</td>
+<td>PAN</td>
+<td>9291262</td>
+<td>Silvar</td>
+<td>yes</td>
+<td>2.89</td>
+<td>15.0</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>SEA ARGUS</td>
+<td>GMB</td>
+<td>9004815</td>
+<td></td>
+<td></td>
+<td>2.94</td>
+<td>11.0</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>ANTLIA</td>
+<td>GIN</td>
+<td>9381744</td>
+<td>Antila</td>
+<td>yes</td>
+<td>3.33</td>
+<td>154.0</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>BODY</td>
+<td>TZA</td>
+<td>7808401</td>
+<td>BEBEK-E</td>
+<td>yes</td>
+<td>3.48</td>
+<td>7.0</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>CHIOS</td>
+<td>COM</td>
+<td>7113375</td>
+<td></td>
+<td></td>
+<td>3.54</td>
+<td>137.0</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>IZOLA</td>
+<td>BRB</td>
+<td>9249312</td>
+<td>IZOLA</td>
+<td>yes</td>
+<td>3.97</td>
+<td>30.0</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>GOLD PEARL</td>
+<td>VNM</td>
+<td>9292187</td>
+<td>LUNA LUSTER</td>
+<td>yes</td>
+<td>4.05</td>
+<td>51.0</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>NEAMAH MEN ALLAH ELP</td>
+<td>EGY</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.07</td>
+<td>2.9</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>AILAMA</td>
+<td>GMB</td>
+<td>9232888</td>
+<td>Ksena</td>
+<td>yes</td>
+<td>4.08</td>
+<td>9.0</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>31.737</td>
+<td>32.293</td>
+<td>FU HAI WAN</td>
+<td>PAN</td>
+<td>9368235</td>
+<td>Fu Hai Wan</td>
+<td>yes</td>
+<td>4.16</td>
+<td>8.0</td>
+<td></td>
+<td>13</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>LCT CAHAYA FAMILY</td>
+<td>IDN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>0.84</td>
+<td>28.9</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>SIRIUS 1</td>
+<td>COM</td>
+<td>9285847</td>
+<td>Sirius 1</td>
+<td>yes</td>
+<td>1.25</td>
+<td>2.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>OPL 52</td>
+<td>MYS</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.38</td>
+<td>2.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>FOREVER</td>
+<td>TZA</td>
+<td>9136058</td>
+<td>FOREVER</td>
+<td></td>
+<td>1.76</td>
+<td>220.1</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>NARCISSUS</td>
+<td>PAN</td>
+<td>9232931</td>
+<td>NARCISSUS</td>
+<td>yes</td>
+<td>2.05</td>
+<td>11.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>PVT IRIS</td>
+<td>VNM</td>
+<td>9288277</td>
+<td></td>
+<td></td>
+<td>2.33</td>
+<td>174.1</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>AN RONG</td>
+<td>PLW</td>
+<td>8024351</td>
+<td></td>
+<td></td>
+<td>2.37</td>
+<td>4.1</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>HAI HUN</td>
+<td>GMB</td>
+<td>9251951</td>
+<td>KOHO I</td>
+<td>yes</td>
+<td>2.53</td>
+<td>25.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>GUANG TAI</td>
+<td>GUY</td>
+<td>9526693</td>
+<td>Liang Sheng</td>
+<td>yes</td>
+<td>2.56</td>
+<td>354.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>RUN ZE 5</td>
+<td>CHN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.70</td>
+<td>6.9</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>EUROFORCE</td>
+<td>LBR</td>
+<td>9251585</td>
+<td></td>
+<td></td>
+<td>2.71</td>
+<td>76.3</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>ALICIA</td>
+<td>BES</td>
+<td>9281695</td>
+<td>Montrose</td>
+<td>yes</td>
+<td>3.15</td>
+<td>73.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>AN RONG</td>
+<td>PLW</td>
+<td>8024351</td>
+<td></td>
+<td></td>
+<td>3.39</td>
+<td>29.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>AN RONG</td>
+<td>PLW</td>
+<td>8024351</td>
+<td></td>
+<td></td>
+<td>3.51</td>
+<td>2.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>HAI HUN</td>
+<td>GMB</td>
+<td>9251951</td>
+<td>KOHO I</td>
+<td>yes</td>
+<td>3.53</td>
+<td>123.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>STI PONTIAC</td>
+<td>MHL</td>
+<td>9704465</td>
+<td></td>
+<td></td>
+<td>3.53</td>
+<td>45.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>MOONBAY</td>
+<td>GUY</td>
+<td>9230907</td>
+<td>ETERNAL FORTUNE</td>
+<td>yes</td>
+<td>3.71</td>
+<td>354.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>MARS</td>
+<td>PLW</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.83</td>
+<td>127.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>SJ SATU</td>
+<td>MYS</td>
+<td>8989082</td>
+<td></td>
+<td></td>
+<td>3.95</td>
+<td>53.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>AN SHUN</td>
+<td>PLW</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.06</td>
+<td>84.1</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>TAURUS</td>
+<td>BES</td>
+<td>9259745</td>
+<td>Eternal Peace</td>
+<td>yes</td>
+<td>4.11</td>
+<td>354.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>ARTARA</td>
+<td>PAN</td>
+<td>9185528</td>
+<td>Gelor</td>
+<td>yes</td>
+<td>4.13</td>
+<td>82.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>AN SHUN</td>
+<td>PLW</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.20</td>
+<td>64.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>COLOSSUS</td>
+<td>KNA</td>
+<td>9553270</td>
+<td></td>
+<td></td>
+<td>4.26</td>
+<td>46.9</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>LYNX SATU</td>
+<td>MYS</td>
+<td>9075395</td>
+<td></td>
+<td></td>
+<td>4.34</td>
+<td>27.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>FELICITA</td>
+<td>COM</td>
+<td>9167162</td>
+<td>FELICITA</td>
+<td>yes</td>
+<td>4.37</td>
+<td>18.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>GREAT VENTURE</td>
+<td>TUV</td>
+<td>9262194</td>
+<td></td>
+<td></td>
+<td>4.50</td>
+<td>226.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>FIORA</td>
+<td>GMB</td>
+<td>9255684</td>
+<td>Golden Eagle</td>
+<td>yes</td>
+<td>4.57</td>
+<td>3.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>GELOR</td>
+<td>CMR</td>
+<td>9185528</td>
+<td>Gelor</td>
+<td>yes</td>
+<td>4.62</td>
+<td>183.1</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>BIG MAG</td>
+<td>PAN</td>
+<td>9263215</td>
+<td>BIG MAG</td>
+<td>yes</td>
+<td>4.83</td>
+<td>312.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>AQUARIS</td>
+<td>PAN</td>
+<td>9251822</td>
+<td>RIESCO</td>
+<td>yes</td>
+<td>4.83</td>
+<td>16.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>GALUNGGUNG</td>
+<td>PAN</td>
+<td>9455791</td>
+<td></td>
+<td></td>
+<td>4.84</td>
+<td>354.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>2.009</td>
+<td>104.776</td>
+<td>DELIVER</td>
+<td>GMB</td>
+<td>9194983</td>
+<td>Deliver</td>
+<td>yes</td>
+<td>4.99</td>
+<td>130.0</td>
+<td></td>
+<td>29</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>2.074</td>
+<td>104.762</td>
+<td>ELMO</td>
+<td>MWI</td>
+<td>9256913</td>
+<td>ELMO</td>
+<td>yes</td>
+<td>1.91</td>
+<td>92.4</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>2.074</td>
+<td>104.762</td>
+<td>FAUSTA</td>
+<td>GUY</td>
+<td>9232450</td>
+<td>AR MZ</td>
+<td>yes</td>
+<td>3.24</td>
+<td>92.4</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>2.074</td>
+<td>104.762</td>
+<td>NOAH QUEEN</td>
+<td>BLZ</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.49</td>
+<td>2.9</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>2.074</td>
+<td>104.762</td>
+<td>VENTURA</td>
+<td>GUY</td>
+<td>9216559</td>
+<td>Berenice Pride</td>
+<td>yes</td>
+<td>3.50</td>
+<td>92.4</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>2.074</td>
+<td>104.762</td>
+<td>UMA</td>
+<td>GUY</td>
+<td>9258870</td>
+<td>UMA</td>
+<td>yes</td>
+<td>3.72</td>
+<td>92.4</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>2.074</td>
+<td>104.762</td>
+<td>PVT IRIS</td>
+<td>VNM</td>
+<td>9288277</td>
+<td></td>
+<td></td>
+<td>3.87</td>
+<td>49.4</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>2.074</td>
+<td>104.762</td>
+<td>GALUNGGUNG</td>
+<td>PAN</td>
+<td>9455791</td>
+<td></td>
+<td></td>
+<td>3.97</td>
+<td>92.4</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>2.074</td>
+<td>104.762</td>
+<td>KENCANA JAYA</td>
+<td>MYS</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.80</td>
+<td>2.0</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>2.074</td>
+<td>104.762</td>
+<td>SIRIUS 1</td>
+<td>COM</td>
+<td>9285847</td>
+<td>Sirius 1</td>
+<td>yes</td>
+<td>4.94</td>
+<td>92.4</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>2.074</td>
+<td>104.762</td>
+<td>PVT IRIS</td>
+<td>VNM</td>
+<td>9288277</td>
+<td></td>
+<td></td>
+<td>4.94</td>
+<td>5.0</td>
+<td></td>
+<td>9</td>
+</tr>
+<tr>
+<td>2025-11-11 02:13</td>
+<td>2.160</td>
+<td>104.767</td>
+<td>KARYACAHAYAMANDIRI 3</td>
+<td>IDN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.67</td>
+<td>2.0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>2025-11-11 02:13</td>
+<td>2.160</td>
+<td>104.767</td>
+<td>PEPPERONI</td>
+<td>TZA</td>
+<td>9230892</td>
+<td></td>
+<td></td>
+<td>3.30</td>
+<td>38.8</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>2025-11-11 02:13</td>
+<td>2.160</td>
+<td>104.767</td>
+<td>KARYACAHAYAMANDIRI 3</td>
+<td>IDN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.57</td>
+<td>2.0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>2025-11-11 02:13</td>
+<td>2.160</td>
+<td>104.767</td>
+<td>KARYACAHAYAMANDIRI 3</td>
+<td>IDN</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.71</td>
+<td>5.0</td>
+<td></td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where the partners came from and went next</strong> (GFW port visits):</p>
+<table>
+<thead>
+<tr>
+<th>meeting</th>
+<th>partner</th>
+<th>came from</th>
+<th>days before</th>
+<th>next ports</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-09-24 00:59</td>
+<td>VITUS BERING</td>
+<td>HONGKONG (CHN)</td>
+<td>5.1</td>
+<td>CHANGXINGDAO (CHN) 2024-09-25; BERINGOVSKY (RUS) 2024-10-23; BERINGOVSKY (RUS) 2024-10-28</td>
+</tr>
+<tr>
+<td>2024-12-20 07:57</td>
+<td>BREEZE</td>
+<td>SUEZ SOUTH ANCHORAGE (EGY)</td>
+<td>9.1</td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2024-12-20 07:57</td>
+<td>RUBY</td>
+<td>none recorded</td>
+<td></td>
+<td>PORT SAID (EGY) 2025-01-23</td>
+</tr>
+<tr>
+<td>2024-12-20 07:57</td>
+<td>LEGACY</td>
+<td>SUEZ SOUTH ANCHORAGE (EGY)</td>
+<td>0.8</td>
+<td>PORT SAID (EGY) 2025-01-24; PORT SAID (EGY) 2025-01-29; PORT SAID (EGY) 2025-02-02</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>RANGLER</td>
+<td>unnamed anchorage (RUS)</td>
+<td>19.3</td>
+<td>unnamed anchorage (RUS) 2025-02-24; unnamed anchorage (RUS) 2025-02-25; unnamed anchorage (RUS) 2025-02-26</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>OZANNO</td>
+<td>none recorded</td>
+<td></td>
+<td>unnamed anchorage (RUS) 2025-02-23; PORT SAID (EGY) 2025-03-13; PORT SAID (EGY) 2025-03-14</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>LIBERTY</td>
+<td>PORT SAID (EGY)</td>
+<td>5.1</td>
+<td>PORT SAID (EGY) 2025-03-26</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>GOLD PEARL</td>
+<td>SUEZ SOUTH ANCHORAGE (EGY)</td>
+<td>11.3</td>
+<td>PORT SAID (EGY) 2025-02-17; PORT SAID (EGY) 2025-04-15; SUEZ SOUTH ANCHORAGE (EGY) 2025-04-16</td>
+</tr>
+<tr>
+<td>2025-01-29 14:59</td>
+<td>TRUST</td>
+<td>none recorded</td>
+<td></td>
+<td>AMBARLI (TUR) 2025-03-07</td>
+</tr>
+<tr>
+<td>2025-03-21 14:59</td>
+<td>BREEZE</td>
+<td>unnamed anchorage (ISR)</td>
+<td>2.1</td>
+<td>EILAT (ISR) 2025-03-26; SUEZ SOUTH ANCHORAGE (EGY) 2025-03-31; unnamed anchorage (ISR) 2025-04-02</td>
+</tr>
+<tr>
+<td>2025-03-21 14:59</td>
+<td>TOA PAYOH</td>
+<td>MERSIN (TUR)</td>
+<td>2.8</td>
+<td>unnamed anchorage (RUS) 2025-04-10; AMBARLI (TUR) 2025-04-14; MARMARA EREGLISI (TUR) 2025-04-15</td>
+</tr>
+<tr>
+<td>2025-03-21 14:59</td>
+<td>LIBERTY</td>
+<td>PORT SAID (EGY)</td>
+<td>56.1</td>
+<td>PORT SAID (EGY) 2025-03-26</td>
+</tr>
+<tr>
+<td>2025-03-21 14:59</td>
+<td>LEGACY</td>
+<td>ALEXANDRIA (EGY)</td>
+<td>11.1</td>
+<td>PORT SAID (EGY) 2025-04-04; PORT SAID (EGY) 2025-05-01</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>LEGACY</td>
+<td>ALEXANDRIA (EGY)</td>
+<td>15.1</td>
+<td>PORT SAID (EGY) 2025-04-04; PORT SAID (EGY) 2025-05-01</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>LIBERTY</td>
+<td>PORT SAID (EGY)</td>
+<td>60.1</td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-03-25 14:59</td>
+<td>EAGLE-S</td>
+<td>MARSAXLOKK (MLT)</td>
+<td>3.7</td>
+<td>PORT SAID (EGY) 2025-06-13</td>
+</tr>
+<tr>
+<td>2025-03-26 07:59</td>
+<td>EAGLE-S</td>
+<td>MARSAXLOKK (MLT)</td>
+<td>4.4</td>
+<td>PORT SAID (EGY) 2025-06-13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>N CERNA</td>
+<td>ISTANBUL (TUR)</td>
+<td>0.3</td>
+<td>JEDDAH (SAU) 2025-04-15</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>GOLD PEARL</td>
+<td>PORT SAID (EGY)</td>
+<td>38.7</td>
+<td>PORT SAID (EGY) 2025-04-15; SUEZ SOUTH ANCHORAGE (EGY) 2025-04-16; SUEZ SOUTH ANCHORAGE (EGY) 2025-04-18</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>EAGLE-S</td>
+<td>MARSAXLOKK (MLT)</td>
+<td>7.2</td>
+<td>PORT SAID (EGY) 2025-06-13</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>IZOLA</td>
+<td>unnamed anchorage (IND)</td>
+<td>7.6</td>
+<td>PORT SAID (EGY) 2025-04-05; KOCHI (IND) 2025-04-27; unnamed anchorage (IND) 2025-05-07</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>FU HAI WAN</td>
+<td>unnamed anchorage (IND)</td>
+<td>16.7</td>
+<td>CHN-238 (CHN) 2025-04-09; MOJI (JPN) 2025-04-25</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>SILVAR</td>
+<td>VISTINO (RUS)</td>
+<td>15.7</td>
+<td>SINGAPORE (SGP) 2025-04-18</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>ANTLIA</td>
+<td>none recorded</td>
+<td></td>
+<td>PORT SAID (EGY) 2025-04-17</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>AILAMA</td>
+<td>SINGAPORE (SGP)</td>
+<td>21.2</td>
+<td>unnamed anchorage (RUS) 2025-04-17; unnamed anchorage (RUS) 2025-04-22; unnamed anchorage (RUS) 2025-04-30</td>
+</tr>
+<tr>
+<td>2025-03-29 02:59</td>
+<td>BODY</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>FIORA</td>
+<td>YANTAI (CHN)</td>
+<td>12.5</td>
+<td>DONGJIAKOU (CHN) 2025-11-12; DONGJIAKOU (CHN) 2025-11-23</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>GELOR</td>
+<td>none recorded</td>
+<td></td>
+<td>BATAM (IDN) 2025-12-14</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>ALICIA</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>AQUARIS</td>
+<td>QINGDAO (CHN)</td>
+<td>8.2</td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>NARCISSUS</td>
+<td>NAKHODKA (RUS)</td>
+<td>2.6</td>
+<td>RUS-308 (RUS) 2025-11-20; BAYUQUAN ANCHORAGE (CHN) 2025-11-29; BAYUQUAN (CHN) 2025-11-30</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>ARTARA</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>HAI HUN</td>
+<td>KHOR FAKKAN (ARE)</td>
+<td>16.6</td>
+<td>KHOR FAKKAN (ARE) 2025-12-10</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>DELIVER</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>TAURUS</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>BIG MAG</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>FELICITA</td>
+<td>HONGKONG (CHN)</td>
+<td>29.6</td>
+<td>UMM QASR (IRQ) 2025-11-22</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>GUANG TAI</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>MOONBAY</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-10-20 21:59</td>
+<td>SIRIUS 1</td>
+<td>none recorded</td>
+<td></td>
+<td>TELOK RAMUNIA (MYS) 2025-12-02</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>SIRIUS 1</td>
+<td>none recorded</td>
+<td></td>
+<td>TELOK RAMUNIA (MYS) 2025-12-02</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>UMA</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>ELMO</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>FAUSTA</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-11-04 16:59</td>
+<td>VENTURA</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+</tbody>
+</table>
+<h2>Evidence ladder for the strongest meetings</h2>
+<p>Ticked = supported by data in this repo; unticked = still to check by hand.</p>
+<h3>2025-03-26 — EAGLE-S (COK, IMO 9329760), 2.67 km, 66 h overlap</h3>
+<p>Position 31.737, 32.291. This ship's previous port: PORT SAID (EGY, 2025-03-24); next: PORT SAID (EGY, 2025-04-05).</p>
+<ul>
+<li><input type='checkbox' checked disabled> 1. Loitering of 66 h at sea</li>
+<li><input type='checkbox' checked disabled> 2. Partner co-located (nearby); partner sanctioned today — check designation date</li>
+<li><input type='checkbox' disabled> 3. Cargo logic — to assess. Partner came from MARSAXLOKK (MLT) and next called at: PORT SAID (EGY) 2025-06-13.</li>
+<li><input type='checkbox' disabled> 4. Draught change — not obtained (no free historical source covering the period)</li>
+<li><input type='checkbox' disabled> 5. Satellite imagery — <a href="https://browser.dataspace.copernicus.eu/?zoom=12&amp;lat=31.7373&amp;lng=32.2905&amp;fromTime=2025-03-25T00:00:00.000Z&amp;toTime=2025-03-28T23:59:59.999Z">open Sentinel imagery for these dates</a></li>
+<li><input type='checkbox' disabled> 6. Independent reporting / official record</li>
+</ul>
+<h2>Data issues and blind spots</h2>
+<ul>
+<li><strong>2025-02-06</strong> — Days with no events while barely moving: where was it? — 43 days with no events after loitering; moved only 23 km (0.0 kn average)</li>
+<li><strong>2025-04-06</strong> — Days with no events while barely moving: where was it? — 24 days with no events after port visit PORT SAID; moved only 61 km (0.1 kn average)</li>
+<li><strong>2025-05-06</strong> — Days with no events while barely moving: where was it? — 55 days with no events after port visit PORT SAID; moved only 2086 km (0.9 kn average)</li>
+</ul>
+<h2>Sources</h2>
+<ul>
+<li>Global Fishing Watch API v3 (events, vessel identity). Events are <em>apparent</em> and algorithmic; see the GFW data caveats.</li>
+<li>OpenSanctions maritime dataset (maritime-2026-11-09.csv), CC BY-NC 4.0. Confirm each listing in the original EU / UK notice before publishing.</li>
+<li>EAGLE S: https://www.opensanctions.org/entities/abuja-mou-det-7875f45c6f91e82287b8b09b1365dd0825b2f974</li>
+<li>INDRAS: https://www.opensanctions.org/entities/ca-sema-780bab93dc4a5d63cded3730b83bc7e4abec3d84</li>
+<li>C VIKING: https://www.opensanctions.org/entities/abuja-mou-psc-c66155a6c85e0162019eb28abc5f91cba4bcd908</li>
+<li>BLUE EMBER: https://www.opensanctions.org/entities/ca-sema-fc140aadd9456043830dd566977d76a4ffa2667f</li>
+<li>ATLAS: https://www.opensanctions.org/entities/ca-sema-64e484e1d4753b7675fe3c7fc760d8fa2e67c4d1</li>
+<li>EAGLE-S: https://www.opensanctions.org/entities/abuja-mou-det-7875f45c6f91e82287b8b09b1365dd0825b2f974</li>
+<li>ANNA: https://www.opensanctions.org/entities/ofac-39688</li>
+<li>MALAK: https://www.opensanctions.org/entities/ca-sema-16c8b3b9b0f4db82cd62ac5d189fc4a90b682790</li>
+<li>PHOTON: https://www.opensanctions.org/entities/abuja-mou-psc-9a2a2d754d486fc1a81583698faceec0a0a6e5b1</li>
+<li>SPIRIT 2: https://www.opensanctions.org/entities/ca-sema-b9be7f8baff03c113ea41cfaeda23f4ebc0aaf19</li>
+<li>NOVA: https://www.opensanctions.org/entities/bs-mou-54b18d01d6e0bd5de34d1d594ebbf2ed365b32f8</li>
+<li>LADY JASMINE: https://www.opensanctions.org/entities/eu-oj-21b123e9cc89893c0d9d40241c34e6e03cd4f623</li>
+<li>SARA II: https://www.opensanctions.org/entities/ca-sema-7c4893ddf331ce66a475d0ddb2b2cf6609bfa84e</li>
+<li>DARIKA: https://www.opensanctions.org/entities/ofac-58121</li>
+<li>ASTRAL: https://www.opensanctions.org/entities/ca-sema-a95383c6f3bf5807bf00b3d58dc2f19ab17261b5</li>
+<li>LIA: https://www.opensanctions.org/entities/ofac-29484</li>
+<li>MANISA: https://www.opensanctions.org/entities/ofac-29483</li>
+<li>ALBARRAQ Z: https://www.opensanctions.org/entities/ofac-56711</li>
+<li>JAGUAR: https://www.opensanctions.org/entities/ofac-32173</li>
+<li>DESTAN: https://www.opensanctions.org/entities/ca-sema-0b2e1aa2d30a1b2b63e82960d8907ca2e64fa0fd</li>
+<li>LIONESS: https://www.opensanctions.org/entities/imo-vsl-9285744</li>
+<li>BLUE NIL: https://www.opensanctions.org/entities/imo-vsl-9288265</li>
+<li>ADITYA: https://www.opensanctions.org/entities/ca-sema-34f4f9a7fef9c4949ea263d909db10e0c81f1b72</li>
+<li>K M A: https://www.opensanctions.org/entities/ofac-48715</li>
+<li>WORLD PROGRESS: https://www.opensanctions.org/entities/ofac-55889</li>
+<li>SEVEN PEARLS: https://www.opensanctions.org/entities/ca-sema-ba052da5c46d43f32c74aa628eb1ca21454ed726</li>
+<li>ELZA: https://www.opensanctions.org/entities/imo-vsl-9221671</li>
+<li>NEW FUSION: https://www.opensanctions.org/entities/ofac-57467</li>
+<li>ELIZA II: https://www.opensanctions.org/entities/ofac-52329</li>
+<li>MERU: https://www.opensanctions.org/entities/ca-sema-8d1afb864a2b6bf907c0a0be4895c37c8bc251e1</li>
+<li>GURUDEV: https://www.opensanctions.org/entities/ca-sema-7b82f4622fcf1bd0622dd1f68ae3756b551b5d6a</li>
+<li>CONCORD EXPRESS: https://www.opensanctions.org/entities/ca-sema-e83a062e6d480a46f465158a55d055f7bb03d6a4</li>
+<li>JAGGER: https://www.opensanctions.org/entities/ca-sema-415a4df8b5fabf05202d4cf692e565dc2e623b35</li>
+<li>PHOENIX: https://www.opensanctions.org/entities/abuja-mou-psc-9a2a2d754d486fc1a81583698faceec0a0a6e5b1</li>
+<li>EASTERN PEARL: https://www.opensanctions.org/entities/ca-sema-d859e7f740e628a510f0af759581346e7dd5bdf3</li>
+<li>LOKOSAO: https://www.opensanctions.org/entities/ca-sema-27678a09fa0461f753a7fd9f08f845fe2ecf1d3d</li>
+<li>JAGUAR: https://www.opensanctions.org/entities/ca-sema-415a4df8b5fabf05202d4cf692e565dc2e623b35</li>
+<li>SAUGER: https://www.opensanctions.org/entities/ca-sema-fc140aadd9456043830dd566977d76a4ffa2667f</li>
+<li>ARCADIA: https://www.opensanctions.org/entities/ca-sema-64e484e1d4753b7675fe3c7fc760d8fa2e67c4d1</li>
+<li>LEGACY: https://www.opensanctions.org/entities/ca-sema-26de55536cffd906acfea8ec31ef9c42686a683f</li>
+<li>AILAMA: https://www.opensanctions.org/entities/ca-sema-fb697810dd90130e2994a24e835f141146dfac12</li>
+<li>SILVAR: https://www.opensanctions.org/entities/ca-sema-244fdd30a367e1c6a269e03f99f791ff5a47a5cb</li>
+<li>FU HAI WAN: https://www.opensanctions.org/entities/ca-sema-fc324efaea078043aa1034876f9268c374af524f</li>
+<li>IZOLA: https://www.opensanctions.org/entities/ca-sema-fba847cd82d5387bff1b6b074946d460bf2d97de</li>
+<li>GOLD PEARL: https://www.opensanctions.org/entities/eu-oj-a4949e4dc274a7514788378d06343987d4ad4d35</li>
+<li>N CERNA: https://www.opensanctions.org/entities/ca-sema-a2d54cb48f5e18c7a5032e0414f9455aa36b63c9</li>
+<li>C VIKING: https://www.opensanctions.org/entities/abuja-mou-psc-c66155a6c85e0162019eb28abc5f91cba4bcd908</li>
+<li>INDRAS: https://www.opensanctions.org/entities/ca-sema-780bab93dc4a5d63cded3730b83bc7e4abec3d84</li>
+<li>RUBY: https://www.opensanctions.org/entities/ofac-30862</li>
+<li>BREEZE: https://www.opensanctions.org/entities/ca-sema-d9065c38267446442c4455db2a5e035b0243eda9</li>
+<li>TRUST: https://www.opensanctions.org/entities/ca-sema-8e9db7e40aafc633a35d6568a69c4cd9fdfc68c1</li>
+<li>LIBERTY: https://www.opensanctions.org/entities/ca-sema-d878cf8e93df3ba3b3160fea9676304e10def95c</li>
+<li>OZANNO: https://www.opensanctions.org/entities/ca-sema-0fb3c45623406fdba2d4aae14daee60ac98ea0bb</li>
+<li>RANGLER: https://www.opensanctions.org/entities/ca-sema-e7651af173ff2282964830ea7ab5412fd72203cb</li>
+<li>TOA PAYOH: https://www.opensanctions.org/entities/bs-mou-e54400025954fb5593d49bcc9c0888290e29214c</li>
+<li>ANTLIA: https://www.opensanctions.org/entities/ca-sema-72ae3d9e638574167ea7f8da42e118cad55af4f4</li>
+<li>BODY: https://www.opensanctions.org/entities/eu-oj-262baf7907d40e4bf915866b3081ef04caaad051</li>
+<li>MOONBAY: https://www.opensanctions.org/entities/ofac-48200</li>
+<li>TAURUS: https://www.opensanctions.org/entities/ca-sema-9179f260c219cc65544270e5bd48b949a4a96931</li>
+<li>GUANG TAI: https://www.opensanctions.org/entities/ofac-40902</li>
+<li>FELICITA: https://www.opensanctions.org/entities/ofac-57016</li>
+<li>BIG MAG: https://www.opensanctions.org/entities/imo-vsl-9263215</li>
+<li>SIRIUS 1: https://www.opensanctions.org/entities/ca-sema-54706d00b168955036b9910e66acad921912ae69</li>
+<li>DELIVER: https://www.opensanctions.org/entities/ca-sema-cbd0b6ac6c14bc44074ba48b7f893bf8f281d4ad</li>
+<li>ARTARA: https://www.opensanctions.org/entities/ca-sema-e72d7de21f84451b273a689d788a6db1decb4024</li>
+<li>FIORA: https://www.opensanctions.org/entities/ca-sema-c28eab05e81dc40dc9701d9f112c050036b788a2</li>
+<li>GELOR: https://www.opensanctions.org/entities/ca-sema-e72d7de21f84451b273a689d788a6db1decb4024</li>
+<li>HAI HUN: https://www.opensanctions.org/entities/ofac-52271</li>
+<li>AQUARIS: https://www.opensanctions.org/entities/imo-vsl-9251822</li>
+<li>NARCISSUS: https://www.opensanctions.org/entities/ca-sema-0a99b5be5200de076d8a9020b64267f2923f9319</li>
+<li>ALICIA: https://www.opensanctions.org/entities/ofac-53322</li>
+<li>UMA: https://www.opensanctions.org/entities/imo-vsl-9258870</li>
+<li>ELMO: https://www.opensanctions.org/entities/imo-vsl-9256913</li>
+<li>FAUSTA: https://www.opensanctions.org/entities/imo-vsl-9232450</li>
+<li>VENTURA: https://www.opensanctions.org/entities/ofac-47311</li>
+</ul></div><footer>Vessel events: Global Fishing Watch (apparent, AIS-derived). Sanctions data: OpenSanctions (CC BY-NC 4.0). Flags are leads for verification, not findings. Built 2026-11-09 · <a href='https://github.com/ikosan1015/shadow-fleet-tracker'>code and methodology</a></footer></main></body></html>

@@ -87,7 +87,7 @@ def parse_identity(search_json: dict, imo: str) -> pd.DataFrame:
     if df.empty:
         return df
     for c in ("from", "to"):
-        df[c] = pd.to_datetime(df[c], utc=True, errors="coerce")
+        df[c] = pd.to_datetime(df[c], utc=True, errors="coerce", format="ISO8601")
     return df.drop_duplicates().sort_values(["imo", "from"]).reset_index(drop=True)
 
 
@@ -154,7 +154,7 @@ def parse_event(e: dict, imo: str) -> dict:
 def events_frame(rows: list[dict]) -> pd.DataFrame:
     df = pd.DataFrame(rows).reindex(columns=EVENT_COLUMNS)
     for c in ("start", "end"):
-        df[c] = pd.to_datetime(df[c], utc=True, errors="coerce")
+        df[c] = pd.to_datetime(df[c], utc=True, errors="coerce", format="ISO8601")
     df["duration_h"] = (df["end"] - df["start"]).dt.total_seconds() / 3600
     num = [c for c in EVENT_COLUMNS if c.endswith(("lat", "lon", "_km", "_kn"))]
     df[num] = df[num].apply(pd.to_numeric, errors="coerce")

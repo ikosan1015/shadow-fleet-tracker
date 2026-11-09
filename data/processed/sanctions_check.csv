@@ -1,7 +1,166 @@
 role,name,imo,flag,matched_by,os_caption,os_risk,os_flag,os_datasets,os_url,listed,shadow_tag,detained
 studied (sanctioned),EAGLE S,9329760,,imo (bulk file),MT EAGLE S; Eagle S; EAGLE S,mare.detained; reg.warn; sanction; mare.shadow; poi,ck,abuja_mou_detention; ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/abuja-mou-det-7875f45c6f91e82287b8b09b1365dd0825b2f974 https://www.opensanctions.org/entities/ca-sema-2edde8f2d425a091bee1a5ecf4b93959f43db314 https://www.opensanctions.org/entities/eu-oj-25ade0b049285a1ea6869f4a9013d91caa7dc74f https://www.opensanctions.org/entities/eu-sancmap-12b275191fee15ecc19a27951e5c7f28b96d9db8 https://www.opensanctions.org/entities/gb-fcdo-rus2778 https://www.opensanctions.org/entities/imo-vsl-9329760,True,True,True
+studied (sanctioned),INDRAS,9314894,,imo (bulk file),INDRAS; Indras; PINEGA,sanction; mare.shadow; poi,pa; ru,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-780bab93dc4a5d63cded3730b83bc7e4abec3d84 https://www.opensanctions.org/entities/eu-oj-686de7f57320716ca058f02a366218638fa7dafd https://www.opensanctions.org/entities/eu-sancmap-a4379e03e5510c785e69fc4e20d1c3372dd9f958 https://www.opensanctions.org/entities/gb-fcdo-rus2525 https://www.opensanctions.org/entities/imo-vsl-9314894,True,True,False
+studied (sanctioned),C VIKING,9261657,,imo (bulk file),C VIKING; SHANDONG ZIHE; C Viking,mare.detained; reg.warn; sanction; mare.shadow; poi,ck; hk; sl,ext_abuja_mou_psc; black_sea_mou_detention; ca_dfatd_sema_sanctions; ch_seco_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/abuja-mou-psc-c66155a6c85e0162019eb28abc5f91cba4bcd908 https://www.opensanctions.org/entities/bs-mou-b54d1d4c7e96b74c8f6c557a0c6874500ef2a200 https://www.opensanctions.org/entities/ca-sema-4f0bca42269b31c1119244ce6d2f45663a0e8b53 https://www.opensanctions.org/entities/ch-seco-99976 https://www.opensanctions.org/entities/eu-oj-c26f3511298aca77fa30df56b4d91621916bc8c7 https://www.opensanctions.org/entities/eu-sancmap-3ffd03d2ae11d5e0cfc42b53113f5a9e62630327 https://www.opensanctions.org/entities/gb-fcdo-rus2503 https://www.opensanctions.org/entities/imo-vsl-9261657,True,True,True
+studied (sanctioned),BLUE EMBER,9273442,,imo (bulk file),Blue Ember; PIER; BLUE EMBER,sanction; mare.shadow; poi,bb; st,ca_dfatd_sema_sanctions; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-fc140aadd9456043830dd566977d76a4ffa2667f https://www.opensanctions.org/entities/gb-fcdo-rus2803 https://www.opensanctions.org/entities/imo-vsl-9273442,True,True,False
+studied (sanctioned),ATLAS,9413573,,imo (bulk file),Atlas; ATLAS; ARCADIA,sanction; mare.shadow; poi,bb; om,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ca-sema-64e484e1d4753b7675fe3c7fc760d8fa2e67c4d1 https://www.opensanctions.org/entities/eu-oj-b62a6b334845e9276c4ee62968657eb3bce097b6 https://www.opensanctions.org/entities/eu-sancmap-a1f97cfa2d31bd973962615a58622bec27a61c90 https://www.opensanctions.org/entities/eu-sancmap-bf435efde4fb0bdb4bcfb9856a5dbb6bfcbc3756 https://www.opensanctions.org/entities/gb-fcdo-rus2225 https://www.opensanctions.org/entities/imo-vsl-9413573 https://www.opensanctions.org/entities/ofac-51758,True,True,False
+partner,EAGLE-S,9329760,COK,imo (bulk file),MT EAGLE S; Eagle S; EAGLE S,mare.detained; reg.warn; sanction; mare.shadow; poi,ck,abuja_mou_detention; ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/abuja-mou-det-7875f45c6f91e82287b8b09b1365dd0825b2f974 https://www.opensanctions.org/entities/ca-sema-2edde8f2d425a091bee1a5ecf4b93959f43db314 https://www.opensanctions.org/entities/eu-oj-25ade0b049285a1ea6869f4a9013d91caa7dc74f https://www.opensanctions.org/entities/eu-sancmap-12b275191fee15ecc19a27951e5c7f28b96d9db8 https://www.opensanctions.org/entities/gb-fcdo-rus2778 https://www.opensanctions.org/entities/imo-vsl-9329760,True,True,True
+partner,ANNA,9233208,CMR,imo (bulk file),Rain Drop,sanction,ck,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-39688,True,False,False
+partner,INFINITY,9179701,GUY,none,,,,,,False,False,False
+partner,MIA,7803530,COM,none,,,,,,False,False,False
+partner,BLUE ROSE,9335915,MHL,none,,,,,,False,False,False
+partner,CRONUS,9337016,LBR,none,,,,,,False,False,False
+partner,SEA TIGER,,EGY,none,,,,,,False,False,False
+partner,MALAK,,EGY,name only (bulk file) - VERIFY,Malak,sanction,,ca_dfatd_sema_sanctions,https://www.opensanctions.org/entities/ca-sema-16c8b3b9b0f4db82cd62ac5d189fc4a90b682790,True,False,False
+partner,SABAHAT TELLI,9112870,TUR,none,,,,,,False,False,False
+partner,STI BRIXTON,9686869,MHL,none,,,,,,False,False,False
+partner,MAERSK VALLETTA,9833369,SGP,none,,,,,,False,False,False
+partner,SEASTAR 1,9163283,PAN,imo (bulk file),SEASTAR 1,mare.detained,pa,tokyo_mou_detention,https://www.opensanctions.org/entities/tok-mou-det-12b79ef087f4591e3c0f5be1fd5d1d3eb3efadc9,False,False,True
+partner,SEA ARGUS,9004815,GMB,none,,,,,,False,False,False
+partner,PHOTON,9333424,GMB,imo (bulk file),SCF PECHORA; Phoenix; PHOTON,sanction; mare.shadow; poi,ga; cm,ext_abuja_mou_psc; ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/abuja-mou-psc-9a2a2d754d486fc1a81583698faceec0a0a6e5b1 https://www.opensanctions.org/entities/ca-sema-5d8a0c54447802677753b4d421ddcb42517e5c06 https://www.opensanctions.org/entities/eu-oj-3603170e9bff805569cca248d78c0960eec3b299 https://www.opensanctions.org/entities/eu-sancmap-368753231f67283b36032bb1fdae7157867ecf2d https://www.opensanctions.org/entities/eu-sancmap-6b3700bb77f0bcb69d897852b356b4dc8f059ee7 https://www.opensanctions.org/entities/gb-fcdo-rus2186 https://www.opensanctions.org/entities/imo-vsl-9333424,True,True,False
+partner,SPIRIT 2,9409259,PLW,imo (bulk file),Spirit 2; SPIRIT 2; SPIRIT2,sanction; mare.shadow; poi,pa; gq; sl,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/ca-sema-b9be7f8baff03c113ea41cfaeda23f4ebc0aaf19 https://www.opensanctions.org/entities/eu-oj-a0dd1163c8c06d369e3c78144fed974cf6cce738 https://www.opensanctions.org/entities/eu-sancmap-a09d7c9d8bfebccc3a6fd392ef2f5facc85e3cbc https://www.opensanctions.org/entities/gb-fcdo-rus2760 https://www.opensanctions.org/entities/imo-vsl-9409259 https://www.opensanctions.org/entities/tokyo-mou-psc-9ca68592cd4904519d9a2e96256c58fe64874093,True,True,False
+partner,NOVA,9379052,GMB,imo (bulk file),OCEAN AUTUMN; Ocean Autumn; NOVA,mare.detained; reg.warn; sanction; mare.shadow; poi,pa,black_sea_mou_detention; ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/bs-mou-54b18d01d6e0bd5de34d1d594ebbf2ed365b32f8 https://www.opensanctions.org/entities/ca-sema-d64544eec71761e23494e8fb34ee55be094d12eb https://www.opensanctions.org/entities/eu-oj-fb8b6d6325ea2ee896d0c458112eb0150513c925 https://www.opensanctions.org/entities/eu-sancmap-a7ec467d8fd5c8ea70fb4581398173a5647d0639 https://www.opensanctions.org/entities/gb-fcdo-rus2735 https://www.opensanctions.org/entities/imo-vsl-9379052,True,True,True
+partner,JINCHEN,9279757,PAN,none,,,,,,False,False,False
+partner,BALTIC ICE,9327401,LBR,none,,,,,,False,False,False
+partner,LADY JASMINE,1031537,TZA,imo (bulk file),LADY JASMINE,sanction; mare.shadow; poi,tz,eu_journal_sanctions; eu_sanctions_map; ua_war_sanctions,https://www.opensanctions.org/entities/eu-oj-21b123e9cc89893c0d9d40241c34e6e03cd4f623 https://www.opensanctions.org/entities/eu-sancmap-2e320ac7c233134606845c8bf756f2f184422013 https://www.opensanctions.org/entities/imo-vsl-1031537,True,True,False
+partner,SARA II,9301615,LBR,imo (bulk file),Sara II; SARA II; SIRTIC,sanction; mare.shadow; poi,gq; lr,ca_dfatd_sema_sanctions; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ca-sema-7c4893ddf331ce66a475d0ddb2b2cf6609bfa84e https://www.opensanctions.org/entities/gb-fcdo-rus2952 https://www.opensanctions.org/entities/imo-vsl-9301615 https://www.opensanctions.org/entities/ofac-47226,True,True,False
+partner,EL AMIRA HANA,,EGY,none,,,,,,False,False,False
+partner,DARIKA,9506693,PAN,imo (bulk file),DARIKA,sanction,pa,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-58121,True,False,False
+partner,ZEKO Y,8027573,COM,imo (bulk file),ZEKO Y,mare.detained,tz,black_sea_mou_detention,https://www.opensanctions.org/entities/bs-mou-aa0e8f491d87a104886a6ab4f53bb743d379c7f0,False,False,True
+partner,KARPATHOS,9382140,CYP,none,,,,,,False,False,False
+partner,ELMOTWAKEL ALA ALLAH,,EGY,none,,,,,,False,False,False
+partner,RITAJ,,EGY,none,,,,,,False,False,False
+partner,MINERVA JOANNA,9380386,GRC,none,,,,,,False,False,False
+partner,IXORA,9940459,LBR,none,,,,,,False,False,False
+partner,AEGEAN,8027705,MNG,none,,,,,,False,False,False
+partner,ABC IRIS,9514195,PAN,imo (bulk file),EASTERN IRIS,mare.detained,hk,tokyo_mou_detention,https://www.opensanctions.org/entities/tok-mou-det-bc19f157f3b7e1e40afb94baade37d6ef24b1a77,False,False,True
+partner,HTM SAMURAI,9595125,MLT,none,,,,,,False,False,False
+partner,DARMIK,9201774,TUR,none,,,,,,False,False,False
+partner,DICLE DENIZ,9464273,BRB,none,,,,,,False,False,False
+partner,ASTRAL,9274800,GMB,imo (bulk file),Yangtze; Astral; ASTRAL; YANGTZE; LABRADOR,sanction; mare.shadow; poi,ga; ru,ca_dfatd_sema_sanctions; ch_seco_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-a95383c6f3bf5807bf00b3d58dc2f19ab17261b5 https://www.opensanctions.org/entities/ch-seco-99996 https://www.opensanctions.org/entities/eu-oj-0ee913f70eaf1f2fe22e8f34cd161bb70fa8b00a https://www.opensanctions.org/entities/eu-sancmap-17ff7a91b0ceae7196fbfa456b5734aa8b45b7e2 https://www.opensanctions.org/entities/gb-fcdo-rus2499 https://www.opensanctions.org/entities/imo-vsl-9274800,True,True,False
+partner,ASEL,8946822,TZA,none,,,,,,False,False,False
+partner,MARISA N,8004090,CMR,none,,,,,,False,False,False
+partner,MOHAMAD Y,8107000,COM,none,,,,,,False,False,False
+partner,HERO SD,9113886,VUT,none,,,,,,False,False,False
+partner,DESTINY HELPER,8910354,,none,,,,,,False,False,False
+partner,LIA,9041057,GUY,imo (bulk file),serenity,sanction,gy,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-29484,True,False,False
+partner,RAJAB,,EGY,none,,,,,,False,False,False
+partner,MANISA,9176773,GUY,imo (bulk file),ANGLIA,sanction,cm,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-29483,True,False,False
+partner,ALBARRAQ Z,9252943,COM,imo (bulk file),Albarraq Z,sanction,,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-56711,True,False,False
+partner,ABACUS,7427659,CMR,none,,,,,,False,False,False
+partner,CORNELIA,9216597,LBR,imo (bulk file),CORNELIA,mare.detained; reg.warn,lr,black_sea_mou_detention,https://www.opensanctions.org/entities/bs-mou-12a560a97ede5eb23a768b562639df678aeaf2f7,False,False,True
+partner,JAGUAR,9167148,BES,imo (bulk file),Triple Success,sanction,ga,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-32173,True,False,False
+partner,,,EGY,none,,,,,,False,False,False
+partner,DESTAN,9388766,OMN,imo (bulk file),Destan; DESTAN; TANZANIT,sanction; mare.shadow; poi,pa; ru,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-0b2e1aa2d30a1b2b63e82960d8907ca2e64fa0fd https://www.opensanctions.org/entities/eu-oj-face106fb8cf6b1dafa35eee5ad9af6baa431dd2 https://www.opensanctions.org/entities/eu-sancmap-6d0db24249d2fb5e00ee80f23b54aa6f0624c3c9 https://www.opensanctions.org/entities/gb-fcdo-rus2500 https://www.opensanctions.org/entities/imo-vsl-9388766,True,True,False
+partner,EL ADHAM,,EGY,none,,,,,,False,False,False
+partner,KUNOOZ,,EGY,none,,,,,,False,False,False
+partner,HAFNIA TAURUS,9461673,MLT,none,,,,,,False,False,False
+partner,SEALOYALTY,9783928,MLT,none,,,,,,False,False,False
+partner,JARNAIN,9823546,LBR,none,,,,,,False,False,False
+partner,JAMILAH,9133185,COM,none,,,,,,False,False,False
+partner,NORTHWOOD,9222118,PLW,imo (bulk file),MAERSK NORTHWORD; NORTHWOOD,mare.detained,sg; pw,ext_abuja_mou_psc; tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/abuja-mou-psc-f1a8d5b47059e9b29d3d228d83861435c7696105 https://www.opensanctions.org/entities/tok-mou-det-9efa1d5abd0cb710813e5c675d6867f445219d24 https://www.opensanctions.org/entities/tokyo-mou-psc-e86fe6625aa736274bb9b0af7ac64f59faf00317,False,False,True
 partner,BEKS BEBEK,,MHL,none,,,,,,False,False,False
 partner,OSCAR,9365386,LBR,imo (bulk file),OSCAR,poi,lr,ext_abuja_mou_psc; ua_war_sanctions,https://www.opensanctions.org/entities/abuja-mou-psc-ce97addf31c9f1d630ff2f02ddb755f129a4b48c https://www.opensanctions.org/entities/imo-vsl-9365386,False,False,False
+partner,POLKA,9422641,LBR,none,,,,,,False,False,False
+partner,LIONESS,9285744,PAN,imo (bulk file),NIL 308; LIONESS,mare.shadow; poi; sanction,pa,ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/imo-vsl-9285744 https://www.opensanctions.org/entities/ofac-51379,True,True,False
+partner,ITHAKI,9382176,LBR,none,,,,,,False,False,False
+partner,DELTA,9595395,LBR,none,,,,,,False,False,False
+partner,BLUE NIL,9288265,PAN,imo (bulk file),TWENTY ONE; BLUE NIL,mare.shadow; poi; sanction,ck,ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/imo-vsl-9288265 https://www.opensanctions.org/entities/ofac-51376,True,True,False
+partner,MONJASA SHAKER,9510591,LBR,none,,,,,,False,False,False
+partner,CLIO,9833450,LBR,none,,,,,,False,False,False
+partner,ESTELLA,9382700,PAN,none,,,,,,False,False,False
+partner,ADITYA,9323314,GAB,imo (bulk file),Aditya; ADITYA; MIMOZA,sanction; mare.shadow; poi,cm; ru,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-34f4f9a7fef9c4949ea263d909db10e0c81f1b72 https://www.opensanctions.org/entities/eu-oj-36e8abb1b8c9612cb38810d217afbd10ba1683a0 https://www.opensanctions.org/entities/eu-sancmap-7ec8fde011dd99e1c8a62f7409e5d1841cb593f3 https://www.opensanctions.org/entities/gb-fcdo-rus3424 https://www.opensanctions.org/entities/imo-vsl-9323314,True,True,False
+partner,KOTA NALURI,9362308,SGP,none,,,,,,False,False,False
+partner,CHASER,9439292,LBR,none,,,,,,False,False,False
+partner,MELTEMI,9407823,LBR,none,,,,,,False,False,False
+partner,K M A,9234616,COK,imo (bulk file),K M A; ADMIRAL,sanction; mare.detained,ck; gi,us_ofac_sdn; us_trade_csl; tokyo_mou_detention,https://www.opensanctions.org/entities/ofac-48715 https://www.opensanctions.org/entities/tok-mou-det-d1aa6275addd52810bf7a0be3771dc764ad48f8b,True,False,True
+partner,WORLD PROGRESS,9300996,LBR,imo (bulk file),WORLD PROGRESS,sanction,ck,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-55889,True,False,False
+partner,AL BARRAH,9332030,SAU,none,,,,,,False,False,False
+partner,MARINE LIBERTY,9578488,SGP,none,,,,,,False,False,False
+partner,KRONOS,9439280,LBR,none,,,,,,False,False,False
+partner,HEREDIA SEA,9387188,LBR,none,,,,,,False,False,False
+partner,MT BABYLON,9379519,IND,none,,,,,,False,False,False
+partner,MONJASA SHIPPER,9825025,LBR,none,,,,,,False,False,False
+partner,SEA LINE 1,8873245,ARE,none,,,,,,False,False,False
+partner,ESTIA,9327035,BHS,imo (bulk file),ESTIA; LV ESTIA,mare.detained,bs; mh,tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/tok-mou-det-676f23da50dd0738a19854af2077c6163758e77e https://www.opensanctions.org/entities/tokyo-mou-psc-6183b410b226592f6cbe5393abfd89e04986931a,False,False,True
+partner,KOHZAN MARU 6,9889045,LBR,none,,,,,,False,False,False
+partner,SHARAFDIAMOND,,ARE,none,,,,,,False,False,False
+partner,KHASAB SILVER,9718832,MHL,none,,,,,,False,False,False
+partner,SANMAR SAROD,9321184,IND,none,,,,,,False,False,False
+partner,JAG PADMA,9325348,IND,none,,,,,,False,False,False
+partner,INCHCAPE 20,9342293,,none,,,,,,False,False,False
+partner,M.T  SANMAR SANGEET,9279757,SGP,none,,,,,,False,False,False
+partner,LOVELY LADY,9960978,MLT,none,,,,,,False,False,False
+partner,DTA DEAN ANDREW,9184108,ARE,none,,,,,,False,False,False
+partner,ALFIOS,9884241,BHS,none,,,,,,False,False,False
+partner,ANDIAMO,9512757,MHL,none,,,,,,False,False,False
+partner,MONJASA SERVER,9510577,LBR,none,,,,,,False,False,False
+partner,ELKA ATHINA,9249116,LBR,none,,,,,,False,False,False
+partner,STOLT SNELAND,9352212,CYM,none,,,,,,False,False,False
+partner,LARGO EXCELLENCE,9935923,LBR,none,,,,,,False,False,False
+partner,STI BATTERY,9688362,MHL,none,,,,,,False,False,False
+partner,REGAL RACHEL,9424089,MHL,imo (bulk file),HPC LIBERTY,mare.detained,pa,ext_abuja_mou_psc; tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/abuja-mou-psc-afa94846a72e26a03b1f1909f3576935fa5cb5f4 https://www.opensanctions.org/entities/tok-mou-det-f4d8f5ec8009a0f2fa6e8018854b4cab89041caa https://www.opensanctions.org/entities/tokyo-mou-psc-571f11fdea50fdcafa7c1573deb66d9084d127ad,False,False,True
+partner,CASPER,9408815,LBR,imo (bulk file),MT CASPER,mare.detained; reg.warn,lr,abuja_mou_detention,https://www.opensanctions.org/entities/abuja-mou-det-2091d56d06eb63cbd47c39f4c153936d920d11d5,False,False,True
+partner,SEVEN PEARLS,9343986,KNA,imo (bulk file),Capella MB; CAPELLA MB; CAPELLA MB (formerly SEVEN PEARLS),sanction; mare.shadow; poi,,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-ba052da5c46d43f32c74aa628eb1ca21454ed726 https://www.opensanctions.org/entities/eu-oj-6d857ad26480bd5d1d14ea9657a2bb3e6b7546c3 https://www.opensanctions.org/entities/eu-sancmap-2d3876494a6cdfcbcc4b7d812406caae0a5aa10f https://www.opensanctions.org/entities/imo-vsl-9343986,True,True,False
+partner,KIMOLOS,9371282,LBR,none,,,,,,False,False,False
+partner,GEORGIA M,9321196,PAN,imo (bulk file),GEORGIA M; GISELE,mare.detained,pa; lr,tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/tok-mou-det-9406701a00e2d0cdad0b699e4ce21cea491a7afe https://www.opensanctions.org/entities/tokyo-mou-psc-025356543dbdc416b35c42809c3bb6709d9264d0,False,False,True
+partner,CMA CGM ZANZIBAR,9367827,MLT,none,,,,,,False,False,False
+partner,MEGALOPOLIS,9477799,MLT,none,,,,,,False,False,False
+partner,PAN PEGASUS,9855501,LBR,none,,,,,,False,False,False
+partner,NORD MAJESTIC,9902835,SGP,none,,,,,,False,False,False
+partner,SIDRA AL RUWAIS,9339648,LBR,none,,,,,,False,False,False
+partner,ELZA,9221671,LBR,imo (bulk file),ELZA,mare.shadow; poi; sanction,lr,ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/imo-vsl-9221671 https://www.opensanctions.org/entities/ofac-51036,True,True,False
+partner,MARLIN HERA,9729221,MHL,none,,,,,,False,False,False
+partner,ASTRAIOS,9961465,LBR,none,,,,,,False,False,False
+partner,AL-HADBAA,9649988,JOR,none,,,,,,False,False,False
+partner,MAERSK CANCUN,9786138,DNK,none,,,,,,False,False,False
+partner,CNC BULL,9378785,KOR,none,,,,,,False,False,False
+partner,NAVIG8 HONOR,9556181,MHL,none,,,,,,False,False,False
+partner,LILAC VICTORIA,9589815,IND,none,,,,,,False,False,False
+partner,SM 3 NOORA,9820829,,none,,,,,,False,False,False
+partner,FREDENSBORG,9465394,THA,imo (bulk file),FREDENSBORG,mare.detained,th,tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/tok-mou-det-f3ae205ebac1ebbf2604cb3023311ed6c9585ee7 https://www.opensanctions.org/entities/tokyo-mou-psc-34a00d86908c1e6696911154d4fc9f7a9e7ff628,False,False,True
+partner,APL CAIRO,9234109,SGP,none,,,,,,False,False,False
+partner,SNOWCAT,,,none,,,,,,False,False,False
+partner,NAVE RIGEL,9638551,MHL,none,,,,,,False,False,False
+partner,PALM,9281425,GNB,none,,,,,,False,False,False
+partner,PUFFIN TWO,9438274,LBR,none,,,,,,False,False,False
+partner,KUALA LUMPUR EXPRESS,9343730,DEU,none,,,,,,False,False,False
+partner,SC GOLD OCEAN,9323807,MHL,imo (bulk file),SC GOLD OCEAN,mare.detained,mh,tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/tok-mou-det-93b288edf37ffff4832832ab6ad453914ea95ebf https://www.opensanctions.org/entities/tokyo-mou-psc-7d6df524a71dbafc05d45f0ef96ed503f9987c5b,False,False,True
+partner,SPIL KARTINI,9353266,PAN,none,,,,,,False,False,False
+partner,MSC MARGRIT,9465318,HKG,none,,,,,,False,False,False
+partner,BOBIC,9317781,MHL,none,,,,,,False,False,False
+partner,SERUI,9746073,IDN,none,,,,,,False,False,False
+partner,HTK GALAXY,9590917,PAN,imo (bulk file),HTK GALAXY,mare.detained,pa,tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/tok-mou-det-68b255688227410b8ec04e6cbf3ce0557d773156 https://www.opensanctions.org/entities/tokyo-mou-psc-92b74ab43cad771981fd685810ac390e059bf52a,False,False,True
+partner,HTK LUCKY,9281944,VNM,imo (bulk file),HTK LUCKY,mare.detained,vn,tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/tok-mou-det-92e9290f79f12c2b88ee5b544e49511270b08e73 https://www.opensanctions.org/entities/tokyo-mou-psc-9842bdf690ccdd9cd206ac227bcacff4710be793,False,False,True
+partner,EAST AYUTTHAYA,9584293,THA,none,,,,,,False,False,False
+partner,UNITY TRITON,9764104,BHS,none,,,,,,False,False,False
+partner,ALICE,,PAN,name only (bulk file) - VERIFY,ALICE,mare.detained,pw,black_sea_mou_detention,https://www.opensanctions.org/entities/bs-mou-31ad66d1e3343cfea1a4c2c9969f4666cfab4bd4,False,False,True
+partner,NEW FUSION,9277723,PAN,imo (bulk file),NEW FUSION,sanction,pa,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-57467,True,False,False
+partner,ELIZA II,9418078,STP,imo (bulk file),ELIZA II,sanction,pa,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-52329,True,False,False
+partner,OILIVIA,,SPM,none,,,,,,False,False,False
+partner,MERU,9187227,GMB,imo (bulk file),Meru; MERU,sanction; mare.shadow; poi,km; gq; sl,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ca-sema-8d1afb864a2b6bf907c0a0be4895c37c8bc251e1 https://www.opensanctions.org/entities/eu-oj-e26eaaaa6f2a13990da4056530b1befca536db3a https://www.opensanctions.org/entities/eu-sancmap-5ac2d83c5b5d569d7c5ba48b27e526b0f7b4b1ab https://www.opensanctions.org/entities/gb-fcdo-rus2850 https://www.opensanctions.org/entities/imo-vsl-9187227 https://www.opensanctions.org/entities/ofac-51908,True,True,False
+partner,MARS,,PLW,name only (bulk file) - VERIFY,MARS,mare.detained,lr,black_sea_mou_detention,https://www.opensanctions.org/entities/bs-mou-87f3d42e891d458f2881ebc2ae0b42fcf6f5b18f,False,False,True
+partner,STRAITS DIGNITY,9306859,STP,imo (bulk file),STRAITS DIGNITY,mare.detained,mn,tokyo_mou_detention,https://www.opensanctions.org/entities/tok-mou-det-546b154813fb4c7317e4c677584ac5eb120f07b1,False,False,True
+partner,STRAITS KAIZEN,9394349,BLZ,none,,,,,,False,False,False
+partner,STRAITS PRIDE,9066447,MNG,none,,,,,,False,False,False
+partner,STRAITS COURAGEOUS,8704262,MNG,none,,,,,,False,False,False
+partner,JC DALIAN,1105106,PAN,none,,,,,,False,False,False
+partner,OUTLANDER,9218337,SLE,none,,,,,,False,False,False
+partner,BEKS BEBEK,9281425,MHL,none,,,,,,False,False,False
+partner,YAGIZA,,FRA,none,,,,,,False,False,False
+partner,HOBART,,POL,none,,,,,,False,False,False
+partner,GURUDEV,9253234,PAN,imo (bulk file),GURUDEV; Gurudev; SATNA,sanction; mare.shadow; poi,pa; cm,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-7b82f4622fcf1bd0622dd1f68ae3756b551b5d6a https://www.opensanctions.org/entities/eu-oj-e6c3c70ad937fba17572ee9a92bef2d1c7148c0b https://www.opensanctions.org/entities/eu-sancmap-7c12421e726b85fc2a5c7c37c01ce98e482722be https://www.opensanctions.org/entities/gb-fcdo-rus2549 https://www.opensanctions.org/entities/imo-vsl-9253234,True,True,False
+partner,CONCORD EXPRESS,9247443,PAN,imo (bulk file),Magnus; Quartanus; Quartanus (formerly Morpheus); QUARTANUS; SKIRON,sanction; mare.shadow; poi,gq,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-e83a062e6d480a46f465158a55d055f7bb03d6a4 https://www.opensanctions.org/entities/eu-oj-83a1b6a5a87ac0d575160772fe4af7a3e0451920 https://www.opensanctions.org/entities/eu-sancmap-4b5d33c95a207f7dda55684c9fb0038bad75b5ee https://www.opensanctions.org/entities/gb-fcdo-rus2606 https://www.opensanctions.org/entities/imo-vsl-9247443,True,True,False
+partner,SUNNY BRIGHT,9287948,JPN,none,,,,,,False,False,False
+partner,JAGGER,9354301,COM,imo (bulk file),JAGUAR; Jaguar; Jaguar (formerly Zaliv Amerika); Zaliv Amerika; JAGGER,sanction; mare.shadow; poi,bb; ru; pa,ca_dfatd_sema_sanctions; ch_seco_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ca-sema-415a4df8b5fabf05202d4cf692e565dc2e623b35 https://www.opensanctions.org/entities/ch-seco-87257 https://www.opensanctions.org/entities/eu-oj-d5324a892412b42eef76b3935b92d69dbe56cd80 https://www.opensanctions.org/entities/eu-sancmap-5f420a26fc854bb743cdfcdedde2201dc866fe54 https://www.opensanctions.org/entities/eu-sancmap-9c1c25b27b3c32eeada64da41a7a8f61c1ec3462 https://www.opensanctions.org/entities/gb-fcdo-rus2872 https://www.opensanctions.org/entities/imo-vsl-9354301 https://www.opensanctions.org/entities/ofac-51496,True,True,False
+partner,PHOENIX,9333424,MWI,imo (bulk file),SCF PECHORA; Phoenix; PHOTON,sanction; mare.shadow; poi,ga; cm,ext_abuja_mou_psc; ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/abuja-mou-psc-9a2a2d754d486fc1a81583698faceec0a0a6e5b1 https://www.opensanctions.org/entities/ca-sema-5d8a0c54447802677753b4d421ddcb42517e5c06 https://www.opensanctions.org/entities/eu-oj-3603170e9bff805569cca248d78c0960eec3b299 https://www.opensanctions.org/entities/eu-sancmap-368753231f67283b36032bb1fdae7157867ecf2d https://www.opensanctions.org/entities/eu-sancmap-6b3700bb77f0bcb69d897852b356b4dc8f059ee7 https://www.opensanctions.org/entities/gb-fcdo-rus2186 https://www.opensanctions.org/entities/imo-vsl-9333424,True,True,False
+partner,EASTERN PEARL,9285859,COM,imo (bulk file),Eastern Pearl; EASTERN PEARL; AZORIN,sanction; mare.shadow; poi,hn; sl,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-d859e7f740e628a510f0af759581346e7dd5bdf3 https://www.opensanctions.org/entities/eu-oj-0df9db27a678605bfbc01f6e4e28e7dd5b8edf57 https://www.opensanctions.org/entities/eu-sancmap-b289fbd758480cf9c7137b5be5fe51f04466fbe9 https://www.opensanctions.org/entities/gb-fcdo-rus2228 https://www.opensanctions.org/entities/imo-vsl-9285859,True,True,False
+partner,LOKOSAO,9286657,STP,imo (bulk file),Lokosao; DYNAMIK TRADER; JUNDAR,sanction; mare.shadow; poi,ck; sl,ca_dfatd_sema_sanctions; ch_seco_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-27678a09fa0461f753a7fd9f08f845fe2ecf1d3d https://www.opensanctions.org/entities/ch-seco-90209 https://www.opensanctions.org/entities/eu-oj-63e587f4887b9e16199221c7a3d80e43a8e74fcb https://www.opensanctions.org/entities/eu-sancmap-11ee8ac3affc1c4532434756f6ab6949313a08af https://www.opensanctions.org/entities/eu-sancmap-261aa040b0624a3069b722a241c424080251f151 https://www.opensanctions.org/entities/gb-fcdo-rus2179 https://www.opensanctions.org/entities/imo-vsl-9286657,True,True,False
+partner,ATLANTIC EXPRESS,9330850,SGP,none,,,,,,False,False,False
+partner,MISS NEPAL,,EGY,none,,,,,,False,False,False
+partner,JAGUAR,9354301,BRB,imo (bulk file),JAGUAR; Jaguar; Jaguar (formerly Zaliv Amerika); Zaliv Amerika; JAGGER,sanction; mare.shadow; poi,bb; ru; pa,ca_dfatd_sema_sanctions; ch_seco_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ca-sema-415a4df8b5fabf05202d4cf692e565dc2e623b35 https://www.opensanctions.org/entities/ch-seco-87257 https://www.opensanctions.org/entities/eu-oj-d5324a892412b42eef76b3935b92d69dbe56cd80 https://www.opensanctions.org/entities/eu-sancmap-5f420a26fc854bb743cdfcdedde2201dc866fe54 https://www.opensanctions.org/entities/eu-sancmap-9c1c25b27b3c32eeada64da41a7a8f61c1ec3462 https://www.opensanctions.org/entities/gb-fcdo-rus2872 https://www.opensanctions.org/entities/imo-vsl-9354301 https://www.opensanctions.org/entities/ofac-51496,True,True,False
+partner,ZEBRA,9231157,LBR,none,,,,,,False,False,False
+partner,TP VENTURE,9895202,NOR,none,,,,,,False,False,False
 partner,SAUGER,9273442,MHL,imo (bulk file),Blue Ember; PIER; BLUE EMBER,sanction; mare.shadow; poi,bb; st,ca_dfatd_sema_sanctions; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-fc140aadd9456043830dd566977d76a4ffa2667f https://www.opensanctions.org/entities/gb-fcdo-rus2803 https://www.opensanctions.org/entities/imo-vsl-9273442,True,True,False
 partner,MOUNT OLYMPUS,9260081,MHL,none,,,,,,False,False,False
 partner,ORIZZONTE,,ITA,none,,,,,,False,False,False
@@ -13,7 +172,6 @@ partner,SEA BREEZE,7116781,PLW,imo (bulk file),AK DENISA,mare.detained,tg,black_
 partner,LEGACY,9339337,COM,imo (bulk file),Legacy; Legacy (formerly NS Lotus); NS Lotus; NS LOTUS; LAVENDER,sanction; mare.shadow; poi,ga; om; bb,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ca-sema-26de55536cffd906acfea8ec31ef9c42686a683f https://www.opensanctions.org/entities/eu-oj-8b27e8cda4fda6e46b5e60626dfbcc51b82cbbc1 https://www.opensanctions.org/entities/eu-sancmap-d5cba604ab94a82ca193e8c5d161190fef212145 https://www.opensanctions.org/entities/eu-sancmap-e89757d789337b7a7102202c7a3fd14fd6740d3d https://www.opensanctions.org/entities/gb-fcdo-rus2189 https://www.opensanctions.org/entities/imo-vsl-9339337 https://www.opensanctions.org/entities/ofac-51780,True,True,False
 partner,CHEM ABBEY,9937971,LBR,none,,,,,,False,False,False
 partner,AILAMA,9232888,GMB,imo (bulk file),Ksena; Ailama; KSENA; AILANA,sanction; mare.shadow; poi,pa; sl,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-fb697810dd90130e2994a24e835f141146dfac12 https://www.opensanctions.org/entities/eu-oj-e2ec63b0f71f4cd3ca9514950c06ffc217b279ae https://www.opensanctions.org/entities/eu-sancmap-c0b0d241cab12c29033146543daf38047a37fe21 https://www.opensanctions.org/entities/gb-fcdo-rus2325 https://www.opensanctions.org/entities/imo-vsl-9232888,True,True,False
-partner,SEA ARGUS,9004815,GMB,none,,,,,,False,False,False
 partner,SILVAR,9291262,PAN,imo (bulk file),"Silvar; SILVAR; IMO 9291262 (""SILVAR"")",sanction; mare.shadow; poi,cm,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ca-sema-244fdd30a367e1c6a269e03f99f791ff5a47a5cb https://www.opensanctions.org/entities/eu-oj-9e725048a698222c67418e826a90af0e51d1c20f https://www.opensanctions.org/entities/eu-sancmap-782897d0323c130910ba435c376bec90ef0fe91c https://www.opensanctions.org/entities/gb-fcdo-rus3665 https://www.opensanctions.org/entities/imo-vsl-9291262 https://www.opensanctions.org/entities/ofac-56951,True,True,False
 partner,MARIDIVE  601,9643374,BLZ,none,,,,,,False,False,False
 partner,FU HAI WAN,9368235,PAN,imo (bulk file),Fu Hai Wan; FU HAI WAN; RAUKHTOPAZ,sanction; mare.shadow; poi,pa; ru,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-fc324efaea078043aa1034876f9268c374af524f https://www.opensanctions.org/entities/eu-oj-3337582f2fb97b2b0ab1b405ca0834582c6f538a https://www.opensanctions.org/entities/eu-sancmap-fe42b634faa66da107a627b490f22df0f257e13d https://www.opensanctions.org/entities/gb-fcdo-rus2490 https://www.opensanctions.org/entities/imo-vsl-9368235,True,True,False
@@ -24,3 +182,114 @@ partner,N CERNA,9289520,STP,imo (bulk file),N Cerna; Canis Power; N Cerna (forme
 partner,RCC PASSION,9453107,BHS,none,,,,,,False,False,False
 partner,C VIKING,9261657,SLE,imo (bulk file),C VIKING; SHANDONG ZIHE; C Viking,mare.detained; reg.warn; sanction; mare.shadow; poi,ck; hk; sl,ext_abuja_mou_psc; black_sea_mou_detention; ca_dfatd_sema_sanctions; ch_seco_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/abuja-mou-psc-c66155a6c85e0162019eb28abc5f91cba4bcd908 https://www.opensanctions.org/entities/bs-mou-b54d1d4c7e96b74c8f6c557a0c6874500ef2a200 https://www.opensanctions.org/entities/ca-sema-4f0bca42269b31c1119244ce6d2f45663a0e8b53 https://www.opensanctions.org/entities/ch-seco-99976 https://www.opensanctions.org/entities/eu-oj-c26f3511298aca77fa30df56b4d91621916bc8c7 https://www.opensanctions.org/entities/eu-sancmap-3ffd03d2ae11d5e0cfc42b53113f5a9e62630327 https://www.opensanctions.org/entities/gb-fcdo-rus2503 https://www.opensanctions.org/entities/imo-vsl-9261657,True,True,True
 partner,INDRAS,9314894,PAN,imo (bulk file),INDRAS; Indras; PINEGA,sanction; mare.shadow; poi,pa; ru,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-780bab93dc4a5d63cded3730b83bc7e4abec3d84 https://www.opensanctions.org/entities/eu-oj-686de7f57320716ca058f02a366218638fa7dafd https://www.opensanctions.org/entities/eu-sancmap-a4379e03e5510c785e69fc4e20d1c3372dd9f958 https://www.opensanctions.org/entities/gb-fcdo-rus2525 https://www.opensanctions.org/entities/imo-vsl-9314894,True,True,False
+partner,LIAOZHUANGYU25207,,CHN,none,,,,,,False,False,False
+partner,ZHONGTIANCHANGSHENG,,CHN,none,,,,,,False,False,False
+partner,4233,,CHN,none,,,,,,False,False,False
+partner,ZHONG CHANG 388,,CHN,none,,,,,,False,False,False
+partner,ZHE NENG 5,9214109,CHN,none,,,,,,False,False,False
+partner,ZHONG GU 6,,CHN,none,,,,,,False,False,False
+partner,GUO DIAN 32,9185059,CHN,none,,,,,,False,False,False
+partner,LIAOHUYU25192-4-99%,,,none,,,,,,False,False,False
+partner,LIAOHUYU25130,,CHN,none,,,,,,False,False,False
+partner,LIAOHUYU25192,,CHN,none,,,,,,False,False,False
+partner,VITUS BERING,9838840,BRB,none,,,,,,False,False,False
+partner,YIN YUAN,,CHN,none,,,,,,False,False,False
+partner,YAN ZHAN 98,,CHN,none,,,,,,False,False,False
+partner,12345-29-57%,,CHN,none,,,,,,False,False,False
+partner,LIAODANYU21419-2-63%,,,none,,,,,,False,False,False
+partner,12345-36-99%,,CHN,none,,,,,,False,False,False
+partner,LIAODANYU21419,,CHN,none,,,,,,False,False,False
+partner,CHANG SHENG TAI 6,,CHN,none,,,,,,False,False,False
+partner,YOU YI ZHI YUAN,,CHN,none,,,,,,False,False,False
+partner,LIAOYING25076-07-07%,,IRL,none,,,,,,False,False,False
+partner,LIAOYINGYU25076-290%,,CHN,none,,,,,,False,False,False
+partner,LIAOYINGYUYUN25076,,CHN,none,,,,,,False,False,False
+partner,LIAOYINGYU25076-399%,,CHN,none,,,,,,False,False,False
+partner,DONG FANG YUAN YUAN,,CHN,none,,,,,,False,False,False
+partner,YONG HANG FU SHENG,,CHN,none,,,,,,False,False,False
+partner,MIHO PRACAT,9384514,HRV,imo (bulk file),MIHO PRACAT; CRESTLINE,mare.detained,hr; mh,tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/tok-mou-det-c991913fb4992659c128a758ed1240d0042ac3b6 https://www.opensanctions.org/entities/tokyo-mou-psc-636fbe768a917f1c00ada08c74c75c77ee879667 https://www.opensanctions.org/entities/tokyo-mou-psc-be18fc43e80290320350e644fa670d2e09ad9759,False,False,True
+partner,YOU YI CHANG SHUN,,CHN,none,,,,,,False,False,False
+partner,12345-32-32%,,CHN,none,,,,,,False,False,False
+partner,LIAOYINGYU26299-3-,,CHN,none,,,,,,False,False,False
+partner,PENG JU 11,,CHN,none,,,,,,False,False,False
+partner,LIAOYINGYU26299-1-,,CHN,none,,,,,,False,False,False
+partner,XIANGZHAN15,,CHN,none,,,,,,False,False,False
+partner,ZHONGJIUHONGHAI,,CHN,none,,,,,,False,False,False
+partner,COSCO OCEANIA,9334923,HKG,none,,,,,,False,False,False
+partner,YUN XIANG 68,,CHN,none,,,,,,False,False,False
+partner,LI TONG 269,,CHN,none,,,,,,False,False,False
+partner,DA TANG 07,,CHN,none,,,,,,False,False,False
+partner,ZHE YONG YOU 10,,CHN,none,,,,,,False,False,False
+partner,DI HAI 12,8662529,CHN,none,,,,,,False,False,False
+partner,LURONGYU58519,,CHN,none,,,,,,False,False,False
+partner,LUQINGXINYUYUN60032,,CHN,none,,,,,,False,False,False
+partner,HUHJK,,CHN,none,,,,,,False,False,False
+partner,JIHUANGYUYUN05121,,CHN,none,,,,,,False,False,False
+partner,12065-4-91%,,,none,,,,,,False,False,False
+partner,01221-12,,,none,,,,,,False,False,False
+partner,01221-1399%,,,none,,,,,,False,False,False
+partner,01620-04-78%,,,none,,,,,,False,False,False
+partner,01221-1493%,,,none,,,,,,False,False,False
+partner,01221-0785%,,,none,,,,,,False,False,False
+partner,01221-1591%,,,none,,,,,,False,False,False
+partner,01221-0199%,,,none,,,,,,False,False,False
+partner,12089-1788%,,,none,,,,,,False,False,False
+partner,12174-08-90%,,,none,,,,,,False,False,False
+partner,12065-7-89%,,,none,,,,,,False,False,False
+partner,12065-0667%,,,none,,,,,,False,False,False
+partner,09615-29 40%,,,none,,,,,,False,False,False
+partner,LURONGYU51269,,CHN,none,,,,,,False,False,False
+partner,01241-1-99%,,,none,,,,,,False,False,False
+partner,ASP TREASURES,9732242,PAN,none,,,,,,False,False,False
+partner,RUBY,9192258,GUY,imo (bulk file),BALIAR,sanction,lr,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-30862,True,False,False
+partner,PHOSPHOR,9354179,HKG,none,,,,,,False,False,False
+partner,BREEZE,9305568,BRB,imo (bulk file),Breeze; BREEZE; SCF Baltica,sanction; mare.shadow; poi,ga; ru,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-d9065c38267446442c4455db2a5e035b0243eda9 https://www.opensanctions.org/entities/eu-oj-21022fa885db2525f0a3d6fcdf9c2ef5ea6b188a https://www.opensanctions.org/entities/eu-sancmap-5a43ca1b6bdd4f5f72636c0a96c5a6bd372de483 https://www.opensanctions.org/entities/gb-fcdo-rus2200 https://www.opensanctions.org/entities/imo-vsl-9305568,True,True,False
+partner,SIBEL J,7900091,TZA,imo (bulk file),OMORFI; SIBEL J,mare.detained,tz,black_sea_mou_detention,https://www.opensanctions.org/entities/bs-mou-1721efcf210c38dd5b2359a377ad9b0b137bc8b7 https://www.opensanctions.org/entities/bs-mou-fee08eee912887039c196e8a92c92410c9cd11ab,False,False,True
+partner,MUSTAFA K,8915184,COM,imo (bulk file),SEA BREEZE,mare.detained,tg,black_sea_mou_detention,https://www.opensanctions.org/entities/bs-mou-cd3a4752e24a505ae0a6e5578a387f967d875787,False,False,True
+partner,TRUST,9382798,BRB,imo (bulk file),Trust; TRUST,sanction; mare.shadow; poi,km; ru; bb,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ca-sema-8e9db7e40aafc633a35d6568a69c4cd9fdfc68c1 https://www.opensanctions.org/entities/eu-oj-5f805e05f0ca1cc4b591b80985cbd62121a6bd37 https://www.opensanctions.org/entities/eu-sancmap-7a21e3f58114d21f71e5c9df76282813ad3f1aa3 https://www.opensanctions.org/entities/eu-sancmap-ed0abd60bf4886898a2f6befa969b6ea3f7470c0 https://www.opensanctions.org/entities/gb-fcdo-rus2890 https://www.opensanctions.org/entities/imo-vsl-9382798 https://www.opensanctions.org/entities/ofac-51587,True,True,False
+partner,LIBERTY,9339325,BRB,imo (bulk file),Liberty; Level; LEVEL; LIBERTY,sanction; mare.shadow; poi,bb; om,ca_dfatd_sema_sanctions; ch_seco_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/ca-sema-d878cf8e93df3ba3b3160fea9676304e10def95c https://www.opensanctions.org/entities/ch-seco-98149 https://www.opensanctions.org/entities/eu-oj-68ab9bb2fc91be007a539171056e934c8a30d21b https://www.opensanctions.org/entities/eu-sancmap-e647958af905aa5cd5876f25b9ae1b672fc6eb41 https://www.opensanctions.org/entities/gb-fcdo-rus2190 https://www.opensanctions.org/entities/imo-vsl-9339325 https://www.opensanctions.org/entities/ofac-51632 https://www.opensanctions.org/entities/tokyo-mou-psc-903ceadfeb16a8d87fb8d3d97fbad65c373f19eb,True,True,False
+partner,OZANNO,9394935,STP,imo (bulk file),Ozanno; Ocean AMZ; Ozanno (formerly Ocean AMZ); OCEAN AMZ; OSANA,sanction; mare.shadow; poi,ck; sl,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-0fb3c45623406fdba2d4aae14daee60ac98ea0bb https://www.opensanctions.org/entities/eu-oj-800ba0a8b811796a7c576ce1e9cd452af6bc9e00 https://www.opensanctions.org/entities/eu-sancmap-08a6f65d62431db142706178646576d6f095c4c3 https://www.opensanctions.org/entities/eu-sancmap-d41f1aede7d35d198c31db7ed3a325154c7cc6e4 https://www.opensanctions.org/entities/gb-fcdo-rus2180 https://www.opensanctions.org/entities/imo-vsl-9394935,True,True,False
+partner,RANGLER,9206671,CMR,imo (bulk file),Rangler; RANGLER; BRISK,sanction; mare.shadow; poi,cm; gq,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/ca-sema-e7651af173ff2282964830ea7ab5412fd72203cb https://www.opensanctions.org/entities/eu-oj-76bf2ac38e5d88d84599810cee0e075e7f17abfb https://www.opensanctions.org/entities/eu-sancmap-e6fc958bd5186a5fdfe6431e3cf0fcd7621c9ad6 https://www.opensanctions.org/entities/gb-fcdo-rus2785 https://www.opensanctions.org/entities/imo-vsl-9206671 https://www.opensanctions.org/entities/tokyo-mou-psc-c619a649f2efa364d0a8ca835d89b672f9f1d36d,True,True,False
+partner,ANGELO 1,7946942,CMR,none,,,,,,False,False,False
+partner,BATAL1,,EGY,none,,,,,,False,False,False
+partner,STAR ROWAYTON,9575216,LBR,none,,,,,,False,False,False
+partner,TOA PAYOH,9298492,PAN,imo (bulk file),"TOA PAYOH; Toa Payoh; IMO 9298492 (""TOA PAYOH"")",mare.detained; sanction; mare.shadow; poi,mg; pa,black_sea_mou_detention; ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/bs-mou-e54400025954fb5593d49bcc9c0888290e29214c https://www.opensanctions.org/entities/ca-sema-1619643a7c6970d6b75eed04f5d0ef90775c5d65 https://www.opensanctions.org/entities/eu-oj-bbc3755e4de3adddef1e7796242bb944f422cbce https://www.opensanctions.org/entities/eu-sancmap-10dd198d7a351b371848a437741a05ab2c88dd33 https://www.opensanctions.org/entities/gb-fcdo-rus3668 https://www.opensanctions.org/entities/imo-vsl-9298492 https://www.opensanctions.org/entities/ofac-54809,True,True,True
+partner,BREEZE,9455650,LBR,imo (bulk file),SUN SKY; BREEZE,mare.detained,mh; lr,ext_abuja_mou_psc; tokyo_mou_detention,https://www.opensanctions.org/entities/abuja-mou-psc-34abd18f224b95dcb4faac8e41ee0d80e2b58d41 https://www.opensanctions.org/entities/tok-mou-det-f438b80ecf99a96256754c26b1a2d5f6d3156414,False,False,True
+partner,ANTLIA,9381744,GIN,imo (bulk file),Antila; ANTILA; ARKHITEKTOR; HS Legend,sanction; mare.shadow; poi,ru; lr,ca_dfatd_sema_sanctions; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ca-sema-72ae3d9e638574167ea7f8da42e118cad55af4f4 https://www.opensanctions.org/entities/gb-fcdo-rus2999 https://www.opensanctions.org/entities/imo-vsl-9381744 https://www.opensanctions.org/entities/ofac-47233,True,True,False
+partner,BODY,7808401,TZA,imo (bulk file),BEBEK-E; IMO 7808401 (BEBEK-E),sanction; mare.shadow; poi,tr,eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/eu-oj-262baf7907d40e4bf915866b3081ef04caaad051 https://www.opensanctions.org/entities/eu-sancmap-b681336e4e4361bfe4b9e2bd980f674e5851d5da https://www.opensanctions.org/entities/gb-fcdo-rus3752 https://www.opensanctions.org/entities/imo-vsl-7808401,True,True,False
+partner,MOONBAY,9230907,GUY,imo (bulk file),ETERNAL FORTUNE,sanction,gy,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-48200,True,False,False
+partner,TAURUS,9259745,BES,imo (bulk file),Eternal Peace; ETERNAL PEACE,sanction; mare.shadow; poi,pa,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ca-sema-9179f260c219cc65544270e5bd48b949a4a96931 https://www.opensanctions.org/entities/eu-oj-9f0f4cc3c120221db5fa18616f0dca14fd408ac7 https://www.opensanctions.org/entities/eu-sancmap-0cd8f364755419be87171167633eff631f0a6499 https://www.opensanctions.org/entities/gb-fcdo-rus2784 https://www.opensanctions.org/entities/imo-vsl-9259745 https://www.opensanctions.org/entities/ofac-50843,True,True,False
+partner,GALUNGGUNG,9455791,PAN,none,,,,,,False,False,False
+partner,GUANG TAI,9526693,GUY,imo (bulk file),Liang Sheng,sanction,hk,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-40902,True,False,False
+partner,EUROFORCE,9251585,LBR,none,,,,,,False,False,False
+partner,LCT CAHAYA FAMILY,,IDN,none,,,,,,False,False,False
+partner,FELICITA,9167162,COM,imo (bulk file),FELICITA,sanction,km,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-57016,True,False,False
+partner,BIG MAG,9263215,PAN,imo (bulk file),BIG MAG,mare.shadow; poi; sanction,pa,ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/imo-vsl-9263215 https://www.opensanctions.org/entities/ofac-54147,True,True,False
+partner,OPL 52,,MYS,none,,,,,,False,False,False
+partner,SIRIUS 1,9285847,COM,imo (bulk file),Sirius 1; Sirius I; SIRIUS 1,sanction; mare.shadow; poi; mare.detained,pa; km,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl; tokyo_mou_detention,https://www.opensanctions.org/entities/ca-sema-54706d00b168955036b9910e66acad921912ae69 https://www.opensanctions.org/entities/eu-oj-8ada345852adcd9db94a99cfc70be152a066feee https://www.opensanctions.org/entities/eu-sancmap-052b97d67cf01e2a2f3549e9dedf2941273c028a https://www.opensanctions.org/entities/gb-fcdo-rus2958 https://www.opensanctions.org/entities/imo-vsl-9285847 https://www.opensanctions.org/entities/ofac-51611 https://www.opensanctions.org/entities/tok-mou-det-df5e711ac453b895730edbbbd94fc4a82d4fc97a,True,True,True
+partner,DELIVER,9194983,GMB,imo (bulk file),Deliver; DELIVER,sanction; mare.shadow; poi,,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-cbd0b6ac6c14bc44074ba48b7f893bf8f281d4ad https://www.opensanctions.org/entities/eu-oj-dbe89195dc41211a524b981ae361c9c79a08e06f https://www.opensanctions.org/entities/eu-sancmap-0a63e088dafc3b32deb3379c7e7ca0ecf1822d18 https://www.opensanctions.org/entities/eu-sancmap-27a7e866833cbed7811ff7a39182c2e0fc181b5b https://www.opensanctions.org/entities/gb-fcdo-rus2556 https://www.opensanctions.org/entities/imo-vsl-9194983,True,True,False
+partner,ARTARA,9185528,PAN,imo (bulk file),Gelor; GELOR,sanction; mare.shadow; poi,pa; gq; cm,ca_dfatd_sema_sanctions; gb_fcdo_sanctions; ua_war_sanctions; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/ca-sema-e72d7de21f84451b273a689d788a6db1decb4024 https://www.opensanctions.org/entities/gb-fcdo-rus3119 https://www.opensanctions.org/entities/imo-vsl-9185528 https://www.opensanctions.org/entities/tokyo-mou-psc-aae2c6aa26af220dc704dd7507b3f610159d5079,True,True,False
+partner,FIORA,9255684,GMB,imo (bulk file),Golden Eagle; FIORA; GOLDEN EAGLE,sanction; mare.shadow; poi,gm,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions; us_ofac_sdn; us_trade_csl; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/ca-sema-c28eab05e81dc40dc9701d9f112c050036b788a2 https://www.opensanctions.org/entities/eu-oj-4c4cbb426fd7c6221be201b52dde78af252057f0 https://www.opensanctions.org/entities/eu-sancmap-bca07f078415bbfbe5a5cc59f7b8acbe69d0c0d0 https://www.opensanctions.org/entities/gb-fcdo-rus3106 https://www.opensanctions.org/entities/imo-vsl-9255684 https://www.opensanctions.org/entities/ofac-56547 https://www.opensanctions.org/entities/tokyo-mou-psc-6eb3dedfa461566f11cc13eb0d62c4f7ff175a61,True,True,False
+partner,AN RONG,8024351,PLW,none,,,,,,False,False,False
+partner,GREAT VENTURE,9262194,TUV,none,,,,,,False,False,False
+partner,SJ SATU,8989082,MYS,none,,,,,,False,False,False
+partner,AN SHUN,,PLW,name only (bulk file) - VERIFY,AN SHUN,mare.detained,mn,tokyo_mou_detention,https://www.opensanctions.org/entities/tok-mou-det-de5dd8e0477ac64bf9defe2e9e19df283a563a99,False,False,True
+partner,COLOSSUS,9553270,KNA,none,,,,,,False,False,False
+partner,FOREVER,9136058,TZA,imo (bulk file),FOREVER,mare.detained,ga; tz,tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/tok-mou-det-2f5907e4d7d9df4f383f43ed5bc63da0f2b096e6 https://www.opensanctions.org/entities/tokyo-mou-psc-2647684ac492490a877983510329dcfe1666e84d,False,False,True
+partner,GELOR,9185528,CMR,imo (bulk file),Gelor; GELOR,sanction; mare.shadow; poi,pa; gq; cm,ca_dfatd_sema_sanctions; gb_fcdo_sanctions; ua_war_sanctions; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/ca-sema-e72d7de21f84451b273a689d788a6db1decb4024 https://www.opensanctions.org/entities/gb-fcdo-rus3119 https://www.opensanctions.org/entities/imo-vsl-9185528 https://www.opensanctions.org/entities/tokyo-mou-psc-aae2c6aa26af220dc704dd7507b3f610159d5079,True,True,False
+partner,PVT IRIS,9288277,VNM,none,,,,,,False,False,False
+partner,HAI HUN,9251951,GMB,imo (bulk file),KOHO I,sanction,dj,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-52271,True,False,False
+partner,AQUARIS,9251822,PAN,imo (bulk file),RIESCO; Aquaris; AQUARIS,mare.shadow; poi; sanction; mare.detained,pa; to,ua_war_sanctions; us_ofac_sdn; us_trade_csl; tokyo_mou_detention; ext_tokyo_mou_psc,https://www.opensanctions.org/entities/imo-vsl-9251822 https://www.opensanctions.org/entities/ofac-56417 https://www.opensanctions.org/entities/tok-mou-det-817fb43cbe2a66aee7dc7c6915274c0462688976 https://www.opensanctions.org/entities/tokyo-mou-psc-344eb871aa0804793a60e5c97bfd075c8248fd75,True,True,True
+partner,LYNX SATU,9075395,MYS,none,,,,,,False,False,False
+partner,NARCISSUS,9232931,PAN,imo (bulk file),NARCISSUS; Narcissus; MONOLIT,sanction; mare.shadow; poi,ru,ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions,https://www.opensanctions.org/entities/ca-sema-0a99b5be5200de076d8a9020b64267f2923f9319 https://www.opensanctions.org/entities/eu-oj-c4b04ad908e8c468f4e1caa1f86ebabb3d2e2a5a https://www.opensanctions.org/entities/eu-sancmap-0038482816d2b5cfc491415716c33963841ca6f5 https://www.opensanctions.org/entities/gb-fcdo-rus2608 https://www.opensanctions.org/entities/imo-vsl-9232931,True,True,False
+partner,STI PONTIAC,9704465,MHL,none,,,,,,False,False,False
+partner,ALICIA,9281695,BES,imo (bulk file),Montrose; OCEAN KAPAL,sanction; mare.detained,sm; pw,us_ofac_sdn; us_trade_csl; tokyo_mou_detention,https://www.opensanctions.org/entities/ofac-53322 https://www.opensanctions.org/entities/tok-mou-det-6b936fa9b796d400931666bae122058d948df56c,True,False,True
+partner,RUN ZE 5,,CHN,none,,,,,,False,False,False
+partner,UMA,9258870,GUY,imo (bulk file),UMA; LELIA,mare.shadow; poi; sanction,bb,ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/imo-vsl-9258870 https://www.opensanctions.org/entities/ofac-51813,True,True,False
+partner,ELMO,9256913,MWI,imo (bulk file),ELMO; RIO NAPO,mare.shadow; poi; sanction,ck,ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/imo-vsl-9256913 https://www.opensanctions.org/entities/ofac-51375,True,True,False
+partner,FAUSTA,9232450,GUY,imo (bulk file),AR MZ; RENEEZ,mare.shadow; poi; sanction,pw,ua_war_sanctions; us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/imo-vsl-9232450 https://www.opensanctions.org/entities/ofac-48183,True,True,False
+partner,VENTURA,9216559,GUY,imo (bulk file),Berenice Pride,sanction,pa,us_ofac_sdn; us_trade_csl,https://www.opensanctions.org/entities/ofac-47311,True,False,False
+partner,KENCANA JAYA,,MYS,none,,,,,,False,False,False
+partner,NOAH QUEEN,,BLZ,none,,,,,,False,False,False
+partner,PEPPERONI,9230892,TZA,none,,,,,,False,False,False
+partner,KARYACAHAYAMANDIRI 3,,IDN,none,,,,,,False,False,False

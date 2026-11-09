@@ -15,6 +15,7 @@ dependencies = [
     "plotly>=5.18",
     "networkx>=3.2",
     "scikit-learn>=1.4",
+    "markdown>=3.10.3",
 ]
 
 [project.optional-dependencies]

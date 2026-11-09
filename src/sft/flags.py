@@ -25,9 +25,31 @@ class Rules:
     loiter_min_port_dist_km: float = 20.0
     alongside_km: float = 0.5        # partner this close = physically alongside
     crowd_max_partners: int = 4      # more distinct ships than this = anchorage / queue
+    long_port_visit_days: float = 30.0   # "port visit" this long with no clean exit = check it
+    silence_min_days: float = 7.0        # no events at all for this long...
+    silence_max_knots: float = 1.5       # ...and averaging under this in straight-line distance
+                                         # (sea routes are far longer than great circles)
 
 
 FLAG_COLUMNS = ["imo", "event_id", "rule", "start", "lat", "lon", "detail"]
+
+# rule -> (category, strength 1-3, plain-English meaning). Used by case files + dashboard.
+RULE_INFO = {
+    "alongside_listed": ("meeting", 3, "A sanctioned vessel loitered alongside (≤ 0.5 km)"),
+    "alongside_meeting": ("meeting", 3, "Another vessel loitered alongside (≤ 0.5 km)"),
+    "colocated_with_listed": ("meeting", 2, "A sanctioned vessel loitered nearby (≤ 5 km), quiet area"),
+    "colocated_loitering": ("meeting", 1, "Another vessel loitered nearby (≤ 5 km), quiet area"),
+    "listed_nearby_in_anchorage": ("meeting", 1, "A sanctioned vessel nearby in a crowded anchorage"),
+    "encounter_with_listed": ("meeting", 3, "GFW encounter with a watchlisted vessel"),
+    "long_gap": ("dark activity", 2, "AIS gap ≥ 12 h (GFW: offshore only)"),
+    "gap_near_hotspot": ("dark activity", 3, "AIS gap starting/ending near a known STS area"),
+    "gap_after_russian_terminal": ("dark activity", 3, "Went dark soon after a Russian oil terminal"),
+    "open_sea_loitering": ("route", 1, "Loitered ≥ 6 h away from any port"),
+    "unloaded_without_port_call": ("cargo", 3, "Draught fell with no discharge port call"),
+    "loaded_without_port_call": ("cargo", 3, "Draught rose with no loading port call"),
+    "suspect_long_port_visit": ("data quality", 2, "Very long GFW port visit, no clean exit: check it"),
+    "unexplained_silence": ("data quality", 2, "Days with no events while barely moving: where was it?"),
+}
 
 
 def norm_name(s) -> str:
@@ -209,6 +231,48 @@ def watch_sets(vessels: pd.DataFrame, identities: pd.DataFrame | None = None
     return imos, names, ids
 
 
+def suspect_long_port_visits(ev: pd.DataFrame, r: Rules) -> pd.DataFrame:
+    """Very long port visits with no end anchorage (or a different one) may be several
+    stays merged into one record, e.g. EAGLE S 'at VISTINO' for 105 days while it was
+    reportedly detained in Finland. Not evidence of wrongdoing: a reason to check."""
+    pv = ev[(ev["type"] == "port_visit") & (ev["duration_h"] >= r.long_port_visit_days * 24)].copy()
+    if pv.empty:
+        return _flag(pv, "suspect_long_port_visit", "")
+    start_name = pv.get("port_start_name", pv["port_name"])
+    end_name = pv.get("port_end_name", pd.Series(index=pv.index, dtype=object))
+    odd = end_name.isna() | (end_name.fillna("") != start_name.fillna(""))
+    pv = pv[odd]
+    return _flag(pv, "suspect_long_port_visit", lambda d: (
+        (d["duration_h"] / 24).round(0).astype(int).astype(str) + " days 'at "
+        + d["port_name"].fillna("unnamed anchorage").astype(str) + "', end anchorage: "
+        + d.get("port_end_name", pd.Series(index=d.index, dtype=object)).fillna("none").astype(str)))
+
+
+def unexplained_silences(ev: pd.DataFrame, r: Rules) -> pd.DataFrame:
+    """Stretches with no events at all, where the ship also ended up near where it
+    started. A ship on a voyage covers ~250+ nm a day; one that is silent for a week
+    and barely moved was somewhere GFW logged nothing — anchored, drifting, or dark."""
+    out = []
+    for imo, g in ev.dropna(subset=["start"]).sort_values("start").groupby("imo"):
+        g = g.reset_index(drop=True)
+        for i in range(1, len(g)):
+            a, b = g.loc[i - 1], g.loc[i]
+            a_end = a["end"] if pd.notna(a["end"]) else a["start"]
+            hours = (b["start"] - a_end).total_seconds() / 3600
+            if hours < r.silence_min_days * 24 or pd.isna(a["lat"]) or pd.isna(b["lat"]):
+                continue
+            km = float(haversine_km(a["lat"], a["lon"], b["lat"], b["lon"]))
+            knots = km / 1.852 / hours
+            if knots > r.silence_max_knots:
+                continue  # consistent with simply sailing somewhere
+            out.append({"imo": imo, "event_id": f"silence-{a['event_id']}", "rule": "unexplained_silence",
+                        "start": a_end, "lat": a["lat"], "lon": a["lon"],
+                        "detail": (f"{hours / 24:.0f} days with no events after {a['type'].replace('_', ' ')}"
+                                   + (f" {a['port_name']}" if pd.notna(a.get("port_name")) else "")
+                                   + f"; moved only {km:.0f} km ({knots:.1f} kn average)")})
+    return pd.DataFrame(out, columns=FLAG_COLUMNS)
+
+
 # ------------------------------------------------------------------ pipeline
 def apply_all(ev: pd.DataFrame, vessels: pd.DataFrame,
               identities: pd.DataFrame | None = None, rules: Rules = Rules(),
@@ -223,6 +287,8 @@ def apply_all(ev: pd.DataFrame, vessels: pd.DataFrame,
         encounters_with_listed(ev, watch_names, watch_ids),
         open_sea_loitering(ev, rules),
         colocated_loitering(partners, rules),
+        suspect_long_port_visits(ev, rules),
+        unexplained_silences(ev, rules),
     ]
     if draught_flags is not None and not draught_flags.empty:
         parts.append(draught_flags.reindex(columns=FLAG_COLUMNS))

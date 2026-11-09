@@ -7,7 +7,10 @@ Only the endpoints this project needs:
 
 from __future__ import annotations
 
+import io
+import json
 import time
+import zipfile
 from collections.abc import Iterable
 from urllib.parse import urlencode
 
@@ -71,6 +74,32 @@ class GFWClient:
         params += _indexed("datasets", [IDENTITY_DATASET])
         params += _indexed("includes", ["MATCH_CRITERIA", "OWNERSHIP"])
         return self._get("/vessels/search", params)
+
+    def report(self, params: list[tuple[str, str]], body: dict) -> dict | list:
+        """POST /4wings/report. Handles GFW's quirks: one report per user at a time
+        (429 -> wait), results sometimes returned as a zip, geojson as object or string."""
+        url = f"{self.base}/4wings/report?{urlencode(params, safe='[]:,()')}"
+        as_string = False
+        for attempt in range(self.max_retries + 2):
+            payload = ({k: (json.dumps(v) if as_string and k == "geojson" else v)
+                        for k, v in body.items()})
+            r = self.session.post(url, json=payload, timeout=180)
+            if r.status_code in (429, 524) or r.status_code >= 500:
+                time.sleep(float(r.headers.get("Retry-After", 5 * (attempt + 1))))
+                continue
+            if r.status_code in (400, 422) and not as_string and "geojson" in r.text.lower():
+                as_string = True  # docs are ambiguous; try the other encoding once
+                continue
+            if r.status_code >= 400:
+                raise requests.HTTPError(f"{r.status_code} for 4wings/report: {r.text[:300]}",
+                                         response=r)
+            time.sleep(self.pause)
+            if r.content[:2] == b"PK":  # zipped result
+                with zipfile.ZipFile(io.BytesIO(r.content)) as z:
+                    name = next(n for n in z.namelist() if n.lower().endswith(".json"))
+                    return json.loads(z.read(name))
+            return r.json()
+        raise RuntimeError("GFW report kept failing (busy or timing out); try again later")
 
     def get_vessel(self, vessel_id: str) -> dict:
         """Identity record for one GFW vessel id (used to look up encounter partners)."""

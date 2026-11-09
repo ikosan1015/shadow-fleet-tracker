@@ -1,2 +1,6 @@
-imo,name,group,days_observed,alongside_meeting,colocated_loitering,colocated_with_listed,listed_nearby_in_anchorage,open_sea_loitering,alongside_meeting_per30d,colocated_loitering_per30d,colocated_with_listed_per30d,listed_nearby_in_anchorage_per30d,open_sea_loitering_per30d
-9329760,EAGLE S,sanctioned,770.4369907407407,1,4,3,2,27,0.04,0.16,0.12,0.08,1.05
+imo,name,group,days_observed,alongside_listed,alongside_meeting,colocated_loitering,colocated_with_listed,listed_nearby_in_anchorage,open_sea_loitering,suspect_long_port_visit,unexplained_silence,alongside_listed_per30d,alongside_meeting_per30d,colocated_loitering_per30d,colocated_with_listed_per30d,listed_nearby_in_anchorage_per30d,open_sea_loitering_per30d,suspect_long_port_visit_per30d,unexplained_silence_per30d
+9261657,C VIKING,sanctioned,721.8958217592592,0,0,0,3,2,9,1,6,0.0,0.0,0.0,0.12,0.08,0.37,0.04,0.25
+9273442,BLUE EMBER,sanctioned,732.9197453703704,0,2,4,0,5,13,0,2,0.0,0.08,0.16,0.0,0.2,0.53,0.0,0.08
+9314894,INDRAS,sanctioned,713.3458333333333,1,0,3,1,1,24,0,9,0.04,0.0,0.13,0.04,0.04,1.01,0.0,0.38
+9329760,EAGLE S,sanctioned,770.4369907407407,0,1,4,3,2,27,1,4,0.0,0.04,0.16,0.12,0.08,1.05,0.04,0.16
+9413573,ATLAS,sanctioned,727.8965972222222,0,0,5,1,8,35,0,3,0.0,0.0,0.21,0.04,0.33,1.44,0.0,0.12

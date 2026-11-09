@@ -1,0 +1,1164 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>INDRAS (IMO 9314894)</title><style>
+:root{--bg:#fafaf8;--fg:#1d1d1f;--muted:#6b6b70;--line:#e3e3e0;--card:#fff;--accent:#c0392b;
+--chip:#f0f0ec;--link:#1f5fa8}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ececec;--muted:#a0a0a8;--line:#2c2c30;
+--card:#1c1c1f;--chip:#26262a;--link:#7fb0ff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);
+font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--link)}main{max-width:1080px;margin:0 auto;padding:28px 16px 64px}
+header h1{font-size:28px;margin:0 0 4px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 20px}
+.note{background:var(--chip);border-left:3px solid var(--accent);padding:10px 14px;border-radius:6px;
+font-size:13.5px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:22px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.stat b{display:block;font-size:26px;font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h3{margin:0 0 2px;font-size:18px}.card .meta{color:var(--muted);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.chip{background:var(--chip);border-radius:999px;padding:2px 10px;font-size:12.5px}
+.chip.red{background:#c0392b;color:#fff}.chip.orange{background:#e67e22;color:#fff}
+.btns a{display:inline-block;margin-right:10px;font-weight:600;text-decoration:none}
+h2{font-size:20px;margin:34px 0 10px;padding-top:8px;border-top:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:8px 0 16px;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600;white-space:nowrap}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px}
+footer{margin-top:40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+.case h1{display:none}.case ul li input{margin-right:6px}
+nav{font-size:14px;margin-bottom:14px}
+</style></head><body><main><nav><a href='index.html'>← All vessels</a></nav><header><h1>INDRAS (IMO 9314894)</h1><p class='sub'>Case file · <a href='9314894.html'>open interactive map</a></p></header><h2>Activity timeline</h2><div style="height:300px; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="e42370c3-58d8-40cd-bfee-a568966a893c" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e42370c3-58d8-40cd-bfee-a568966a893c")) {                    Plotly.newPlot(                        "e42370c3-58d8-40cd-bfee-a568966a893c",                        [{"base":["2024-02-28T14:05:23.000000","2024-03-04T04:52:12.000000","2024-03-18T23:39:30.000000","2024-03-24T05:28:29.000000","2024-03-27T20:21:46.000000","2024-04-21T10:16:30.000000","2024-04-26T04:24:56.000000","2024-04-29T04:45:31.000000","2024-08-20T10:40:34.000000","2024-08-23T03:26:41.000000","2024-09-01T07:32:42.000000","2024-09-06T06:12:08.000000","2024-09-09T06:21:13.000000","2024-09-12T20:00:43.000000","2024-09-15T05:14:27.000000","2024-09-21T09:04:11.000000","2024-09-30T05:08:34.000000","2024-10-08T12:25:43.000000","2024-10-08T16:18:40.000000","2024-10-30T11:13:15.000000","2024-10-31T05:25:38.000000","2024-10-31T16:43:19.000000","2024-11-04T02:59:29.000000","2024-11-06T20:50:44.000000","2024-12-17T22:42:37.000000","2024-12-24T02:10:32.000000","2025-01-01T03:42:27.000000","2025-01-12T22:37:19.000000","2025-01-14T00:32:50.000000","2025-02-01T09:11:45.000000","2025-02-06T14:54:55.000000","2025-02-07T12:02:22.000000","2025-02-13T12:54:04.000000","2025-02-15T03:52:33.000000","2025-02-19T14:00:20.000000","2025-03-30T07:59:37.000000","2025-03-31T04:21:30.000000","2025-04-02T04:47:56.000000","2025-04-14T14:56:06.000000","2025-04-16T17:53:07.000000","2025-04-30T16:32:08.000000","2025-05-03T10:37:44.000000","2025-05-07T18:03:02.000000","2025-05-09T14:02:41.000000","2025-08-03T04:43:52.000000","2025-08-22T04:24:26.000000","2025-08-26T03:32:51.000000","2025-08-30T07:13:27.000000","2025-09-22T14:32:23.000000","2025-09-25T07:35:10.000000","2025-09-29T14:54:01.000000","2025-10-08T10:00:40.000000","2025-10-17T13:31:08.000000","2025-10-28T17:30:38.000000","2025-11-04T12:34:54.000000","2025-11-06T21:41:19.000000","2025-11-25T06:13:27.000000","2025-11-29T13:03:21.000000","2025-12-15T14:34:10.000000","2025-12-18T11:50:25.000000"],"customdata":[["2024-02-28","2024-03-03","MARSAXLOKK"],["2024-03-04","2024-03-17",""],["2024-03-18","2024-03-19","KALI LIMENES ANCHORAGE"],["2024-03-24","2024-03-25","PORT SAID"],["2024-03-27","2024-04-21",""],["2024-04-21","2024-04-23","PORT SUDAN"],["2024-04-26","2024-04-27","SUEZ SOUTH ANCHORAGE"],["2024-04-29","2024-04-29","KALI LIMENES ANCHORAGE"],["2024-08-20","2024-08-21","PORT SUDAN"],["2024-08-23","2024-08-28",""],["2024-09-01","2024-09-03","PORT SUDAN"],["2024-09-06","2024-09-06","SUEZ SOUTH ANCHORAGE"],["2024-09-09","2024-09-10","SUEZ SOUTH ANCHORAGE"],["2024-09-12","2024-09-14","CANAKKALE"],["2024-09-15","2024-09-18","AMBARLI"],["2024-09-21","2024-09-26",""],["2024-09-30","2024-09-30",""],["2024-10-08","2024-10-08","ALEXANDRIA"],["2024-10-08","2024-10-11","ALEXANDRIA"],["2024-10-30","2024-10-30","PORT SAID"],["2024-10-31","2024-10-31",""],["2024-10-31","2024-11-02","SUEZ PORT"],["2024-11-04","2024-11-04","JEDDAH"],["2024-11-06","2024-11-08","DJIBOUTI"],["2024-12-17","2024-12-23","SUEZ SOUTH ANCHORAGE"],["2024-12-24","2024-12-28","SUEZ PORT"],["2025-01-01","2025-01-02","AMBARLI"],["2025-01-12","2025-01-13","AMBARLI"],["2025-01-14","2025-01-14",""],["2025-02-01","2025-02-05","ALEXANDRIA"],["2025-02-06","2025-02-07","ALEXANDRIA"],["2025-02-07","2025-02-11","ALEXANDRIA"],["2025-02-13","2025-02-14",""],["2025-02-15","2025-02-19","ISTANBUL"],["2025-02-19","2025-03-30","YALOVA TOWN"],["2025-03-30","2025-03-31","YALOVA TOWN"],["2025-03-31","2025-04-01","AMBARLI"],["2025-04-02","2025-04-03",""],["2025-04-14","2025-04-15","PORT SAID"],["2025-04-16","2025-04-21","ZAHRANI"],["2025-04-30","2025-05-01","PORT SAID"],["2025-05-03","2025-05-05","MERSIN"],["2025-05-07","2025-05-09","CANAKKALE"],["2025-05-09","2025-05-12","AMBARLI"],["2025-08-03","2025-08-04","PORT SAID"],["2025-08-22","2025-08-23","ISTANBUL"],["2025-08-26","2025-08-27","NOVOROSSIYSK"],["2025-08-30","2025-08-31",""],["2025-09-22","2025-09-25","PORT SAID"],["2025-09-25","2025-09-27","PORT SAID"],["2025-09-29","2025-09-29","CANAKKALE"],["2025-10-08","2025-10-12",""],["2025-10-17","2025-10-18",""],["2025-10-28","2025-11-01","ALEXANDRIA"],["2025-11-04","2025-11-06","AMBARLI"],["2025-11-06","2025-11-07",""],["2025-11-25","2025-11-27",""],["2025-11-29","2025-11-30","VYSOTSK"],["2025-12-15","2025-12-17",""],["2025-12-18","2025-12-27",""]],"hovertemplate":"%{customdata[0]} \u2192 %{customdata[1]}\u003cbr\u003e%{customdata[2]}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#2c7fb8"},"name":"port visit","orientation":"h","x":{"dtype":"f8","bdata":"AAAAwKkuskEAAABm87zRQQAAAICL9XdBAAAAoDgfkkEAAAAkrp\u002ffQQAAAMCFk6dBAAAAINq+lEEAAACAFAyEQQAAAODPQJ5BAAAAGJbrukEAAAAQgOGqQQAAAMC0L4VBAAAAoNvXlUEAAADARCSjQQAAAGh9KLBBAAAAAIjivEEAAADAUgSBQQAAAABwmXRBAAAAgA17qkEAAABAOj+EQQAAAADc1HxBAAAAQF\u002f0m0EAAAAAOgd5QQAAAKDEYaFBAAAA8HscvUEAAAAY6ZO1QQAAABA4pqFBAAAA4Ou5kEEAAAAAZ6mMQQAAALAJP7ZBAAAA4EPVkEEAAABgwAy0QQAAACAvnJRBAAAAiM8ttkEAAAB7SOLoQQAAAABPMIxBAAAAQM5cokEAAACAesubQQAAAODMIJlBAAAA0EaqtkEAAACAZbSVQQAAADBZUaZBAAAAYD1mmkEAAACQTxqvQQAAAAB0yJNBAAAAEI5uoUEAAADAnmKbQQAAAIAZbZxBAAAAULqYq0EAAADg5oGmQQAAAABwmXRBAAAA6CUdtkEAAAAgUcCUQQAAABBhMbJBAAAAAP+QpUEAAACgIfyUQQAAAFDMp6hBAAAA4LW2kkEAAAAw6OmhQQAAAGTq5cZB"},"y":["port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit","port visit"],"type":"bar"},{"base":["2024-01-14T00:57:58.000000","2024-01-15T07:58:38.000000","2024-01-15T16:58:01.000000","2024-02-26T09:59:45.000000","2024-02-26T14:59:34.000000","2024-02-28T00:59:04.000000","2024-02-28T06:59:54.000000","2024-05-12T16:57:16.000000","2024-05-13T01:57:46.000000","2024-05-13T08:58:30.000000","2024-09-07T15:59:02.000000","2024-10-11T14:57:19.000000","2024-10-19T15:57:23.000000","2024-10-20T16:59:20.000000","2025-04-06T14:59:25.000000","2025-04-07T01:59:04.000000","2025-04-07T18:59:35.000000","2025-04-08T17:59:19.000000","2025-04-08T23:59:22.000000","2025-04-09T07:59:24.000000","2025-04-22T04:59:12.000000","2025-04-22T18:59:08.000000","2025-04-24T13:59:34.000000","2025-04-26T22:59:04.000000","2025-05-19T03:59:36.000000","2025-05-19T18:59:14.000000","2025-05-22T15:59:11.000000","2025-05-23T06:59:45.000000","2025-05-23T12:59:05.000000","2025-06-06T10:59:02.000000","2025-06-06T13:59:02.000000","2025-06-07T14:59:18.000000","2025-06-07T19:32:02.000000","2025-06-09T09:17:16.000000","2025-06-09T14:59:16.000000","2025-06-11T03:59:11.000000","2025-06-19T12:29:28.000000","2025-06-19T17:56:47.000000","2025-06-20T15:57:23.000000","2025-10-02T02:59:43.000000","2025-10-02T08:59:18.000000","2025-10-03T12:54:46.000000"],"customdata":[["2024-01-14","2024-01-15",""],["2024-01-15","2024-01-15",""],["2024-01-15","2024-01-17",""],["2024-02-26","2024-02-26",""],["2024-02-26","2024-02-27",""],["2024-02-28","2024-02-28",""],["2024-02-28","2024-02-28",""],["2024-05-12","2024-05-12",""],["2024-05-13","2024-05-13",""],["2024-05-13","2024-05-13",""],["2024-09-07","2024-09-08",""],["2024-10-11","2024-10-12",""],["2024-10-19","2024-10-20",""],["2024-10-20","2024-10-20",""],["2025-04-06","2025-04-07",""],["2025-04-07","2025-04-07",""],["2025-04-07","2025-04-07",""],["2025-04-08","2025-04-08",""],["2025-04-08","2025-04-09",""],["2025-04-09","2025-04-09",""],["2025-04-22","2025-04-22",""],["2025-04-22","2025-04-23",""],["2025-04-24","2025-04-26",""],["2025-04-26","2025-04-28",""],["2025-05-19","2025-05-19",""],["2025-05-19","2025-05-20",""],["2025-05-22","2025-05-23",""],["2025-05-23","2025-05-23",""],["2025-05-23","2025-06-06",""],["2025-06-06","2025-06-06",""],["2025-06-06","2025-06-06",""],["2025-06-07","2025-06-07",""],["2025-06-07","2025-06-08",""],["2025-06-09","2025-06-09",""],["2025-06-09","2025-06-10",""],["2025-06-11","2025-06-11",""],["2025-06-19","2025-06-19",""],["2025-06-19","2025-06-20",""],["2025-06-20","2025-08-03",""],["2025-10-02","2025-10-02",""],["2025-10-02","2025-10-03",""],["2025-10-03","2025-10-06",""]],"hovertemplate":"%{customdata[0]} \u2192 %{customdata[1]}\u003cbr\u003e%{customdata[2]}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#7b3294"},"name":"loitering","orientation":"h","x":{"dtype":"f8","bdata":"AAAAwEXrmEEAAACAhKB0QQAAABBrU6NBAAAAAHCZdEEAAACAZSuXQQAAAABwmXRBAAAAAHCZdEEAAAAABBZ4QQAAAABwmXRBAAAAAHCZdEEAAACACsCJQQAAAMAaeItBAAAAwGzEk0EAAAAA1Qh4QQAAAMBoKoFBAAAAwLUIiEEAAAAAcJl0QQAAAABwmXRBAAAAAHCZdEEAAAAAcJl0QQAAAADtmYRBAAAAAF6cdEEAAADw6+ClQQAAACBCVJxBAAAAAEB3e0EAAACATymBQQAAAIANCohBAAAAAHCZdEEAAABkLs\u002fRQQAAAABwmXRBAAAAAHCZdEEAAAAAcJl0QQAAAABdvYJBAAAAAHCZdEEAAABAZwWSQQAAAABwmXRBAAAAAHCZdEEAAADgTAySQQAAAEXS+etBAAAAAHCZdEEAAAAAMHSVQQAAANBA8q9B"},"y":["loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering","loitering"],"type":"bar"},{"hovertemplate":"%{x|%Y-%m-%d}\u003cbr\u003e%{text}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#c0392b","size":17,"symbol":"diamond"},"mode":"markers","name":"flag strength 3","text":["A sanctioned vessel loitered alongside (\u2264 0.5 km)\u003cbr\u003eCONCORD EXPRESS (PAN): 10.0 h overlap, 0.05 km apart; +1 other ship(s)"],"x":["2025-05-19T18:59:14.000000"],"y":["flags"],"type":"scatter"},{"hovertemplate":"%{x|%Y-%m-%d}\u003cbr\u003e%{text}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#e67e22","size":14,"symbol":"diamond"},"mode":"markers","name":"flag strength 2","text":["Days with no events while barely moving: where was it?\u003cbr\u003e40 days with no events after loitering; moved only 237 km (0.1 kn average)","Days with no events while barely moving: where was it?\u003cbr\u003e13 days with no events after port visit KALI LIMENES ANCHORAGE; moved only 775 km (1.3 kn average)","Days with no events while barely moving: where was it?\u003cbr\u003e99 days with no events after loitering; moved only 1458 km (0.3 kn average)","Days with no events while barely moving: where was it?\u003cbr\u003e39 days with no events after port visit DJIBOUTI; moved only 2277 km (1.3 kn average)","Days with no events while barely moving: where was it?\u003cbr\u003e10 days with no events after port visit AMBARLI; moved only 0 km (0.0 kn average)","Days with no events while barely moving: where was it?\u003cbr\u003e18 days with no events after port visit; moved only 1066 km (1.4 kn average)","A sanctioned vessel loitered nearby (\u2264 5 km), quiet area\u003cbr\u003eALBARRAQ Z (COM): 12.0 h overlap, 2.12 km apart; +2 other ship(s)","Days with no events while barely moving: where was it?\u003cbr\u003e8 days with no events after loitering; moved only 8 km (0.0 kn average)","Days with no events while barely moving: where was it?\u003cbr\u003e18 days with no events after port visit PORT SAID; moved only 1103 km (1.4 kn average)","Days with no events while barely moving: where was it?\u003cbr\u003e22 days with no events after port visit; moved only 1117 km (1.1 kn average)"],"x":["2024-01-17T13:59:58.000000","2024-04-29T16:26:13.000000","2024-05-13T10:58:03.000000","2024-11-08T13:20:54.000000","2025-01-02T20:50:00.000000","2025-01-14T17:14:38.000000","2025-05-23T12:59:05.000000","2025-06-11T06:59:05.000000","2025-08-04T03:46:48.000000","2025-08-31T16:20:35.000000"],"y":["flags","flags","flags","flags","flags","flags","flags","flags","flags","flags"],"type":"scatter"},{"hovertemplate":"%{x|%Y-%m-%d}\u003cbr\u003e%{text}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#95a5a6","size":11,"symbol":"diamond"},"mode":"markers","name":"flag strength 1","text":["Loitered \u2265 6 h away from any port\u003cbr\u003e29.0 h, 189.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e6.0 h, 196.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e45.0 h, 186.0 km from nearest seen port","Another vessel loitered nearby (\u2264 5 km), quiet area\u003cbr\u003eBEKS BEBEK (MHL): 3.0 h overlap, 4.4 km apart","Loitered \u2265 6 h away from any port\u003cbr\u003e7.0 h, 62.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e15.0 h, 331.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e16.0 h, 194.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e23.0 h, 167.0 km from nearest seen port","Another vessel loitered nearby (\u2264 5 km), quiet area\u003cbr\u003eYAGIZA (FRA): 3.0 h overlap, 3.76 km apart","Loitered \u2265 6 h away from any port\u003cbr\u003e7.0 h, 151.0 km from nearest seen port","Another vessel loitered nearby (\u2264 5 km), quiet area\u003cbr\u003eHOBART (POL): 2.0 h overlap, 2.12 km apart","Loitered \u2265 6 h away from any port\u003cbr\u003e10.0 h, 200.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e14.0 h, 191.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e12.0 h, 211.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e6.0 h, 213.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e51.0 h, 177.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e33.0 h, 206.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e8.0 h, 204.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e10.0 h, 184.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e14.0 h, 167.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e332.0 h, 205.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e10.9 h, 180.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e21.0 h, 202.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e21.0 h, 25.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e1043.0 h, 25.0 km from nearest seen port","A sanctioned vessel nearby in a crowded anchorage\u003cbr\u003eEASTERN PEARL (COM): 257.0 h overlap, 1.85 km apart; crowded area, 12 ships","Loitered \u2265 6 h away from any port\u003cbr\u003e25.0 h, 215.0 km from nearest seen port","Loitered \u2265 6 h away from any port\u003cbr\u003e74.4 h, 199.0 km from nearest seen port"],"x":["2024-01-14T00:57:58.000000","2024-01-15T07:58:38.000000","2024-01-15T16:58:01.000000","2024-02-26T14:59:34.000000","2024-05-12T16:57:16.000000","2024-09-07T15:59:02.000000","2024-10-11T14:57:19.000000","2024-10-19T15:57:23.000000","2024-10-19T15:57:23.000000","2024-10-20T16:59:20.000000","2024-10-20T16:59:20.000000","2025-04-06T14:59:25.000000","2025-04-07T01:59:04.000000","2025-04-22T04:59:12.000000","2025-04-22T18:59:08.000000","2025-04-24T13:59:34.000000","2025-04-26T22:59:04.000000","2025-05-19T03:59:36.000000","2025-05-19T18:59:14.000000","2025-05-22T15:59:11.000000","2025-05-23T12:59:05.000000","2025-06-07T19:32:02.000000","2025-06-09T14:59:16.000000","2025-06-19T17:56:47.000000","2025-06-20T15:57:23.000000","2025-06-20T15:57:23.000000","2025-10-02T08:59:18.000000","2025-10-03T12:54:46.000000"],"y":["flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags","flags"],"type":"scatter"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05}}},"margin":{"l":10,"r":10,"t":10,"b":10},"legend":{"orientation":"h","y":-0.25},"xaxis":{"type":"date"},"font":{"family":"system-ui, sans-serif","size":12},"barmode":"overlay","height":300,"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","yaxis":{"categoryorder":"array","categoryarray":["port visit","loitering","flags"]}},                        {"displayModeBar": false, "responsive": true}                    )                };            </script>        </div><div class='case'><h1>INDRAS (IMO 9314894)</h1>
+<p><em>Case file generated 2026-11-09 by shadow-fleet-tracker. All events are apparent events derived from AIS by Global Fishing Watch; flags are leads to verify, not findings.</em></p>
+<h2>Summary</h2>
+<ul>
+<li><strong>OpenSanctions:</strong> sanction; mare.shadow; poi — datasets: ca_dfatd_sema_sanctions; eu_journal_sanctions; eu_sanctions_map; gb_fcdo_sanctions; ua_war_sanctions</li>
+<li><strong>Study group:</strong> sanctioned; EU listed: check, UK listed: check</li>
+<li><strong>Observed:</strong> 2024-01-14 → 2025-12-27; 60 port visit, 42 loitering</li>
+<li><strong>No GFW AIS-off events.</strong> GFW only records gaps ≥ 12 h starting ≥ 50 nm offshore, so near-shore dark periods are invisible here (see METHODOLOGY).</li>
+<li><strong>Flags:</strong> 24 route, 9 data quality, 6 meeting</li>
+</ul>
+<p><strong>Strongest leads</strong> (to verify, not findings):</p>
+<ol>
+<li><strong>2025-05-19</strong> — A sanctioned vessel loitered alongside (≤ 0.5 km) — CONCORD EXPRESS (PAN): 10.0 h overlap, 0.05 km apart; +1 other ship(s)</li>
+<li><strong>2025-05-23</strong> — A sanctioned vessel loitered nearby (≤ 5 km), quiet area — ALBARRAQ Z (COM): 12.0 h overlap, 2.12 km apart; +2 other ship(s)</li>
+</ol>
+<h2>Identity history</h2>
+<table>
+<thead>
+<tr>
+<th>source</th>
+<th>name</th>
+<th>flag</th>
+<th>MMSI</th>
+<th>from</th>
+<th>to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AIS self-reported</td>
+<td>ARION</td>
+<td>LBR</td>
+<td>636014488</td>
+<td>2012-01-01 00:07</td>
+<td>2023-12-31 10:11</td>
+</tr>
+<tr>
+<td>registry:IMO</td>
+<td>ARION</td>
+<td>LBR</td>
+<td>636014488</td>
+<td>2012-01-01 00:10</td>
+<td>2023-02-24 14:47</td>
+</tr>
+<tr>
+<td>AIS self-reported</td>
+<td>MYTHOS</td>
+<td>GAB</td>
+<td>626352000</td>
+<td>2023-12-05 12:43</td>
+<td>2024-12-23 10:22</td>
+</tr>
+<tr>
+<td>AIS self-reported</td>
+<td>INDRAS</td>
+<td>PAN</td>
+<td>352004945</td>
+<td>2024-12-23 10:28</td>
+<td>2025-08-04 23:11</td>
+</tr>
+<tr>
+<td>AIS self-reported</td>
+<td>INDRAS</td>
+<td>SLE</td>
+<td>667001223</td>
+<td>2025-08-04 12:46</td>
+<td>2026-06-30 10:07</td>
+</tr>
+<tr>
+<td>AIS self-reported</td>
+<td>PINEGA</td>
+<td>RUS</td>
+<td>273129510</td>
+<td>2026-06-30 13:59</td>
+<td>2026-11-07 23:59</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Changes in broadcast identity:</strong></p>
+<ul>
+<li>2023-12-05: shipname ARION → MYTHOS</li>
+<li>2023-12-05: flag LBR → GAB</li>
+<li>2023-12-05: ssvid 636014488 → 626352000</li>
+<li>2024-12-23: shipname MYTHOS → INDRAS</li>
+<li>2024-12-23: flag GAB → PAN</li>
+<li>2024-12-23: ssvid 626352000 → 352004945</li>
+<li>2025-08-04: flag PAN → SLE</li>
+<li>2025-08-04: ssvid 352004945 → 667001223</li>
+<li>2026-06-30: shipname INDRAS → PINEGA</li>
+<li>2026-06-30: flag SLE → RUS</li>
+<li>2026-06-30: ssvid 667001223 → 273129510</li>
+</ul>
+<h2>Port calls</h2>
+<table>
+<thead>
+<tr>
+<th>arrived</th>
+<th>left</th>
+<th>days</th>
+<th>port</th>
+<th>country</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-02-28 14:05</td>
+<td>2024-03-03 02:49</td>
+<td>3.5</td>
+<td>MARSAXLOKK</td>
+<td>MLT</td>
+</tr>
+<tr>
+<td>2024-03-04 04:52</td>
+<td>2024-03-17 23:31</td>
+<td>13.8</td>
+<td>(unnamed anchorage)</td>
+<td>LBY</td>
+</tr>
+<tr>
+<td>2024-03-18 23:39</td>
+<td>2024-03-19 06:38</td>
+<td>0.3</td>
+<td>KALI LIMENES ANCHORAGE</td>
+<td>GRC</td>
+</tr>
+<tr>
+<td>2024-03-24 05:28</td>
+<td>2024-03-25 02:35</td>
+<td>0.9</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-03-27 20:21</td>
+<td>2024-04-21 09:52</td>
+<td>24.6</td>
+<td>(unnamed anchorage)</td>
+<td>SDN</td>
+</tr>
+<tr>
+<td>2024-04-21 10:16</td>
+<td>2024-04-23 17:12</td>
+<td>2.3</td>
+<td>PORT SUDAN</td>
+<td>SDN</td>
+</tr>
+<tr>
+<td>2024-04-26 04:24</td>
+<td>2024-04-27 04:35</td>
+<td>1.0</td>
+<td>SUEZ SOUTH ANCHORAGE</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-04-29 04:45</td>
+<td>2024-04-29 16:26</td>
+<td>0.5</td>
+<td>KALI LIMENES ANCHORAGE</td>
+<td>GRC</td>
+</tr>
+<tr>
+<td>2024-08-20 10:40</td>
+<td>2024-08-21 21:55</td>
+<td>1.5</td>
+<td>PORT SUDAN</td>
+<td>SDN</td>
+</tr>
+<tr>
+<td>2024-08-23 03:26</td>
+<td>2024-08-28 08:54</td>
+<td>5.2</td>
+<td>(unnamed anchorage)</td>
+<td>SDN</td>
+</tr>
+<tr>
+<td>2024-09-01 07:32</td>
+<td>2024-09-03 22:10</td>
+<td>2.6</td>
+<td>PORT SUDAN</td>
+<td>SDN</td>
+</tr>
+<tr>
+<td>2024-09-06 06:12</td>
+<td>2024-09-06 18:32</td>
+<td>0.5</td>
+<td>SUEZ SOUTH ANCHORAGE</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-09-09 06:21</td>
+<td>2024-09-10 07:48</td>
+<td>1.1</td>
+<td>SUEZ SOUTH ANCHORAGE</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-09-12 20:00</td>
+<td>2024-09-14 16:36</td>
+<td>1.9</td>
+<td>CANAKKALE</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2024-09-15 05:14</td>
+<td>2024-09-18 08:32</td>
+<td>3.1</td>
+<td>AMBARLI</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2024-09-21 09:04</td>
+<td>2024-09-26 23:40</td>
+<td>5.6</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2024-09-30 05:08</td>
+<td>2024-09-30 15:03</td>
+<td>0.4</td>
+<td>(unnamed anchorage)</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2024-10-08 12:25</td>
+<td>2024-10-08 14:32</td>
+<td>0.1</td>
+<td>ALEXANDRIA</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-10-08 16:18</td>
+<td>2024-10-11 06:00</td>
+<td>2.6</td>
+<td>ALEXANDRIA</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-10-30 11:13</td>
+<td>2024-10-30 23:00</td>
+<td>0.5</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-10-31 05:25</td>
+<td>2024-10-31 13:49</td>
+<td>0.3</td>
+<td>(unnamed anchorage)</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-10-31 16:43</td>
+<td>2024-11-02 01:17</td>
+<td>1.4</td>
+<td>SUEZ PORT</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-11-04 02:59</td>
+<td>2024-11-04 10:16</td>
+<td>0.3</td>
+<td>JEDDAH</td>
+<td>SAU</td>
+</tr>
+<tr>
+<td>2024-11-06 20:50</td>
+<td>2024-11-08 13:20</td>
+<td>1.7</td>
+<td>DJIBOUTI</td>
+<td>DJI</td>
+</tr>
+<tr>
+<td>2024-12-17 22:42</td>
+<td>2024-12-23 14:22</td>
+<td>5.7</td>
+<td>SUEZ SOUTH ANCHORAGE</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2024-12-24 02:10</td>
+<td>2024-12-28 06:44</td>
+<td>4.2</td>
+<td>SUEZ PORT</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-01-01 03:42</td>
+<td>2025-01-02 20:50</td>
+<td>1.7</td>
+<td>AMBARLI</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-01-12 22:37</td>
+<td>2025-01-13 18:06</td>
+<td>0.8</td>
+<td>AMBARLI</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-01-14 00:32</td>
+<td>2025-01-14 17:14</td>
+<td>0.7</td>
+<td>(unnamed anchorage)</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-02-01 09:11</td>
+<td>2025-02-05 16:52</td>
+<td>4.3</td>
+<td>ALEXANDRIA</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-02-06 14:54</td>
+<td>2025-02-07 10:31</td>
+<td>0.8</td>
+<td>ALEXANDRIA</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-02-07 12:02</td>
+<td>2025-02-11 09:28</td>
+<td>3.9</td>
+<td>ALEXANDRIA</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-02-13 12:54</td>
+<td>2025-02-14 12:54</td>
+<td>1.0</td>
+<td>(unnamed anchorage)</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-02-15 03:52</td>
+<td>2025-02-19 11:14</td>
+<td>4.3</td>
+<td>ISTANBUL</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-02-19 14:00</td>
+<td>2025-03-30 05:44</td>
+<td>38.7</td>
+<td>YALOVA TOWN</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-03-30 07:59</td>
+<td>2025-03-31 00:24</td>
+<td>0.7</td>
+<td>YALOVA TOWN</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-03-31 04:21</td>
+<td>2025-04-01 23:08</td>
+<td>1.8</td>
+<td>AMBARLI</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-04-02 04:47</td>
+<td>2025-04-03 13:10</td>
+<td>1.3</td>
+<td>(unnamed anchorage)</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-04-14 14:56</td>
+<td>2025-04-15 20:12</td>
+<td>1.2</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-04-16 17:53</td>
+<td>2025-04-21 03:30</td>
+<td>4.4</td>
+<td>ZAHRANI</td>
+<td>LBN</td>
+</tr>
+<tr>
+<td>2025-04-30 16:32</td>
+<td>2025-05-01 17:49</td>
+<td>1.1</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-05-03 10:37</td>
+<td>2025-05-05 14:37</td>
+<td>2.2</td>
+<td>MERSIN</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-05-07 18:03</td>
+<td>2025-05-09 00:48</td>
+<td>1.3</td>
+<td>CANAKKALE</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-05-09 14:02</td>
+<td>2025-05-12 14:31</td>
+<td>3.0</td>
+<td>AMBARLI</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-08-03 04:43</td>
+<td>2025-08-04 03:46</td>
+<td>1.0</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-08-22 04:24</td>
+<td>2025-08-23 21:01</td>
+<td>1.7</td>
+<td>ISTANBUL</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-08-26 03:32</td>
+<td>2025-08-27 11:27</td>
+<td>1.3</td>
+<td>NOVOROSSIYSK</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-08-30 07:13</td>
+<td>2025-08-31 16:20</td>
+<td>1.4</td>
+<td>(unnamed anchorage)</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-09-22 14:32</td>
+<td>2025-09-25 06:50</td>
+<td>2.7</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-09-25 07:35</td>
+<td>2025-09-27 12:01</td>
+<td>2.2</td>
+<td>PORT SAID</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-09-29 14:54</td>
+<td>2025-09-29 18:24</td>
+<td>0.1</td>
+<td>CANAKKALE</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-10-08 10:00</td>
+<td>2025-10-12 17:04</td>
+<td>4.3</td>
+<td>(unnamed anchorage)</td>
+<td>UKR</td>
+</tr>
+<tr>
+<td>2025-10-17 13:31</td>
+<td>2025-10-18 13:41</td>
+<td>1.0</td>
+<td>(unnamed anchorage)</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-10-28 17:30</td>
+<td>2025-11-01 06:17</td>
+<td>3.5</td>
+<td>ALEXANDRIA</td>
+<td>EGY</td>
+</tr>
+<tr>
+<td>2025-11-04 12:34</td>
+<td>2025-11-06 14:50</td>
+<td>2.1</td>
+<td>AMBARLI</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-11-06 21:41</td>
+<td>2025-11-07 22:08</td>
+<td>1.0</td>
+<td>(unnamed anchorage)</td>
+<td>TUR</td>
+</tr>
+<tr>
+<td>2025-11-25 06:13</td>
+<td>2025-11-27 15:40</td>
+<td>2.4</td>
+<td>(unnamed anchorage)</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-11-29 13:03</td>
+<td>2025-11-30 10:51</td>
+<td>0.9</td>
+<td>VYSOTSK</td>
+<td>RUS</td>
+</tr>
+<tr>
+<td>2025-12-15 14:34</td>
+<td>2025-12-17 08:18</td>
+<td>1.7</td>
+<td>(unnamed anchorage)</td>
+<td>TUN</td>
+</tr>
+<tr>
+<td>2025-12-18 11:50</td>
+<td>2025-12-27 09:15</td>
+<td>8.9</td>
+<td>(unnamed anchorage)</td>
+<td>TUN</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calls by country:</strong> TUR 21, EGY 20, SDN 5, RUS 4, GRC 2, TUN 2, MLT 1, LBY 1, SAU 1, DJI 1, LBN 1, UKR 1</p>
+<h2>Meetings at sea (co-located loitering)</h2>
+<p>Other vessels loitering within 5 km during overlapping hours. 'Ships around' &gt; 4 means a crowded anchorage or queue, where proximity means little.</p>
+<table>
+<thead>
+<tr>
+<th>date</th>
+<th>lat</th>
+<th>lon</th>
+<th>partner (broadcast)</th>
+<th>flag</th>
+<th>IMO</th>
+<th>OpenSanctions name</th>
+<th>sanctioned today</th>
+<th>km</th>
+<th>overlap h</th>
+<th>alongside</th>
+<th>ships around</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-02-26 14:59</td>
+<td>36.005</td>
+<td>15.036</td>
+<td>BEKS BEBEK</td>
+<td>MHL</td>
+<td>9281425</td>
+<td></td>
+<td></td>
+<td>4.40</td>
+<td>3.0</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2024-10-19 15:57</td>
+<td>37.398</td>
+<td>15.664</td>
+<td>YAGIZA</td>
+<td>FRA</td>
+<td></td>
+<td></td>
+<td></td>
+<td>3.76</td>
+<td>3.0</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2024-10-20 16:59</td>
+<td>37.226</td>
+<td>15.680</td>
+<td>HOBART</td>
+<td>POL</td>
+<td></td>
+<td></td>
+<td></td>
+<td>2.12</td>
+<td>2.0</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2025-05-19 18:59</td>
+<td>34.413</td>
+<td>33.633</td>
+<td>CONCORD EXPRESS</td>
+<td>PAN</td>
+<td>9247443</td>
+<td>Magnus</td>
+<td>yes</td>
+<td>0.05</td>
+<td>10.0</td>
+<td>yes</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2025-05-19 18:59</td>
+<td>34.413</td>
+<td>33.633</td>
+<td>GURUDEV</td>
+<td>PAN</td>
+<td>9253234</td>
+<td>GURUDEV</td>
+<td>yes</td>
+<td>3.37</td>
+<td>10.0</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>2025-05-23 12:59</td>
+<td>34.217</td>
+<td>33.263</td>
+<td>ALBARRAQ Z</td>
+<td>COM</td>
+<td>9252943</td>
+<td>Albarraq Z</td>
+<td>yes</td>
+<td>2.12</td>
+<td>12.0</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>2025-05-23 12:59</td>
+<td>34.217</td>
+<td>33.263</td>
+<td>EAGLE-S</td>
+<td>COK</td>
+<td>9329760</td>
+<td>MT EAGLE S</td>
+<td>yes</td>
+<td>2.43</td>
+<td>27.0</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>2025-05-23 12:59</td>
+<td>34.217</td>
+<td>33.263</td>
+<td>SUNNY BRIGHT</td>
+<td>JPN</td>
+<td>9287948</td>
+<td></td>
+<td></td>
+<td>3.77</td>
+<td>11.0</td>
+<td></td>
+<td>3</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>MISS NEPAL</td>
+<td>EGY</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1.51</td>
+<td>2.4</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>EASTERN PEARL</td>
+<td>COM</td>
+<td>9285859</td>
+<td>Eastern Pearl</td>
+<td>yes</td>
+<td>1.85</td>
+<td>257.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>ATLANTIC EXPRESS</td>
+<td>SGP</td>
+<td>9330850</td>
+<td></td>
+<td></td>
+<td>2.20</td>
+<td>54.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>EASTERN PEARL</td>
+<td>COM</td>
+<td>9285859</td>
+<td>Eastern Pearl</td>
+<td>yes</td>
+<td>2.62</td>
+<td>151.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>EASTERN PEARL</td>
+<td>COM</td>
+<td>9285859</td>
+<td>Eastern Pearl</td>
+<td>yes</td>
+<td>2.92</td>
+<td>10.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>ZEBRA</td>
+<td>LBR</td>
+<td>9231157</td>
+<td></td>
+<td></td>
+<td>3.31</td>
+<td>85.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>PHOENIX</td>
+<td>MWI</td>
+<td>9333424</td>
+<td>SCF PECHORA</td>
+<td>yes</td>
+<td>3.67</td>
+<td>125.7</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>LADY JASMINE</td>
+<td>TZA</td>
+<td>1031537</td>
+<td>LADY JASMINE</td>
+<td>yes</td>
+<td>3.69</td>
+<td>7.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>JAGUAR</td>
+<td>BRB</td>
+<td>9354301</td>
+<td>JAGUAR</td>
+<td>yes</td>
+<td>3.92</td>
+<td>193.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>JAGUAR</td>
+<td>BRB</td>
+<td>9354301</td>
+<td>JAGUAR</td>
+<td>yes</td>
+<td>3.93</td>
+<td>194.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>JAGGER</td>
+<td>COM</td>
+<td>9354301</td>
+<td>JAGUAR</td>
+<td>yes</td>
+<td>3.96</td>
+<td>281.6</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>JAGUAR</td>
+<td>BRB</td>
+<td>9354301</td>
+<td>JAGUAR</td>
+<td>yes</td>
+<td>3.96</td>
+<td>42.3</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>TP VENTURE</td>
+<td>NOR</td>
+<td>9895202</td>
+<td></td>
+<td></td>
+<td>4.08</td>
+<td>17.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>JAGGER</td>
+<td>COM</td>
+<td>9354301</td>
+<td>JAGUAR</td>
+<td>yes</td>
+<td>4.18</td>
+<td>208.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>MERU</td>
+<td>COM</td>
+<td>9187227</td>
+<td>Meru</td>
+<td>yes</td>
+<td>4.19</td>
+<td>14.1</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>JAGGER</td>
+<td>COM</td>
+<td>9354301</td>
+<td>JAGUAR</td>
+<td>yes</td>
+<td>4.42</td>
+<td>25.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>MERU</td>
+<td>COM</td>
+<td>9187227</td>
+<td>Meru</td>
+<td>yes</td>
+<td>4.53</td>
+<td>22.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>LOKOSAO</td>
+<td>STP</td>
+<td>9286657</td>
+<td>Lokosao</td>
+<td>yes</td>
+<td>4.90</td>
+<td>347.0</td>
+<td></td>
+<td>12</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>31.696</td>
+<td>32.296</td>
+<td>SEA TIGER</td>
+<td>EGY</td>
+<td></td>
+<td></td>
+<td></td>
+<td>4.94</td>
+<td>18.6</td>
+<td></td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Where the partners came from and went next</strong> (GFW port visits):</p>
+<table>
+<thead>
+<tr>
+<th>meeting</th>
+<th>partner</th>
+<th>came from</th>
+<th>days before</th>
+<th>next ports</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-05-19 18:59</td>
+<td>CONCORD EXPRESS</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-05-19 18:59</td>
+<td>GURUDEV</td>
+<td>ICDAS (TUR)</td>
+<td>7.8</td>
+<td>PORT SAID (EGY) 2025-05-25; unnamed anchorage (TUR) 2025-05-27; PORT SAID (EGY) 2025-07-07</td>
+</tr>
+<tr>
+<td>2025-05-23 12:59</td>
+<td>ALBARRAQ Z</td>
+<td>none recorded</td>
+<td></td>
+<td>PORT SAID (EGY) 2025-06-10; SUEZ PORT (EGY) 2025-06-11; MARSA BASHAYER (SDN) 2025-06-16</td>
+</tr>
+<tr>
+<td>2025-05-23 12:59</td>
+<td>EAGLE-S</td>
+<td>MARSAXLOKK (MLT)</td>
+<td>62.6</td>
+<td>PORT SAID (EGY) 2025-06-13</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>MERU</td>
+<td>none recorded</td>
+<td></td>
+<td>CANAKKALE (TUR) 2025-08-18</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>LADY JASMINE</td>
+<td>none recorded</td>
+<td></td>
+<td>PORT SAID (EGY) 2025-09-13; PORT SAID (EGY) 2025-09-14; PORT SAID (EGY) 2025-09-17</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>JAGUAR</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>LOKOSAO</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>EASTERN PEARL</td>
+<td>none recorded</td>
+<td></td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>PHOENIX</td>
+<td>PORT SAID (EGY)</td>
+<td>7.4</td>
+<td>none recorded within 60 days</td>
+</tr>
+<tr>
+<td>2025-06-20 15:57</td>
+<td>JAGGER</td>
+<td>PORT SAID (EGY)</td>
+<td>28.0</td>
+<td>none recorded within 60 days</td>
+</tr>
+</tbody>
+</table>
+<h2>Evidence ladder for the strongest meetings</h2>
+<p>Ticked = supported by data in this repo; unticked = still to check by hand.</p>
+<h3>2025-05-19 — CONCORD EXPRESS (PAN, IMO 9247443), 0.05 km, 10 h overlap</h3>
+<p>Position 34.413, 33.633. This ship's previous port: AMBARLI (TUR, 2025-05-09); next: PORT SAID (EGY, 2025-08-03).</p>
+<ul>
+<li><input type='checkbox' checked disabled> 1. Loitering of 10 h at sea</li>
+<li><input type='checkbox' checked disabled> 2. Partner co-located (alongside); partner sanctioned today — check designation date</li>
+<li><input type='checkbox' disabled> 3. Cargo logic — to assess. GFW recorded no port visits for the partner from 30 days before to 60 after.</li>
+<li><input type='checkbox' disabled> 4. Draught change — not obtained (no free historical source covering the period)</li>
+<li><input type='checkbox' disabled> 5. Satellite imagery — <a href="https://browser.dataspace.copernicus.eu/?zoom=12&amp;lat=34.4127&amp;lng=33.6331&amp;fromTime=2025-05-18T00:00:00.000Z&amp;toTime=2025-05-21T23:59:59.999Z">open Sentinel imagery for these dates</a></li>
+<li><input type='checkbox' disabled> 6. Independent reporting / official record</li>
+</ul>
+<h3>2025-05-23 — ALBARRAQ Z (COM, IMO 9252943), 2.12 km, 12 h overlap</h3>
+<p>Position 34.217, 33.263. This ship's previous port: AMBARLI (TUR, 2025-05-09); next: PORT SAID (EGY, 2025-08-03).</p>
+<ul>
+<li><input type='checkbox' checked disabled> 1. Loitering of 332 h at sea</li>
+<li><input type='checkbox' checked disabled> 2. Partner co-located (nearby); partner sanctioned today — check designation date</li>
+<li><input type='checkbox' disabled> 3. Cargo logic — to assess. Partner came from no recorded port and next called at: PORT SAID (EGY) 2025-06-10; SUEZ PORT (EGY) 2025-06-11; MARSA BASHAYER (SDN) 2025-06-16.</li>
+<li><input type='checkbox' disabled> 4. Draught change — not obtained (no free historical source covering the period)</li>
+<li><input type='checkbox' disabled> 5. Satellite imagery — <a href="https://browser.dataspace.copernicus.eu/?zoom=12&amp;lat=34.2171&amp;lng=33.2627&amp;fromTime=2025-05-22T00:00:00.000Z&amp;toTime=2025-05-25T23:59:59.999Z">open Sentinel imagery for these dates</a></li>
+<li><input type='checkbox' disabled> 6. Independent reporting / official record</li>
+</ul>
+<h2>Data issues and blind spots</h2>
+<ul>
+<li><strong>2024-01-17</strong> — Days with no events while barely moving: where was it? — 40 days with no events after loitering; moved only 237 km (0.1 kn average)</li>
+<li><strong>2024-04-29</strong> — Days with no events while barely moving: where was it? — 13 days with no events after port visit KALI LIMENES ANCHORAGE; moved only 775 km (1.3 kn average)</li>
+<li><strong>2024-05-13</strong> — Days with no events while barely moving: where was it? — 99 days with no events after loitering; moved only 1458 km (0.3 kn average)</li>
+<li><strong>2024-11-08</strong> — Days with no events while barely moving: where was it? — 39 days with no events after port visit DJIBOUTI; moved only 2277 km (1.3 kn average)</li>
+<li><strong>2025-01-02</strong> — Days with no events while barely moving: where was it? — 10 days with no events after port visit AMBARLI; moved only 0 km (0.0 kn average)</li>
+<li><strong>2025-01-14</strong> — Days with no events while barely moving: where was it? — 18 days with no events after port visit; moved only 1066 km (1.4 kn average)</li>
+<li><strong>2025-06-11</strong> — Days with no events while barely moving: where was it? — 8 days with no events after loitering; moved only 8 km (0.0 kn average)</li>
+<li><strong>2025-08-04</strong> — Days with no events while barely moving: where was it? — 18 days with no events after port visit PORT SAID; moved only 1103 km (1.4 kn average)</li>
+<li><strong>2025-08-31</strong> — Days with no events while barely moving: where was it? — 22 days with no events after port visit; moved only 1117 km (1.1 kn average)</li>
+</ul>
+<h2>Sources</h2>
+<ul>
+<li>Global Fishing Watch API v3 (events, vessel identity). Events are <em>apparent</em> and algorithmic; see the GFW data caveats.</li>
+<li>OpenSanctions maritime dataset (maritime-2026-11-09.csv), CC BY-NC 4.0. Confirm each listing in the original EU / UK notice before publishing.</li>
+<li>EAGLE S: https://www.opensanctions.org/entities/abuja-mou-det-7875f45c6f91e82287b8b09b1365dd0825b2f974</li>
+<li>INDRAS: https://www.opensanctions.org/entities/ca-sema-780bab93dc4a5d63cded3730b83bc7e4abec3d84</li>
+<li>C VIKING: https://www.opensanctions.org/entities/abuja-mou-psc-c66155a6c85e0162019eb28abc5f91cba4bcd908</li>
+<li>BLUE EMBER: https://www.opensanctions.org/entities/ca-sema-fc140aadd9456043830dd566977d76a4ffa2667f</li>
+<li>ATLAS: https://www.opensanctions.org/entities/ca-sema-64e484e1d4753b7675fe3c7fc760d8fa2e67c4d1</li>
+<li>EAGLE-S: https://www.opensanctions.org/entities/abuja-mou-det-7875f45c6f91e82287b8b09b1365dd0825b2f974</li>
+<li>ANNA: https://www.opensanctions.org/entities/ofac-39688</li>
+<li>MALAK: https://www.opensanctions.org/entities/ca-sema-16c8b3b9b0f4db82cd62ac5d189fc4a90b682790</li>
+<li>PHOTON: https://www.opensanctions.org/entities/abuja-mou-psc-9a2a2d754d486fc1a81583698faceec0a0a6e5b1</li>
+<li>SPIRIT 2: https://www.opensanctions.org/entities/ca-sema-b9be7f8baff03c113ea41cfaeda23f4ebc0aaf19</li>
+<li>NOVA: https://www.opensanctions.org/entities/bs-mou-54b18d01d6e0bd5de34d1d594ebbf2ed365b32f8</li>
+<li>LADY JASMINE: https://www.opensanctions.org/entities/eu-oj-21b123e9cc89893c0d9d40241c34e6e03cd4f623</li>
+<li>SARA II: https://www.opensanctions.org/entities/ca-sema-7c4893ddf331ce66a475d0ddb2b2cf6609bfa84e</li>
+<li>DARIKA: https://www.opensanctions.org/entities/ofac-58121</li>
+<li>ASTRAL: https://www.opensanctions.org/entities/ca-sema-a95383c6f3bf5807bf00b3d58dc2f19ab17261b5</li>
+<li>LIA: https://www.opensanctions.org/entities/ofac-29484</li>
+<li>MANISA: https://www.opensanctions.org/entities/ofac-29483</li>
+<li>ALBARRAQ Z: https://www.opensanctions.org/entities/ofac-56711</li>
+<li>JAGUAR: https://www.opensanctions.org/entities/ofac-32173</li>
+<li>DESTAN: https://www.opensanctions.org/entities/ca-sema-0b2e1aa2d30a1b2b63e82960d8907ca2e64fa0fd</li>
+<li>LIONESS: https://www.opensanctions.org/entities/imo-vsl-9285744</li>
+<li>BLUE NIL: https://www.opensanctions.org/entities/imo-vsl-9288265</li>
+<li>ADITYA: https://www.opensanctions.org/entities/ca-sema-34f4f9a7fef9c4949ea263d909db10e0c81f1b72</li>
+<li>K M A: https://www.opensanctions.org/entities/ofac-48715</li>
+<li>WORLD PROGRESS: https://www.opensanctions.org/entities/ofac-55889</li>
+<li>SEVEN PEARLS: https://www.opensanctions.org/entities/ca-sema-ba052da5c46d43f32c74aa628eb1ca21454ed726</li>
+<li>ELZA: https://www.opensanctions.org/entities/imo-vsl-9221671</li>
+<li>NEW FUSION: https://www.opensanctions.org/entities/ofac-57467</li>
+<li>ELIZA II: https://www.opensanctions.org/entities/ofac-52329</li>
+<li>MERU: https://www.opensanctions.org/entities/ca-sema-8d1afb864a2b6bf907c0a0be4895c37c8bc251e1</li>
+<li>GURUDEV: https://www.opensanctions.org/entities/ca-sema-7b82f4622fcf1bd0622dd1f68ae3756b551b5d6a</li>
+<li>CONCORD EXPRESS: https://www.opensanctions.org/entities/ca-sema-e83a062e6d480a46f465158a55d055f7bb03d6a4</li>
+<li>JAGGER: https://www.opensanctions.org/entities/ca-sema-415a4df8b5fabf05202d4cf692e565dc2e623b35</li>
+<li>PHOENIX: https://www.opensanctions.org/entities/abuja-mou-psc-9a2a2d754d486fc1a81583698faceec0a0a6e5b1</li>
+<li>EASTERN PEARL: https://www.opensanctions.org/entities/ca-sema-d859e7f740e628a510f0af759581346e7dd5bdf3</li>
+<li>LOKOSAO: https://www.opensanctions.org/entities/ca-sema-27678a09fa0461f753a7fd9f08f845fe2ecf1d3d</li>
+<li>JAGUAR: https://www.opensanctions.org/entities/ca-sema-415a4df8b5fabf05202d4cf692e565dc2e623b35</li>
+<li>SAUGER: https://www.opensanctions.org/entities/ca-sema-fc140aadd9456043830dd566977d76a4ffa2667f</li>
+<li>ARCADIA: https://www.opensanctions.org/entities/ca-sema-64e484e1d4753b7675fe3c7fc760d8fa2e67c4d1</li>
+<li>LEGACY: https://www.opensanctions.org/entities/ca-sema-26de55536cffd906acfea8ec31ef9c42686a683f</li>
+<li>AILAMA: https://www.opensanctions.org/entities/ca-sema-fb697810dd90130e2994a24e835f141146dfac12</li>
+<li>SILVAR: https://www.opensanctions.org/entities/ca-sema-244fdd30a367e1c6a269e03f99f791ff5a47a5cb</li>
+<li>FU HAI WAN: https://www.opensanctions.org/entities/ca-sema-fc324efaea078043aa1034876f9268c374af524f</li>
+<li>IZOLA: https://www.opensanctions.org/entities/ca-sema-fba847cd82d5387bff1b6b074946d460bf2d97de</li>
+<li>GOLD PEARL: https://www.opensanctions.org/entities/eu-oj-a4949e4dc274a7514788378d06343987d4ad4d35</li>
+<li>N CERNA: https://www.opensanctions.org/entities/ca-sema-a2d54cb48f5e18c7a5032e0414f9455aa36b63c9</li>
+<li>C VIKING: https://www.opensanctions.org/entities/abuja-mou-psc-c66155a6c85e0162019eb28abc5f91cba4bcd908</li>
+<li>INDRAS: https://www.opensanctions.org/entities/ca-sema-780bab93dc4a5d63cded3730b83bc7e4abec3d84</li>
+<li>RUBY: https://www.opensanctions.org/entities/ofac-30862</li>
+<li>BREEZE: https://www.opensanctions.org/entities/ca-sema-d9065c38267446442c4455db2a5e035b0243eda9</li>
+<li>TRUST: https://www.opensanctions.org/entities/ca-sema-8e9db7e40aafc633a35d6568a69c4cd9fdfc68c1</li>
+<li>LIBERTY: https://www.opensanctions.org/entities/ca-sema-d878cf8e93df3ba3b3160fea9676304e10def95c</li>
+<li>OZANNO: https://www.opensanctions.org/entities/ca-sema-0fb3c45623406fdba2d4aae14daee60ac98ea0bb</li>
+<li>RANGLER: https://www.opensanctions.org/entities/ca-sema-e7651af173ff2282964830ea7ab5412fd72203cb</li>
+<li>TOA PAYOH: https://www.opensanctions.org/entities/bs-mou-e54400025954fb5593d49bcc9c0888290e29214c</li>
+<li>ANTLIA: https://www.opensanctions.org/entities/ca-sema-72ae3d9e638574167ea7f8da42e118cad55af4f4</li>
+<li>BODY: https://www.opensanctions.org/entities/eu-oj-262baf7907d40e4bf915866b3081ef04caaad051</li>
+<li>MOONBAY: https://www.opensanctions.org/entities/ofac-48200</li>
+<li>TAURUS: https://www.opensanctions.org/entities/ca-sema-9179f260c219cc65544270e5bd48b949a4a96931</li>
+<li>GUANG TAI: https://www.opensanctions.org/entities/ofac-40902</li>
+<li>FELICITA: https://www.opensanctions.org/entities/ofac-57016</li>
+<li>BIG MAG: https://www.opensanctions.org/entities/imo-vsl-9263215</li>
+<li>SIRIUS 1: https://www.opensanctions.org/entities/ca-sema-54706d00b168955036b9910e66acad921912ae69</li>
+<li>DELIVER: https://www.opensanctions.org/entities/ca-sema-cbd0b6ac6c14bc44074ba48b7f893bf8f281d4ad</li>
+<li>ARTARA: https://www.opensanctions.org/entities/ca-sema-e72d7de21f84451b273a689d788a6db1decb4024</li>
+<li>FIORA: https://www.opensanctions.org/entities/ca-sema-c28eab05e81dc40dc9701d9f112c050036b788a2</li>
+<li>GELOR: https://www.opensanctions.org/entities/ca-sema-e72d7de21f84451b273a689d788a6db1decb4024</li>
+<li>HAI HUN: https://www.opensanctions.org/entities/ofac-52271</li>
+<li>AQUARIS: https://www.opensanctions.org/entities/imo-vsl-9251822</li>
+<li>NARCISSUS: https://www.opensanctions.org/entities/ca-sema-0a99b5be5200de076d8a9020b64267f2923f9319</li>
+<li>ALICIA: https://www.opensanctions.org/entities/ofac-53322</li>
+<li>UMA: https://www.opensanctions.org/entities/imo-vsl-9258870</li>
+<li>ELMO: https://www.opensanctions.org/entities/imo-vsl-9256913</li>
+<li>FAUSTA: https://www.opensanctions.org/entities/imo-vsl-9232450</li>
+<li>VENTURA: https://www.opensanctions.org/entities/ofac-47311</li>
+</ul></div><footer>Vessel events: Global Fishing Watch (apparent, AIS-derived). Sanctions data: OpenSanctions (CC BY-NC 4.0). Flags are leads for verification, not findings. Built 2026-11-09 · <a href='https://github.com/ikosan1015/shadow-fleet-tracker'>code and methodology</a></footer></main></body></html>

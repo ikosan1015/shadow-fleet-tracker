@@ -13,3 +13,4 @@ Grading uses the Admiralty Code:
 | S4 | OpenSanctions (maritime dataset + matching API) | aggregator | | listing status of ships and partners | B2 | CC BY-NC 4.0; confirm each match in the original list |
 | S5 | IMO GISIS | registry | | owner / flag history | A2 | |
 | S6 | Equasis | registry | | owner, manager, P&I, class | B2 | cite only; do not republish tables |
+| S7 | Copernicus Browser (Sentinel-1 / -2 imagery) | satellite imagery | | checking suspected meetings | A2 | free account; links generated in case files |

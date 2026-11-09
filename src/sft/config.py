@@ -49,6 +49,8 @@ EVENT_DATASETS = {
     "loitering": "public-global-loitering-events:latest",
 }
 
+PRESENCE_DATASET = "public-global-presence:latest"   # hourly AIS presence, all vessel types
+
 DEFAULT_START = "2023-01-01"
 DEFAULT_END = "2026-10-31"
 

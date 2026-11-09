@@ -92,3 +92,13 @@ def test_events_in_area_posts_geometry_and_paginates():
     assert [e["id"] for e in out] == ["e0", "e1"]
     url, body = s.bodies[0]
     assert "/events?" in url and body["geometry"]["type"] == "Polygon" and "vessels" not in body
+
+
+def test_meeting_between_two_studied_ships_is_kept(tmp_path, events, vessels):
+    """DARK STAR is also a studied ship here: its meeting with our toy tanker must still show."""
+    ids = pd.concat([identities(), pd.DataFrame({
+        "imo": ["3333333"], "vessel_id": ["p1"], "shipname": ["DARK STAR"], "flag": ["CMR"],
+        "ssvid": ["613000000"], "source": ["AIS self-reported"]})], ignore_index=True)
+    df = partners.run(events, ids, vessels, client=FakeClient(),
+                      raw_root=tmp_path / "raw", out=tmp_path / "out")
+    assert "M/T Dark Star" in set(df["partner_name"])

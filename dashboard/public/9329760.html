@@ -1,0 +1,3426 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_020d826eaef4ce877ce22d144f3d2fa2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    <div style='position:fixed;bottom:8px;left:8px;z-index:9999;background:#fff;padding:4px 8px;font:12px sans-serif'><b>EAGLE S (IMO 9329760)</b> · Vessel events: Global Fishing Watch (globalfishingwatch.org), apparent events. · <a href='case-9329760.html'>case file</a> · <a href='index.html'>all vessels</a></div>
+    
+            <div class="folium-map" id="map_020d826eaef4ce877ce22d144f3d2fa2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_020d826eaef4ce877ce22d144f3d2fa2 = L.map(
+                "map_020d826eaef4ce877ce22d144f3d2fa2",
+                {
+                    center: [36.00072, 22.692001249999997],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f16eb40282ffe4932dff767cef3ab3a = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 16,
+  "maxNativeZoom": 16,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5f16eb40282ffe4932dff767cef3ab3a.addTo(map_020d826eaef4ce877ce22d144f3d2fa2);
+        
+    
+            var feature_group_daa57c59d5571e700a49c5203c76f7d5 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_460d09717693bed8684d16dea1e64a1c = L.circleMarker(
+                [35.9852, 14.832],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_b92964f203470d9686075d7a147498ee = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_35e422a463bf6774e897ddbe4273daf7 = $(`<div id="html_35e422a463bf6774e897ddbe4273daf7" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-01-04 15:17 → 2024-01-06 23:18 UTC<br>56.0 h<br>port: MARSAXLOKK (MLT)</div>`)[0];
+                popup_b92964f203470d9686075d7a147498ee.setContent(html_35e422a463bf6774e897ddbe4273daf7);
+            
+        
+
+        circle_marker_460d09717693bed8684d16dea1e64a1c.bindPopup(popup_b92964f203470d9686075d7a147498ee)
+        ;
+
+        
+    
+    
+            var circle_marker_8e850c34d8297652bd488a7f8cbada86 = L.circleMarker(
+                [36.004, 14.9005],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_2bc163dc391b1a7eba2303b9b35c89d1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e0acc3ed95dc35747938cdc9475969c9 = $(`<div id="html_e0acc3ed95dc35747938cdc9475969c9" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-01-07 05:50 → 2024-01-07 08:08 UTC<br>2.3 h<br>port: MARSAXLOKK (MLT)</div>`)[0];
+                popup_2bc163dc391b1a7eba2303b9b35c89d1.setContent(html_e0acc3ed95dc35747938cdc9475969c9);
+            
+        
+
+        circle_marker_8e850c34d8297652bd488a7f8cbada86.bindPopup(popup_2bc163dc391b1a7eba2303b9b35c89d1)
+        ;
+
+        
+    
+    
+            var circle_marker_013c5ad2ff1b21e2f649eb3db0d61222 = L.circleMarker(
+                [35.9396, 14.9121],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_8b40b47571746bed23fe852199fe22c2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_074f4fede1f29d0e157e32025210fbec = $(`<div id="html_074f4fede1f29d0e157e32025210fbec" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-01-09 08:49 → 2024-01-11 10:05 UTC<br>49.3 h</div>`)[0];
+                popup_8b40b47571746bed23fe852199fe22c2.setContent(html_074f4fede1f29d0e157e32025210fbec);
+            
+        
+
+        circle_marker_013c5ad2ff1b21e2f649eb3db0d61222.bindPopup(popup_8b40b47571746bed23fe852199fe22c2)
+        ;
+
+        
+    
+    
+            var circle_marker_d4e5044ad5553ffb9e3bb862a1c282ec = L.circleMarker(
+                [36.0258, 14.8949],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_97d25e737f927dbfd0854fe3c1045f03 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2c07df0c76b3476e3ecfb00e5456d0bd = $(`<div id="html_2c07df0c76b3476e3ecfb00e5456d0bd" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-01-12 12:18 → 2024-01-13 11:07 UTC<br>22.8 h<br>port: MARSAXLOKK (MLT)</div>`)[0];
+                popup_97d25e737f927dbfd0854fe3c1045f03.setContent(html_2c07df0c76b3476e3ecfb00e5456d0bd);
+            
+        
+
+        circle_marker_d4e5044ad5553ffb9e3bb862a1c282ec.bindPopup(popup_97d25e737f927dbfd0854fe3c1045f03)
+        ;
+
+        
+    
+    
+            var circle_marker_d519bf04b1e4b581e6c4a6e16ee08116 = L.circleMarker(
+                [35.9829, 14.8953],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_06ac6ccac74f90d8d5b540a84a996b91 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_271914ad0b048ee8cac0676692eb8996 = $(`<div id="html_271914ad0b048ee8cac0676692eb8996" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-02-14 19:24 → 2024-02-18 07:08 UTC<br>83.7 h</div>`)[0];
+                popup_06ac6ccac74f90d8d5b540a84a996b91.setContent(html_271914ad0b048ee8cac0676692eb8996);
+            
+        
+
+        circle_marker_d519bf04b1e4b581e6c4a6e16ee08116.bindPopup(popup_06ac6ccac74f90d8d5b540a84a996b91)
+        ;
+
+        
+    
+    
+            var circle_marker_4e69f8f0a85b41f12b3a0f40e6565dc3 = L.circleMarker(
+                [35.9805, 14.8252],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_b607a2bac261f79297da6505c8f6fd06 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ee3c0bbfdad6d3cad437200b97cf1857 = $(`<div id="html_ee3c0bbfdad6d3cad437200b97cf1857" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-02-18 09:42 → 2024-02-18 19:39 UTC<br>10.0 h<br>port: MARSAXLOKK (MLT)</div>`)[0];
+                popup_b607a2bac261f79297da6505c8f6fd06.setContent(html_ee3c0bbfdad6d3cad437200b97cf1857);
+            
+        
+
+        circle_marker_4e69f8f0a85b41f12b3a0f40e6565dc3.bindPopup(popup_b607a2bac261f79297da6505c8f6fd06)
+        ;
+
+        
+    
+    
+            var circle_marker_7d9ddfd7e795e7286bad783196005401 = L.circleMarker(
+                [35.8853, 14.9128],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_f0c6f44879735788de0796e7aad03a72 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_27743ad109b7216febbd7b978c86a424 = $(`<div id="html_27743ad109b7216febbd7b978c86a424" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-02-20 12:33 → 2024-02-22 12:57 UTC<br>48.4 h<br>port: MARSAXLOKK (MLT)</div>`)[0];
+                popup_f0c6f44879735788de0796e7aad03a72.setContent(html_27743ad109b7216febbd7b978c86a424);
+            
+        
+
+        circle_marker_7d9ddfd7e795e7286bad783196005401.bindPopup(popup_f0c6f44879735788de0796e7aad03a72)
+        ;
+
+        
+    
+    
+            var circle_marker_8f31461cd21a3446daa4e7088b1adb0c = L.circleMarker(
+                [35.9719, 14.8139],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_8f9877b10172db467b3d15d40dc57f69 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e312804bc6260dd17109c2a7033953e8 = $(`<div id="html_e312804bc6260dd17109c2a7033953e8" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-02-22 15:30 → 2024-02-23 05:44 UTC<br>14.2 h<br>port: MARSAXLOKK (MLT)</div>`)[0];
+                popup_8f9877b10172db467b3d15d40dc57f69.setContent(html_e312804bc6260dd17109c2a7033953e8);
+            
+        
+
+        circle_marker_8f31461cd21a3446daa4e7088b1adb0c.bindPopup(popup_8f9877b10172db467b3d15d40dc57f69)
+        ;
+
+        
+    
+    
+            var circle_marker_cf20f04dc3fbd81bd37a572330280316 = L.circleMarker(
+                [36.0258, 14.8949],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_ad0f2b4b309960f1d1497c62ed8ed438 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_90b977119a1964c1f72ec39a43030f88 = $(`<div id="html_90b977119a1964c1f72ec39a43030f88" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-02-23 13:14 → 2024-02-23 16:11 UTC<br>2.9 h<br>port: MARSAXLOKK (MLT)</div>`)[0];
+                popup_ad0f2b4b309960f1d1497c62ed8ed438.setContent(html_90b977119a1964c1f72ec39a43030f88);
+            
+        
+
+        circle_marker_cf20f04dc3fbd81bd37a572330280316.bindPopup(popup_ad0f2b4b309960f1d1497c62ed8ed438)
+        ;
+
+        
+    
+    
+            var circle_marker_aa3384a6ad346f9aca3a9efc227d5634 = L.circleMarker(
+                [36.0214, 14.8899],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_ac2a7ef8597b85a32d66c7414a3704a8 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e0c631f0b7cc43715534e9ce8d65b809 = $(`<div id="html_e0c631f0b7cc43715534e9ce8d65b809" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-02-23 22:26 → 2024-03-01 16:13 UTC<br>161.8 h<br>port: MARSAXLOKK (MLT)</div>`)[0];
+                popup_ac2a7ef8597b85a32d66c7414a3704a8.setContent(html_e0c631f0b7cc43715534e9ce8d65b809);
+            
+        
+
+        circle_marker_aa3384a6ad346f9aca3a9efc227d5634.bindPopup(popup_ac2a7ef8597b85a32d66c7414a3704a8)
+        ;
+
+        
+    
+    
+            var circle_marker_bd5232894e07f75f32f0aa10e63fc8d1 = L.circleMarker(
+                [35.9805, 14.8252],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_22f785ff655c2af0dd2655c20e6a57fe = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3861fbc9e7daba8b23897b5de9755e61 = $(`<div id="html_3861fbc9e7daba8b23897b5de9755e61" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-03-01 21:50 → 2024-03-25 11:53 UTC<br>566.1 h<br>port: MARSAXLOKK (MLT)</div>`)[0];
+                popup_22f785ff655c2af0dd2655c20e6a57fe.setContent(html_3861fbc9e7daba8b23897b5de9755e61);
+            
+        
+
+        circle_marker_bd5232894e07f75f32f0aa10e63fc8d1.bindPopup(popup_22f785ff655c2af0dd2655c20e6a57fe)
+        ;
+
+        
+    
+    
+            var circle_marker_87c487c346c76ea9fd7844fec71cccd6 = L.circleMarker(
+                [39.8365, 25.8971],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_a067e01cab025cd82242715342d3bdc1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_59d45f17296dbbf1b9beebe45c5b51da = $(`<div id="html_59d45f17296dbbf1b9beebe45c5b51da" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-03-29 14:18 → 2024-03-31 06:20 UTC<br>40.0 h<br>port: CANAKKALE (TUR)</div>`)[0];
+                popup_a067e01cab025cd82242715342d3bdc1.setContent(html_59d45f17296dbbf1b9beebe45c5b51da);
+            
+        
+
+        circle_marker_87c487c346c76ea9fd7844fec71cccd6.bindPopup(popup_a067e01cab025cd82242715342d3bdc1)
+        ;
+
+        
+    
+    
+            var circle_marker_45b317f2b0b0b9fa584f4fb75e374fc1 = L.circleMarker(
+                [40.9605, 28.7228],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_0208ac968f7eb4d29975a091cfa11a6f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_828aa4971ff1859682ff67c8a81cfa4f = $(`<div id="html_828aa4971ff1859682ff67c8a81cfa4f" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-03-31 21:28 → 2024-04-04 06:06 UTC<br>80.6 h<br>port: AMBARLI (TUR)</div>`)[0];
+                popup_0208ac968f7eb4d29975a091cfa11a6f.setContent(html_828aa4971ff1859682ff67c8a81cfa4f);
+            
+        
+
+        circle_marker_45b317f2b0b0b9fa584f4fb75e374fc1.bindPopup(popup_0208ac968f7eb4d29975a091cfa11a6f)
+        ;
+
+        
+    
+    
+            var circle_marker_a4f56aeecb46c35086ad24141f0ffb1b = L.circleMarker(
+                [40.9307, 28.8344],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_1c50f56c6d74b416c1e28c485cbabae3 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_47ea8797b4398669d0b92dbcfbf35986 = $(`<div id="html_47ea8797b4398669d0b92dbcfbf35986" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-04-04 07:12 → 2024-04-05 15:01 UTC<br>31.8 h<br>port: ISTANBUL (TUR)</div>`)[0];
+                popup_1c50f56c6d74b416c1e28c485cbabae3.setContent(html_47ea8797b4398669d0b92dbcfbf35986);
+            
+        
+
+        circle_marker_a4f56aeecb46c35086ad24141f0ffb1b.bindPopup(popup_1c50f56c6d74b416c1e28c485cbabae3)
+        ;
+
+        
+    
+    
+            var circle_marker_e1b2eb9c79b1da5904698d4db0521c39 = L.circleMarker(
+                [40.6857, 29.3159],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_28cba07e241b4e8faec0d856aad71993 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ead31ca82ba97b1b3cd78d0a82529217 = $(`<div id="html_ead31ca82ba97b1b3cd78d0a82529217" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-04-05 17:56 → 2024-05-26 04:43 UTC<br>1210.8 h<br>port: YALOVA TOWN (TUR)</div>`)[0];
+                popup_28cba07e241b4e8faec0d856aad71993.setContent(html_ead31ca82ba97b1b3cd78d0a82529217);
+            
+        
+
+        circle_marker_e1b2eb9c79b1da5904698d4db0521c39.bindPopup(popup_28cba07e241b4e8faec0d856aad71993)
+        ;
+
+        
+    
+    
+            var circle_marker_3ece0ea490b7838864941d7feb81916c = L.circleMarker(
+                [40.9605, 28.7228],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_ca8a9c257877140f1858bb0dc844b450 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_443ee42c24ae89590777bdd39a931762 = $(`<div id="html_443ee42c24ae89590777bdd39a931762" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-05-26 10:26 → 2024-06-01 23:58 UTC<br>157.5 h<br>port: AMBARLI (TUR)</div>`)[0];
+                popup_ca8a9c257877140f1858bb0dc844b450.setContent(html_443ee42c24ae89590777bdd39a931762);
+            
+        
+
+        circle_marker_3ece0ea490b7838864941d7feb81916c.bindPopup(popup_ca8a9c257877140f1858bb0dc844b450)
+        ;
+
+        
+    
+    
+            var circle_marker_5b71bca4fc4725f5d9d6a235a930b3c5 = L.circleMarker(
+                [40.5139, 27.1706],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_2914fc56ef12ac5ad8e9c663100ad6e5 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4e584e7760a19c8c7257502bf4c58af4 = $(`<div id="html_4e584e7760a19c8c7257502bf4c58af4" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-06-02 05:18 → 2024-06-03 01:43 UTC<br>20.4 h<br>port: ICDAS (TUR)</div>`)[0];
+                popup_2914fc56ef12ac5ad8e9c663100ad6e5.setContent(html_4e584e7760a19c8c7257502bf4c58af4);
+            
+        
+
+        circle_marker_5b71bca4fc4725f5d9d6a235a930b3c5.bindPopup(popup_2914fc56ef12ac5ad8e9c663100ad6e5)
+        ;
+
+        
+    
+    
+            var circle_marker_ea673639c973a2da553c758e4ec92f2a = L.circleMarker(
+                [35.9396, 14.9121],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_6ed42f5644ca6af58a895263b65c4b99 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e5b1fa99601bbacdb0e6576dde985233 = $(`<div id="html_e5b1fa99601bbacdb0e6576dde985233" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-06-05 17:42 → 2024-06-07 04:32 UTC<br>34.8 h</div>`)[0];
+                popup_6ed42f5644ca6af58a895263b65c4b99.setContent(html_e5b1fa99601bbacdb0e6576dde985233);
+            
+        
+
+        circle_marker_ea673639c973a2da553c758e4ec92f2a.bindPopup(popup_6ed42f5644ca6af58a895263b65c4b99)
+        ;
+
+        
+    
+    
+            var circle_marker_29b5b55db1f0a9550cc4bea360d249ac = L.circleMarker(
+                [57.6747, 10.7227],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_cecea6b8d5af4ef5d3380d30b9ef4fc0 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2d28236106dd7e2d83c6cecfcc0a5e5b = $(`<div id="html_2d28236106dd7e2d83c6cecfcc0a5e5b" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-06-18 13:37 → 2024-06-19 13:29 UTC<br>23.9 h<br>port: SKAGEN (DNK)</div>`)[0];
+                popup_cecea6b8d5af4ef5d3380d30b9ef4fc0.setContent(html_2d28236106dd7e2d83c6cecfcc0a5e5b);
+            
+        
+
+        circle_marker_29b5b55db1f0a9550cc4bea360d249ac.bindPopup(popup_cecea6b8d5af4ef5d3380d30b9ef4fc0)
+        ;
+
+        
+    
+    
+            var circle_marker_b9cac7a2996908d18e43a95baff0a841 = L.circleMarker(
+                [60.5374, 28.3807],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_4d38100fe6c92bf869c8a6e5685bbc30 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6c0c14dc5be22ae5f84f9c0e80f21d79 = $(`<div id="html_6c0c14dc5be22ae5f84f9c0e80f21d79" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-06-28 12:57 → 2024-07-01 05:01 UTC<br>64.1 h</div>`)[0];
+                popup_4d38100fe6c92bf869c8a6e5685bbc30.setContent(html_6c0c14dc5be22ae5f84f9c0e80f21d79);
+            
+        
+
+        circle_marker_b9cac7a2996908d18e43a95baff0a841.bindPopup(popup_4d38100fe6c92bf869c8a6e5685bbc30)
+        ;
+
+        
+    
+    
+            var circle_marker_7b92a8790988ca8cf27e778020fd6499 = L.circleMarker(
+                [59.7829, 28.4077],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_7b858a146a12939f6f05ee598b3879b2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_eecf26c84fff4c06b026225e2720448f = $(`<div id="html_eecf26c84fff4c06b026225e2720448f" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-07-01 14:00 → 2024-07-02 16:45 UTC<br>26.8 h<br>port: VISTINO (RUS)</div>`)[0];
+                popup_7b858a146a12939f6f05ee598b3879b2.setContent(html_eecf26c84fff4c06b026225e2720448f);
+            
+        
+
+        circle_marker_7b92a8790988ca8cf27e778020fd6499.bindPopup(popup_7b858a146a12939f6f05ee598b3879b2)
+        ;
+
+        
+    
+    
+            var circle_marker_5525ccbff7482f37019d8183f4deaeb4 = L.circleMarker(
+                [16.8965, -25.0139],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_9dcf028c40ea882219490a5075d04468 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_cd19aed391805c4edee3e5c296a9a738 = $(`<div id="html_cd19aed391805c4edee3e5c296a9a738" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-07-18 07:58 → 2024-07-18 23:26 UTC<br>15.5 h<br>port: MINDELO (CPV)</div>`)[0];
+                popup_9dcf028c40ea882219490a5075d04468.setContent(html_cd19aed391805c4edee3e5c296a9a738);
+            
+        
+
+        circle_marker_5525ccbff7482f37019d8183f4deaeb4.bindPopup(popup_9dcf028c40ea882219490a5075d04468)
+        ;
+
+        
+    
+    
+            var circle_marker_993f67936885059642ed535d6294f737 = L.circleMarker(
+                [22.6513, 69.7028],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_ab019f4a946708487a57b838fb8721ce = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2bce2694d4fb6303a4dff1e4e3af6e87 = $(`<div id="html_2bce2694d4fb6303a4dff1e4e3af6e87" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-08-22 05:27 → 2024-08-29 13:31 UTC<br>176.1 h</div>`)[0];
+                popup_ab019f4a946708487a57b838fb8721ce.setContent(html_2bce2694d4fb6303a4dff1e4e3af6e87);
+            
+        
+
+        circle_marker_993f67936885059642ed535d6294f737.bindPopup(popup_ab019f4a946708487a57b838fb8721ce)
+        ;
+
+        
+    
+    
+            var circle_marker_5191d018f009425e80b192e788809777 = L.circleMarker(
+                [22.6513, 69.7028],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_e11cb1a1899eb8df5dfd68314cb4f7bf = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b5717fe9d628ce2f9449680e48af1385 = $(`<div id="html_b5717fe9d628ce2f9449680e48af1385" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-08-30 23:53 → 2024-09-01 01:55 UTC<br>26.0 h</div>`)[0];
+                popup_e11cb1a1899eb8df5dfd68314cb4f7bf.setContent(html_b5717fe9d628ce2f9449680e48af1385);
+            
+        
+
+        circle_marker_5191d018f009425e80b192e788809777.bindPopup(popup_e11cb1a1899eb8df5dfd68314cb4f7bf)
+        ;
+
+        
+    
+    
+            var circle_marker_4e609840032faaf0a605f91ce8915053 = L.circleMarker(
+                [22.6781, 69.9469],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_a4875e7b630848c30ae3af20560ca916 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_bce91a809aee4790833af3eb6f26d41c = $(`<div id="html_bce91a809aee4790833af3eb6f26d41c" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-09-01 03:28 → 2024-09-03 14:11 UTC<br>58.7 h</div>`)[0];
+                popup_a4875e7b630848c30ae3af20560ca916.setContent(html_bce91a809aee4790833af3eb6f26d41c);
+            
+        
+
+        circle_marker_4e609840032faaf0a605f91ce8915053.bindPopup(popup_a4875e7b630848c30ae3af20560ca916)
+        ;
+
+        
+    
+    
+            var circle_marker_5403bd2d513c8d1fc57a30e271a38bdb = L.circleMarker(
+                [57.6343, 10.6627],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_9a2f29d6ac87ab19dbee35edc7956565 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_540db695b90b4cf7eed179cda99d8a6e = $(`<div id="html_540db695b90b4cf7eed179cda99d8a6e" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-10-15 07:24 → 2024-10-15 19:45 UTC<br>12.4 h<br>port: SKAGEN (DNK)</div>`)[0];
+                popup_9a2f29d6ac87ab19dbee35edc7956565.setContent(html_540db695b90b4cf7eed179cda99d8a6e);
+            
+        
+
+        circle_marker_5403bd2d513c8d1fc57a30e271a38bdb.bindPopup(popup_9a2f29d6ac87ab19dbee35edc7956565)
+        ;
+
+        
+    
+    
+            var circle_marker_33f14153ab0da6315e01540aae890318 = L.circleMarker(
+                [59.7743, 28.4183],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_ef2e8e0d9c61564617d1c863eb91709c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7315b19c9a11d3566c2ec1f61fdd68d6 = $(`<div id="html_7315b19c9a11d3566c2ec1f61fdd68d6" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-10-26 07:22 → 2024-10-27 11:23 UTC<br>28.0 h<br>port: VISTINO (RUS)</div>`)[0];
+                popup_ef2e8e0d9c61564617d1c863eb91709c.setContent(html_7315b19c9a11d3566c2ec1f61fdd68d6);
+            
+        
+
+        circle_marker_33f14153ab0da6315e01540aae890318.bindPopup(popup_ef2e8e0d9c61564617d1c863eb91709c)
+        ;
+
+        
+    
+    
+            var circle_marker_60eae280dbf9855f4073e432d3350fd5 = L.circleMarker(
+                [59.9233, 28.5965],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_2cec1412939cb5db74943ea1a17ac992 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c15fc5241d00626ace2deb4e56792f3a = $(`<div id="html_c15fc5241d00626ace2deb4e56792f3a" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-10-27 12:00 → 2024-10-30 20:15 UTC<br>80.3 h</div>`)[0];
+                popup_2cec1412939cb5db74943ea1a17ac992.setContent(html_c15fc5241d00626ace2deb4e56792f3a);
+            
+        
+
+        circle_marker_60eae280dbf9855f4073e432d3350fd5.bindPopup(popup_2cec1412939cb5db74943ea1a17ac992)
+        ;
+
+        
+    
+    
+            var circle_marker_a26ebb96db650eacdd1322c79cd04aa2 = L.circleMarker(
+                [59.9386, 28.6369],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_8351d30dfaa1ddd3313c281573117398 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3e1e0cf2320bf829683cb19841d9023b = $(`<div id="html_3e1e0cf2320bf829683cb19841d9023b" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-11-05 03:07 → 2024-11-05 05:38 UTC<br>2.5 h</div>`)[0];
+                popup_8351d30dfaa1ddd3313c281573117398.setContent(html_3e1e0cf2320bf829683cb19841d9023b);
+            
+        
+
+        circle_marker_a26ebb96db650eacdd1322c79cd04aa2.bindPopup(popup_8351d30dfaa1ddd3313c281573117398)
+        ;
+
+        
+    
+    
+            var circle_marker_602f8358eef31f56480cab5260955bce = L.circleMarker(
+                [59.9313, 28.6646],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_a239414def56ca432ff0ff0bf50d2c00 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_581731b8c63fefb92cbd34825b470bd5 = $(`<div id="html_581731b8c63fefb92cbd34825b470bd5" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-11-05 12:06 → 2024-11-21 08:51 UTC<br>380.7 h</div>`)[0];
+                popup_a239414def56ca432ff0ff0bf50d2c00.setContent(html_581731b8c63fefb92cbd34825b470bd5);
+            
+        
+
+        circle_marker_602f8358eef31f56480cab5260955bce.bindPopup(popup_a239414def56ca432ff0ff0bf50d2c00)
+        ;
+
+        
+    
+    
+            var circle_marker_d2904f67f12833f5c7ce0faa355db259 = L.circleMarker(
+                [59.7743, 28.4183],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_045173ac60dfa7050d8382d81f69a5da = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7f0ac56197047cd5fb9e6014a0bc0cf6 = $(`<div id="html_7f0ac56197047cd5fb9e6014a0bc0cf6" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2024-11-21 11:15 → 2025-03-07 00:00 UTC<br>2532.8 h<br>port: VISTINO (RUS)<br><span style='color:#d7301f'>⚑ 106 days &#x27;at VISTINO&#x27;, end anchorage: none</span></div>`)[0];
+                popup_045173ac60dfa7050d8382d81f69a5da.setContent(html_7f0ac56197047cd5fb9e6014a0bc0cf6);
+            
+        
+
+        circle_marker_d2904f67f12833f5c7ce0faa355db259.bindPopup(popup_045173ac60dfa7050d8382d81f69a5da)
+        ;
+
+        
+    
+    
+            var circle_marker_9ad02f4456dc98b9b5b1858a8b68f879 = L.circleMarker(
+                [35.8156, 14.9119],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_3e4c8b7bfb2f9bd6fc93b4914b14d6c2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9a55ea0b7ecfa9786524a4fc152da73a = $(`<div id="html_9a55ea0b7ecfa9786524a4fc152da73a" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2025-03-21 20:29 → 2025-03-21 22:30 UTC<br>2.0 h<br>port: MARSAXLOKK (MLT)</div>`)[0];
+                popup_3e4c8b7bfb2f9bd6fc93b4914b14d6c2.setContent(html_9a55ea0b7ecfa9786524a4fc152da73a);
+            
+        
+
+        circle_marker_9ad02f4456dc98b9b5b1858a8b68f879.bindPopup(popup_3e4c8b7bfb2f9bd6fc93b4914b14d6c2)
+        ;
+
+        
+    
+    
+            var circle_marker_d935a4da2c509a0be24b17c3e8c35e05 = L.circleMarker(
+                [31.3931, 32.2951],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_f7f249a5f6ce931ac1d079203e584f74 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6803be8e8d4ef19e699638cf4e5ea6d1 = $(`<div id="html_6803be8e8d4ef19e699638cf4e5ea6d1" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2025-06-13 08:44 → 2025-06-13 23:49 UTC<br>15.1 h<br>port: PORT SAID (EGY)</div>`)[0];
+                popup_f7f249a5f6ce931ac1d079203e584f74.setContent(html_6803be8e8d4ef19e699638cf4e5ea6d1);
+            
+        
+
+        circle_marker_d935a4da2c509a0be24b17c3e8c35e05.bindPopup(popup_f7f249a5f6ce931ac1d079203e584f74)
+        ;
+
+        
+    
+    
+            var circle_marker_13eb1e4a118938de0be59489ad5b0b0f = L.circleMarker(
+                [31.4287, 32.2738],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_e2115eed33cd4c13928763f9780d24a4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c4c26ea4d3c2e05104ec995544c0346f = $(`<div id="html_c4c26ea4d3c2e05104ec995544c0346f" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2025-09-26 07:14 → 2025-09-27 05:20 UTC<br>22.1 h<br>port: PORT SAID (EGY)</div>`)[0];
+                popup_e2115eed33cd4c13928763f9780d24a4.setContent(html_c4c26ea4d3c2e05104ec995544c0346f);
+            
+        
+
+        circle_marker_13eb1e4a118938de0be59489ad5b0b0f.bindPopup(popup_e2115eed33cd4c13928763f9780d24a4)
+        ;
+
+        
+    
+    
+            var circle_marker_e7147f6a1c8e8d7562e9e2e4773be0c1 = L.circleMarker(
+                [31.4287, 32.2738],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_839f25f745bebb2928d46a780b836919 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3fdea287efa8c5200caadb0579f61d2f = $(`<div id="html_3fdea287efa8c5200caadb0579f61d2f" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2025-10-16 06:43 → 2025-10-17 20:55 UTC<br>38.2 h<br>port: PORT SAID (EGY)</div>`)[0];
+                popup_839f25f745bebb2928d46a780b836919.setContent(html_3fdea287efa8c5200caadb0579f61d2f);
+            
+        
+
+        circle_marker_e7147f6a1c8e8d7562e9e2e4773be0c1.bindPopup(popup_839f25f745bebb2928d46a780b836919)
+        ;
+
+        
+    
+    
+            var circle_marker_e347a5aa5454153ecb9d61adf6c35be2 = L.circleMarker(
+                [38.8566, 26.9],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_d45b5c57f4084823d830d66cab67c2f2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4beccf1c9ec0c55909dc4dcace4cb9d3 = $(`<div id="html_4beccf1c9ec0c55909dc4dcace4cb9d3" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2025-10-28 13:19 → 2025-11-11 11:49 UTC<br>334.5 h<br>port: ALIAGA (TUR)</div>`)[0];
+                popup_d45b5c57f4084823d830d66cab67c2f2.setContent(html_4beccf1c9ec0c55909dc4dcace4cb9d3);
+            
+        
+
+        circle_marker_e347a5aa5454153ecb9d61adf6c35be2.bindPopup(popup_d45b5c57f4084823d830d66cab67c2f2)
+        ;
+
+        
+    
+    
+            var circle_marker_5015149f3eb2ee37ead70b8516acf7f8 = L.circleMarker(
+                [40.8133, 29.2948],
+                {"bubblingMouseEvents": true, "color": "#2c7fb8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c7fb8", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_daa57c59d5571e700a49c5203c76f7d5);
+        
+    
+        var popup_55509871bc99b63b85a7d76063081f7a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8652d92873a6c0a8d3c548ab5ee7205a = $(`<div id="html_8652d92873a6c0a8d3c548ab5ee7205a" style="width: 100.0%; height: 100.0%;"><b>port_visit</b><br>2025-11-11 19:06 → 2026-02-13 01:46 UTC<br>2238.7 h<br>port: TUZLA (TUR)</div>`)[0];
+                popup_55509871bc99b63b85a7d76063081f7a.setContent(html_8652d92873a6c0a8d3c548ab5ee7205a);
+            
+        
+
+        circle_marker_5015149f3eb2ee37ead70b8516acf7f8.bindPopup(popup_55509871bc99b63b85a7d76063081f7a)
+        ;
+
+        
+    
+    
+            feature_group_daa57c59d5571e700a49c5203c76f7d5.addTo(map_020d826eaef4ce877ce22d144f3d2fa2);
+        
+    
+            var feature_group_701ff13ef7cd110e6eb3cbbac962ede7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_701ff13ef7cd110e6eb3cbbac962ede7.addTo(map_020d826eaef4ce877ce22d144f3d2fa2);
+        
+    
+            var feature_group_f75f12dc08101e6ec18a6ef21977de4c = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_f75f12dc08101e6ec18a6ef21977de4c.addTo(map_020d826eaef4ce877ce22d144f3d2fa2);
+        
+    
+            var feature_group_2b029dce5e2f9836dde124b0e3114853 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_f26fd8ed6118cb6904e0fd1c340e44ce = L.circleMarker(
+                [35.9008, 15.1139],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_3857ba28fa7712e11e460053d8f52b2a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9f1b2545c3926f1571e267bdb045655e = $(`<div id="html_9f1b2545c3926f1571e267bdb045655e" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-08 03:57 → 2024-01-08 07:48 UTC<br>3.9 h</div>`)[0];
+                popup_3857ba28fa7712e11e460053d8f52b2a.setContent(html_9f1b2545c3926f1571e267bdb045655e);
+            
+        
+
+        circle_marker_f26fd8ed6118cb6904e0fd1c340e44ce.bindPopup(popup_3857ba28fa7712e11e460053d8f52b2a)
+        ;
+
+        
+    
+    
+            var circle_marker_2bf16b5507ffb757941ea28235c61654 = L.circleMarker(
+                [35.8927, 15.1429],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_f34a51ff0ea94645d8d67ffbcf62c9d4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f4f3fabcaed47774b29200b1dffdc43c = $(`<div id="html_f4f3fabcaed47774b29200b1dffdc43c" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-08 10:59 → 2024-01-08 16:58 UTC<br>6.0 h</div>`)[0];
+                popup_f34a51ff0ea94645d8d67ffbcf62c9d4.setContent(html_f4f3fabcaed47774b29200b1dffdc43c);
+            
+        
+
+        circle_marker_2bf16b5507ffb757941ea28235c61654.bindPopup(popup_f34a51ff0ea94645d8d67ffbcf62c9d4)
+        ;
+
+        
+    
+    
+            var circle_marker_c05766045f16ab733d9e501e2b26ff6b = L.circleMarker(
+                [35.8612, 15.1939],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_7f3687e4891074b34ab3b592b1bb0fac = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6e305d2f7e68b112526167a89df86877 = $(`<div id="html_6e305d2f7e68b112526167a89df86877" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-08 21:59 → 2024-01-09 02:59 UTC<br>5.0 h</div>`)[0];
+                popup_7f3687e4891074b34ab3b592b1bb0fac.setContent(html_6e305d2f7e68b112526167a89df86877);
+            
+        
+
+        circle_marker_c05766045f16ab733d9e501e2b26ff6b.bindPopup(popup_7f3687e4891074b34ab3b592b1bb0fac)
+        ;
+
+        
+    
+    
+            var circle_marker_e286773d0c510b8d688ee2d1c3f0cd00 = L.circleMarker(
+                [35.8995, 15.1041],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_76817c4ff3165657f961faec3dcda7a0 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_18b6e4f57a96224ec1b51240b1744750 = $(`<div id="html_18b6e4f57a96224ec1b51240b1744750" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-09 03:59 → 2024-01-09 06:59 UTC<br>3.0 h</div>`)[0];
+                popup_76817c4ff3165657f961faec3dcda7a0.setContent(html_18b6e4f57a96224ec1b51240b1744750);
+            
+        
+
+        circle_marker_e286773d0c510b8d688ee2d1c3f0cd00.bindPopup(popup_76817c4ff3165657f961faec3dcda7a0)
+        ;
+
+        
+    
+    
+            var circle_marker_abd99a52f1a102738c5f72d9b5022010 = L.circleMarker(
+                [36.136, 14.9114],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_310eecc3a9e40ce177fdcde505fc3408 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_45ab3481de47beb5bd28627725aa101b = $(`<div id="html_45ab3481de47beb5bd28627725aa101b" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-11 18:59 → 2024-01-12 08:59 UTC<br>14.0 h<br><span style='color:#d7301f'>⚑ BEKS BEBEK (MHL): 14.0 h overlap, 0.04 km apart</span></div>`)[0];
+                popup_310eecc3a9e40ce177fdcde505fc3408.setContent(html_45ab3481de47beb5bd28627725aa101b);
+            
+        
+
+        circle_marker_abd99a52f1a102738c5f72d9b5022010.bindPopup(popup_310eecc3a9e40ce177fdcde505fc3408)
+        ;
+
+        
+    
+    
+            var circle_marker_811db5515de72a517294830b0bf9efb3 = L.circleMarker(
+                [37.1948, 15.7183],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_5856f3cc91564f132d10122872c7b549 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3ff343fac66305141ade5d46e8f71f43 = $(`<div id="html_3ff343fac66305141ade5d46e8f71f43" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-13 18:56 → 2024-01-13 23:58 UTC<br>5.0 h</div>`)[0];
+                popup_5856f3cc91564f132d10122872c7b549.setContent(html_3ff343fac66305141ade5d46e8f71f43);
+            
+        
+
+        circle_marker_811db5515de72a517294830b0bf9efb3.bindPopup(popup_5856f3cc91564f132d10122872c7b549)
+        ;
+
+        
+    
+    
+            var circle_marker_8c0d053fae8c52912f39049b58182434 = L.circleMarker(
+                [37.3125, 15.7258],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_c1fcf50e9137b1589650dcce2f94f4fa = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8781ad93ccaddf91a0a88ea2b7bf20b5 = $(`<div id="html_8781ad93ccaddf91a0a88ea2b7bf20b5" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-16 08:58 → 2024-01-16 09:58 UTC<br>1.0 h</div>`)[0];
+                popup_c1fcf50e9137b1589650dcce2f94f4fa.setContent(html_8781ad93ccaddf91a0a88ea2b7bf20b5);
+            
+        
+
+        circle_marker_8c0d053fae8c52912f39049b58182434.bindPopup(popup_c1fcf50e9137b1589650dcce2f94f4fa)
+        ;
+
+        
+    
+    
+            var circle_marker_484bde4437830638a29d15433c786638 = L.circleMarker(
+                [37.3625, 15.9495],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_6a10ad80ba72ef166f512104fad6df24 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_849b3bcf0a16b8205dab2cdaa91cdb74 = $(`<div id="html_849b3bcf0a16b8205dab2cdaa91cdb74" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-18 01:59 → 2024-01-19 18:59 UTC<br>41.0 h<br><span style='color:#d7301f'>⚑ 41.0 h, 176.0 km from nearest seen port; OSCAR (LBR): 5.0 h overlap, 3.11 km apart</span></div>`)[0];
+                popup_6a10ad80ba72ef166f512104fad6df24.setContent(html_849b3bcf0a16b8205dab2cdaa91cdb74);
+            
+        
+
+        circle_marker_484bde4437830638a29d15433c786638.bindPopup(popup_6a10ad80ba72ef166f512104fad6df24)
+        ;
+
+        
+    
+    
+            var circle_marker_f9ad79d1f483aee28279e8e7f6f4ab3a = L.circleMarker(
+                [37.2563, 15.7366],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_9904f950513624ef1be53383b585c88b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ccd74c7639131bbc67567ef01e02fe84 = $(`<div id="html_ccd74c7639131bbc67567ef01e02fe84" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-19 22:59 → 2024-01-20 07:58 UTC<br>9.0 h<br><span style='color:#d7301f'>⚑ 9.0 h, 156.0 km from nearest seen port</span></div>`)[0];
+                popup_9904f950513624ef1be53383b585c88b.setContent(html_ccd74c7639131bbc67567ef01e02fe84);
+            
+        
+
+        circle_marker_f9ad79d1f483aee28279e8e7f6f4ab3a.bindPopup(popup_9904f950513624ef1be53383b585c88b)
+        ;
+
+        
+    
+    
+            var circle_marker_c10608ad22cc98f8b951f0f3bd370c28 = L.circleMarker(
+                [37.171, 15.7105],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_ef9695c4e690027c730f51c3580f3803 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_205930ba76001deebc9c683d9895a7e3 = $(`<div id="html_205930ba76001deebc9c683d9895a7e3" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-22 20:58 → 2024-01-24 03:59 UTC<br>31.0 h<br><span style='color:#d7301f'>⚑ 31.0 h, 147.0 km from nearest seen port; SAUGER (MHL): 20.0 h overlap, 4.06 km apart; +1 other ship(s)</span></div>`)[0];
+                popup_ef9695c4e690027c730f51c3580f3803.setContent(html_205930ba76001deebc9c683d9895a7e3);
+            
+        
+
+        circle_marker_c10608ad22cc98f8b951f0f3bd370c28.bindPopup(popup_ef9695c4e690027c730f51c3580f3803)
+        ;
+
+        
+    
+    
+            var circle_marker_1643b901d612e4428370423961f46997 = L.circleMarker(
+                [37.3044, 15.6547],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_2d5e1ebcb37ff9fe70440c1146830002 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0222a1ada9da51d8bb52baed51266350 = $(`<div id="html_0222a1ada9da51d8bb52baed51266350" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-24 12:59 → 2024-01-29 11:59 UTC<br>119.0 h<br><span style='color:#d7301f'>⚑ 119.0 h, 157.0 km from nearest seen port; MOUNT OLYMPUS (MHL): 40.0 h overlap, 3.84 km apart</span></div>`)[0];
+                popup_2d5e1ebcb37ff9fe70440c1146830002.setContent(html_0222a1ada9da51d8bb52baed51266350);
+            
+        
+
+        circle_marker_1643b901d612e4428370423961f46997.bindPopup(popup_2d5e1ebcb37ff9fe70440c1146830002)
+        ;
+
+        
+    
+    
+            var circle_marker_ec387fd3f8ec2662ccb285206f971658 = L.circleMarker(
+                [37.194, 15.7176],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_e2b7fbf91d1c4f714adebe469d05fa7d = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a1a21116793fefbf9a2dda0d50ae7e25 = $(`<div id="html_a1a21116793fefbf9a2dda0d50ae7e25" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-29 14:53 → 2024-01-30 17:57 UTC<br>27.1 h<br><span style='color:#d7301f'>⚑ 27.1 h, 149.0 km from nearest seen port</span></div>`)[0];
+                popup_e2b7fbf91d1c4f714adebe469d05fa7d.setContent(html_a1a21116793fefbf9a2dda0d50ae7e25);
+            
+        
+
+        circle_marker_ec387fd3f8ec2662ccb285206f971658.bindPopup(popup_e2b7fbf91d1c4f714adebe469d05fa7d)
+        ;
+
+        
+    
+    
+            var circle_marker_63ef883352a5e01294c4446a89102f70 = L.circleMarker(
+                [37.0968, 15.8302],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_41279df3bb7d4c5dbae1e0ed34aeafc0 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7cc5f642a3a397a325c3d56c5d639626 = $(`<div id="html_7cc5f642a3a397a325c3d56c5d639626" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-01-31 13:59 → 2024-02-06 06:59 UTC<br>137.0 h<br><span style='color:#d7301f'>⚑ 137.0 h, 145.0 km from nearest seen port</span></div>`)[0];
+                popup_41279df3bb7d4c5dbae1e0ed34aeafc0.setContent(html_7cc5f642a3a397a325c3d56c5d639626);
+            
+        
+
+        circle_marker_63ef883352a5e01294c4446a89102f70.bindPopup(popup_41279df3bb7d4c5dbae1e0ed34aeafc0)
+        ;
+
+        
+    
+    
+            var circle_marker_56a49dc151d5e4b6a56bce1c6dee89bb = L.circleMarker(
+                [37.1856, 15.7348],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_063a97687f82c358cd99fbde52af4a0d = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7b29aaeba55752768cf1f1666330ae3c = $(`<div id="html_7b29aaeba55752768cf1f1666330ae3c" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-02-06 08:59 → 2024-02-07 07:59 UTC<br>23.0 h<br><span style='color:#d7301f'>⚑ 23.0 h, 149.0 km from nearest seen port; ORIZZONTE (ITA): 7.7 h overlap, 3.36 km apart</span></div>`)[0];
+                popup_063a97687f82c358cd99fbde52af4a0d.setContent(html_7b29aaeba55752768cf1f1666330ae3c);
+            
+        
+
+        circle_marker_56a49dc151d5e4b6a56bce1c6dee89bb.bindPopup(popup_063a97687f82c358cd99fbde52af4a0d)
+        ;
+
+        
+    
+    
+            var circle_marker_d7e1403497ee99d280b2136bb0fb5679 = L.circleMarker(
+                [37.2618, 15.7148],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_9284179f67508592397892f56f59800a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_edb1dda3cdceca97acfe48a2b6d469fc = $(`<div id="html_edb1dda3cdceca97acfe48a2b6d469fc" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-02-07 17:58 → 2024-02-08 00:58 UTC<br>7.0 h<br><span style='color:#d7301f'>⚑ 7.0 h, 156.0 km from nearest seen port</span></div>`)[0];
+                popup_9284179f67508592397892f56f59800a.setContent(html_edb1dda3cdceca97acfe48a2b6d469fc);
+            
+        
+
+        circle_marker_d7e1403497ee99d280b2136bb0fb5679.bindPopup(popup_9284179f67508592397892f56f59800a)
+        ;
+
+        
+    
+    
+            var circle_marker_0a7a1156f0cfb9ae096e39763864dafa = L.circleMarker(
+                [37.5567, 16.3341],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_284bd2d66e86d45e1e1ab56b989f1589 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a619c4c6eed97532f10094d1236eb5fd = $(`<div id="html_a619c4c6eed97532f10094d1236eb5fd" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-02-08 10:58 → 2024-02-11 16:58 UTC<br>78.0 h<br><span style='color:#d7301f'>⚑ 78.0 h, 213.0 km from nearest seen port</span></div>`)[0];
+                popup_284bd2d66e86d45e1e1ab56b989f1589.setContent(html_a619c4c6eed97532f10094d1236eb5fd);
+            
+        
+
+        circle_marker_0a7a1156f0cfb9ae096e39763864dafa.bindPopup(popup_284bd2d66e86d45e1e1ab56b989f1589)
+        ;
+
+        
+    
+    
+            var circle_marker_8a2935c643e3023b3b4950f20752c650 = L.circleMarker(
+                [37.3153, 15.9644],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_a83f66152a1003c31fafd90ddc598217 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c551dc2b0c8b171c4fe36c32c220bf52 = $(`<div id="html_c551dc2b0c8b171c4fe36c32c220bf52" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-02-12 02:58 → 2024-02-12 07:59 UTC<br>5.0 h</div>`)[0];
+                popup_a83f66152a1003c31fafd90ddc598217.setContent(html_c551dc2b0c8b171c4fe36c32c220bf52);
+            
+        
+
+        circle_marker_8a2935c643e3023b3b4950f20752c650.bindPopup(popup_a83f66152a1003c31fafd90ddc598217)
+        ;
+
+        
+    
+    
+            var circle_marker_013532b59cea2a81ebbaf2f6b0c7e688 = L.circleMarker(
+                [35.9102, 14.9985],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_5a1c5775c0c2403a3bbb2d64b2739da4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_43855c2f99643e3a1cd4b0370656c7d3 = $(`<div id="html_43855c2f99643e3a1cd4b0370656c7d3" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-02-18 19:59 → 2024-02-18 21:59 UTC<br>2.0 h</div>`)[0];
+                popup_5a1c5775c0c2403a3bbb2d64b2739da4.setContent(html_43855c2f99643e3a1cd4b0370656c7d3);
+            
+        
+
+        circle_marker_013532b59cea2a81ebbaf2f6b0c7e688.bindPopup(popup_5a1c5775c0c2403a3bbb2d64b2739da4)
+        ;
+
+        
+    
+    
+            var circle_marker_96626e0386008f36209c4c4809591c29 = L.circleMarker(
+                [58.6749, 20.0471],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_2c60135ce9bf09128afba9d5b204444e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f656a7e8033668e474a77503a2a82264 = $(`<div id="html_f656a7e8033668e474a77503a2a82264" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-06-21 21:59 → 2024-06-23 06:56 UTC<br>32.9 h<br><span style='color:#d7301f'>⚑ 32.9 h, 270.0 km from nearest seen port</span></div>`)[0];
+                popup_2c60135ce9bf09128afba9d5b204444e.setContent(html_f656a7e8033668e474a77503a2a82264);
+            
+        
+
+        circle_marker_96626e0386008f36209c4c4809591c29.bindPopup(popup_2c60135ce9bf09128afba9d5b204444e)
+        ;
+
+        
+    
+    
+            var circle_marker_33d091f98be7e3f6fc72aca3c55a26c2 = L.circleMarker(
+                [58.8804, 19.8713],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_fa468606337937b5c94916762e2499a3 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c99051c3e29cf51201edce1fbf08f041 = $(`<div id="html_c99051c3e29cf51201edce1fbf08f041" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-06-23 08:57 → 2024-06-27 09:55 UTC<br>97.0 h<br><span style='color:#d7301f'>⚑ 97.0 h, 273.0 km from nearest seen port</span></div>`)[0];
+                popup_fa468606337937b5c94916762e2499a3.setContent(html_c99051c3e29cf51201edce1fbf08f041);
+            
+        
+
+        circle_marker_33d091f98be7e3f6fc72aca3c55a26c2.bindPopup(popup_fa468606337937b5c94916762e2499a3)
+        ;
+
+        
+    
+    
+            var circle_marker_f58c54a999685e1e0f18f14bbf8b61f2 = L.circleMarker(
+                [13.8028, -23.064],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_739aeed53ac267c7732827e1b3a9a58f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5c1082cef3cda152c08ad99c1ac875ce = $(`<div id="html_5c1082cef3cda152c08ad99c1ac875ce" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-07-19 17:56 → 2024-07-19 18:59 UTC<br>1.0 h</div>`)[0];
+                popup_739aeed53ac267c7732827e1b3a9a58f.setContent(html_5c1082cef3cda152c08ad99c1ac875ce);
+            
+        
+
+        circle_marker_f58c54a999685e1e0f18f14bbf8b61f2.bindPopup(popup_739aeed53ac267c7732827e1b3a9a58f)
+        ;
+
+        
+    
+    
+            var circle_marker_4833727d9ad22460aa7d972b58050e8d = L.circleMarker(
+                [-17.0523, 2.356],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_efb23017faa1884c3570be05a836a425 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_dfc12cf086483ccb502ddb11f3b41f6c = $(`<div id="html_dfc12cf086483ccb502ddb11f3b41f6c" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-07-28 07:59 → 2024-07-29 10:59 UTC<br>27.0 h<br><span style='color:#d7301f'>⚑ 27.0 h, 4133.0 km from nearest seen port</span></div>`)[0];
+                popup_efb23017faa1884c3570be05a836a425.setContent(html_dfc12cf086483ccb502ddb11f3b41f6c);
+            
+        
+
+        circle_marker_4833727d9ad22460aa7d972b58050e8d.bindPopup(popup_efb23017faa1884c3570be05a836a425)
+        ;
+
+        
+    
+    
+            var circle_marker_efe5d281d046676dd084da940097ab0a = L.circleMarker(
+                [-19.3436, 4.1017],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_9ee5be0f9fab4a14dfd7d471f5160a39 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_04d0002e75fc01480bfb2cc7cac8f4a2 = $(`<div id="html_04d0002e75fc01480bfb2cc7cac8f4a2" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-07-30 06:59 → 2024-07-30 09:59 UTC<br>3.0 h</div>`)[0];
+                popup_9ee5be0f9fab4a14dfd7d471f5160a39.setContent(html_04d0002e75fc01480bfb2cc7cac8f4a2);
+            
+        
+
+        circle_marker_efe5d281d046676dd084da940097ab0a.bindPopup(popup_9ee5be0f9fab4a14dfd7d471f5160a39)
+        ;
+
+        
+    
+    
+            var circle_marker_6cdb156638202e8ac83d0fa008a9225c = L.circleMarker(
+                [-31.6348, 15.0705],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_c5f5639036d1d572a690ee33f2012a3d = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4ff1b99e359463e9991cc2fb8ae2ce8b = $(`<div id="html_4ff1b99e359463e9991cc2fb8ae2ce8b" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2024-08-03 08:59 → 2024-08-03 10:59 UTC<br>2.0 h</div>`)[0];
+                popup_c5f5639036d1d572a690ee33f2012a3d.setContent(html_4ff1b99e359463e9991cc2fb8ae2ce8b);
+            
+        
+
+        circle_marker_6cdb156638202e8ac83d0fa008a9225c.bindPopup(popup_c5f5639036d1d572a690ee33f2012a3d)
+        ;
+
+        
+    
+    
+            var circle_marker_3d4d350760c4ae0af4cdde8aa24a2cc2 = L.circleMarker(
+                [36.0236, 13.5766],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_fa2d3a30c8c914eeefdcc7de3d61802f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_11c39889376dc833381665e3f684e08a = $(`<div id="html_11c39889376dc833381665e3f684e08a" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-03-15 20:59 → 2025-03-15 21:59 UTC<br>1.0 h</div>`)[0];
+                popup_fa2d3a30c8c914eeefdcc7de3d61802f.setContent(html_11c39889376dc833381665e3f684e08a);
+            
+        
+
+        circle_marker_3d4d350760c4ae0af4cdde8aa24a2cc2.bindPopup(popup_fa2d3a30c8c914eeefdcc7de3d61802f)
+        ;
+
+        
+    
+    
+            var circle_marker_8b64a503b72e46b555faed12fc9c623a = L.circleMarker(
+                [35.2414, 15.1493],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_baeadc8b08e792064f8278bc89503551 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f7c842dea027433ae4b4cca1e3c15d02 = $(`<div id="html_f7c842dea027433ae4b4cca1e3c15d02" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-03-16 06:59 → 2025-03-16 09:58 UTC<br>3.0 h</div>`)[0];
+                popup_baeadc8b08e792064f8278bc89503551.setContent(html_f7c842dea027433ae4b4cca1e3c15d02);
+            
+        
+
+        circle_marker_8b64a503b72e46b555faed12fc9c623a.bindPopup(popup_baeadc8b08e792064f8278bc89503551)
+        ;
+
+        
+    
+    
+            var circle_marker_98ec82df6a5e52bf06c061ccbded534e = L.circleMarker(
+                [35.1137, 15.9496],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_b265ae1fa1147a90320d71ed49314624 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0408d05ab7396c3a1d1c1d8f5bdeb990 = $(`<div id="html_0408d05ab7396c3a1d1c1d8f5bdeb990" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-03-16 13:58 → 2025-03-17 04:53 UTC<br>14.9 h<br><span style='color:#d7301f'>⚑ 14.9 h, 122.0 km from nearest seen port</span></div>`)[0];
+                popup_b265ae1fa1147a90320d71ed49314624.setContent(html_0408d05ab7396c3a1d1c1d8f5bdeb990);
+            
+        
+
+        circle_marker_98ec82df6a5e52bf06c061ccbded534e.bindPopup(popup_b265ae1fa1147a90320d71ed49314624)
+        ;
+
+        
+    
+    
+            var circle_marker_ac99e3ef26e041da50af1ff7f49c765d = L.circleMarker(
+                [31.7424, 32.2629],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_ebb9de43a43a19bc328b0abcb1c5e65a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_52664bf4e7002a351ce920a71e4186f0 = $(`<div id="html_52664bf4e7002a351ce920a71e4186f0" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-03-25 08:55 → 2025-03-31 17:27 UTC<br>152.5 h<br><span style='color:#d7301f'>⚑ 152.5 h, 30.0 km from nearest seen port; ARCADIA (OMN): 16.0 h overlap, 1.38 km apart; crowded area, 12 ships</span></div>`)[0];
+                popup_ebb9de43a43a19bc328b0abcb1c5e65a.setContent(html_52664bf4e7002a351ce920a71e4186f0);
+            
+        
+
+        circle_marker_ac99e3ef26e041da50af1ff7f49c765d.bindPopup(popup_ebb9de43a43a19bc328b0abcb1c5e65a)
+        ;
+
+        
+    
+    
+            var circle_marker_ce243dd5a02af30e0c2c66ffa0cb2e2a = L.circleMarker(
+                [31.7412, 32.2638],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_9ebd1898e3d29c810c86c50446e8a904 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2a7abaec5ffa4324a0cc363dc3800777 = $(`<div id="html_2a7abaec5ffa4324a0cc363dc3800777" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-03-31 20:59 → 2025-04-15 19:58 UTC<br>359.0 h<br><span style='color:#d7301f'>⚑ 359.0 h, 30.0 km from nearest seen port; N CERNA (STP): 6.1 h overlap, 2.4 km apart; crowded area, 6 ships</span></div>`)[0];
+                popup_9ebd1898e3d29c810c86c50446e8a904.setContent(html_2a7abaec5ffa4324a0cc363dc3800777);
+            
+        
+
+        circle_marker_ce243dd5a02af30e0c2c66ffa0cb2e2a.bindPopup(popup_9ebd1898e3d29c810c86c50446e8a904)
+        ;
+
+        
+    
+    
+            var circle_marker_179393034ebf7de48620c7696269cd30 = L.circleMarker(
+                [34.2746, 33.2646],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_22df6df4b329bfaef8a04b9d4580ac4e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a528eb50b9dda56fe3dea41be28aad19 = $(`<div id="html_a528eb50b9dda56fe3dea41be28aad19" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-04-16 19:57 → 2025-04-17 05:57 UTC<br>10.0 h<br><span style='color:#d7301f'>⚑ 10.0 h, 207.0 km from nearest seen port</span></div>`)[0];
+                popup_22df6df4b329bfaef8a04b9d4580ac4e.setContent(html_a528eb50b9dda56fe3dea41be28aad19);
+            
+        
+
+        circle_marker_179393034ebf7de48620c7696269cd30.bindPopup(popup_22df6df4b329bfaef8a04b9d4580ac4e)
+        ;
+
+        
+    
+    
+            var circle_marker_0d489d7d2973901fbcb5891b791a869c = L.circleMarker(
+                [34.2565, 33.1009],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_a0d63faef876699ff0533287aa5d06ce = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9fcb13ebdc7e74ebc39dafdcde4b7135 = $(`<div id="html_9fcb13ebdc7e74ebc39dafdcde4b7135" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-04-19 18:59 → 2025-04-23 09:59 UTC<br>87.0 h<br><span style='color:#d7301f'>⚑ 87.0 h, 220.0 km from nearest seen port; RCC PASSION (BHS): 6.0 h overlap, 4.52 km apart</span></div>`)[0];
+                popup_a0d63faef876699ff0533287aa5d06ce.setContent(html_9fcb13ebdc7e74ebc39dafdcde4b7135);
+            
+        
+
+        circle_marker_0d489d7d2973901fbcb5891b791a869c.bindPopup(popup_a0d63faef876699ff0533287aa5d06ce)
+        ;
+
+        
+    
+    
+            var circle_marker_75957447468d27b34ae06ed81cfa1739 = L.circleMarker(
+                [34.1962, 33.3044],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_116d6e4df7efb79e1aec251047422ba1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3d65c8667362052ebd90f68de063d5ac = $(`<div id="html_3d65c8667362052ebd90f68de063d5ac" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-04-23 12:59 → 2025-04-23 23:59 UTC<br>11.0 h<br><span style='color:#d7301f'>⚑ 11.0 h, 200.0 km from nearest seen port</span></div>`)[0];
+                popup_116d6e4df7efb79e1aec251047422ba1.setContent(html_3d65c8667362052ebd90f68de063d5ac);
+            
+        
+
+        circle_marker_75957447468d27b34ae06ed81cfa1739.bindPopup(popup_116d6e4df7efb79e1aec251047422ba1)
+        ;
+
+        
+    
+    
+            var circle_marker_ac9552503650f8fddbae85177ef2b736 = L.circleMarker(
+                [34.4109, 33.5271],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_36bc56fc8f24766928975319ee7899ca = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_bd0ac46566a46a9a1b9daa17625d286c = $(`<div id="html_bd0ac46566a46a9a1b9daa17625d286c" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-04-24 17:59 → 2025-04-25 00:58 UTC<br>7.0 h<br><span style='color:#d7301f'>⚑ 7.0 h, 192.0 km from nearest seen port</span></div>`)[0];
+                popup_36bc56fc8f24766928975319ee7899ca.setContent(html_bd0ac46566a46a9a1b9daa17625d286c);
+            
+        
+
+        circle_marker_ac9552503650f8fddbae85177ef2b736.bindPopup(popup_36bc56fc8f24766928975319ee7899ca)
+        ;
+
+        
+    
+    
+            var circle_marker_8e85532d4b232bca3d65a9dbb5ab7fa3 = L.circleMarker(
+                [34.1613, 32.962],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_ba80ebd0721ee3289a459a3d63be79b2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_fd9e49d186d1eea9d397c41439ac945d = $(`<div id="html_fd9e49d186d1eea9d397c41439ac945d" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-04-29 16:59 → 2025-04-30 13:59 UTC<br>21.0 h<br><span style='color:#d7301f'>⚑ 21.0 h, 229.0 km from nearest seen port</span></div>`)[0];
+                popup_ba80ebd0721ee3289a459a3d63be79b2.setContent(html_fd9e49d186d1eea9d397c41439ac945d);
+            
+        
+
+        circle_marker_8e85532d4b232bca3d65a9dbb5ab7fa3.bindPopup(popup_ba80ebd0721ee3289a459a3d63be79b2)
+        ;
+
+        
+    
+    
+            var circle_marker_a55d18a5ca25a212ebda28dccd3db1ea = L.circleMarker(
+                [34.2903, 33.4832],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_5b007577ecccac3f9fa43b0c2f9889f9 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b7bb8eddaae62225f81347a7097fae59 = $(`<div id="html_b7bb8eddaae62225f81347a7097fae59" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-04-30 18:58 → 2025-05-06 18:59 UTC<br>144.0 h<br><span style='color:#d7301f'>⚑ 144.0 h, 190.0 km from nearest seen port</span></div>`)[0];
+                popup_5b007577ecccac3f9fa43b0c2f9889f9.setContent(html_b7bb8eddaae62225f81347a7097fae59);
+            
+        
+
+        circle_marker_a55d18a5ca25a212ebda28dccd3db1ea.bindPopup(popup_5b007577ecccac3f9fa43b0c2f9889f9)
+        ;
+
+        
+    
+    
+            var circle_marker_8d364d5486c54c9b4c09aa092a88d6dc = L.circleMarker(
+                [34.5228, 33.9022],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_f4a6ee70275348656bdd22c185f3515f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c490fb05b08f6e86cc3aed394b0a9014 = $(`<div id="html_c490fb05b08f6e86cc3aed394b0a9014" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-05-06 19:59 → 2025-05-06 21:59 UTC<br>2.0 h</div>`)[0];
+                popup_f4a6ee70275348656bdd22c185f3515f.setContent(html_c490fb05b08f6e86cc3aed394b0a9014);
+            
+        
+
+        circle_marker_8d364d5486c54c9b4c09aa092a88d6dc.bindPopup(popup_f4a6ee70275348656bdd22c185f3515f)
+        ;
+
+        
+    
+    
+            var circle_marker_6aa79f93dc2685288b07bb6880b9f21b = L.circleMarker(
+                [34.2719, 33.4539],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_182372e48111d293a86864b06442a9a3 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_24164866fbc922098f9af1eea44858fb = $(`<div id="html_24164866fbc922098f9af1eea44858fb" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-05-24 15:55 → 2025-05-26 12:59 UTC<br>45.1 h<br><span style='color:#d7301f'>⚑ 45.1 h, 191.0 km from nearest seen port; C VIKING (SLE): 45.0 h overlap, 2.96 km apart</span></div>`)[0];
+                popup_182372e48111d293a86864b06442a9a3.setContent(html_24164866fbc922098f9af1eea44858fb);
+            
+        
+
+        circle_marker_6aa79f93dc2685288b07bb6880b9f21b.bindPopup(popup_182372e48111d293a86864b06442a9a3)
+        ;
+
+        
+    
+    
+            var circle_marker_f0d19db5fb69a7e446f39a4c4774e53e = L.circleMarker(
+                [34.4052, 33.5922],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_264769c72a50a0ed70a6227f08a7030a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c7f51a5d696a4048c67b231382366dbe = $(`<div id="html_c7f51a5d696a4048c67b231382366dbe" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-05-26 14:59 → 2025-05-27 09:59 UTC<br>19.0 h<br><span style='color:#d7301f'>⚑ 19.0 h, 187.0 km from nearest seen port</span></div>`)[0];
+                popup_264769c72a50a0ed70a6227f08a7030a.setContent(html_c7f51a5d696a4048c67b231382366dbe);
+            
+        
+
+        circle_marker_f0d19db5fb69a7e446f39a4c4774e53e.bindPopup(popup_264769c72a50a0ed70a6227f08a7030a)
+        ;
+
+        
+    
+    
+            var circle_marker_34a6fa9fbffdb332a321d0f0048830a7 = L.circleMarker(
+                [34.1825, 33.1958],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_c21226df59d9c501b9f2b64e87bf69ea = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b43f0eb907d8a1e75a75d643b40864f4 = $(`<div id="html_b43f0eb907d8a1e75a75d643b40864f4" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-05-27 13:59 → 2025-05-27 14:59 UTC<br>1.0 h</div>`)[0];
+                popup_c21226df59d9c501b9f2b64e87bf69ea.setContent(html_b43f0eb907d8a1e75a75d643b40864f4);
+            
+        
+
+        circle_marker_34a6fa9fbffdb332a321d0f0048830a7.bindPopup(popup_c21226df59d9c501b9f2b64e87bf69ea)
+        ;
+
+        
+    
+    
+            var circle_marker_b50d726252262083db2762166f910180 = L.circleMarker(
+                [34.1954, 33.2659],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_6377ef91439503874679bfbd12c080df = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_27e874abbf83fb928ea316930c077b89 = $(`<div id="html_27e874abbf83fb928ea316930c077b89" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-05-27 17:59 → 2025-05-28 20:59 UTC<br>27.0 h<br><span style='color:#d7301f'>⚑ 27.0 h, 204.0 km from nearest seen port; INDRAS (PAN): 27.0 h overlap, 2.43 km apart</span></div>`)[0];
+                popup_6377ef91439503874679bfbd12c080df.setContent(html_27e874abbf83fb928ea316930c077b89);
+            
+        
+
+        circle_marker_b50d726252262083db2762166f910180.bindPopup(popup_6377ef91439503874679bfbd12c080df)
+        ;
+
+        
+    
+    
+            var circle_marker_565e35d655c65b85a80c909e4a5d6c05 = L.circleMarker(
+                [34.2032, 33.3988],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_d18cf2278845a01aabd496767d108265 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7918f4b9060540b272660cdcf4aade32 = $(`<div id="html_7918f4b9060540b272660cdcf4aade32" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-05-28 23:59 → 2025-05-29 11:59 UTC<br>12.0 h<br><span style='color:#d7301f'>⚑ 12.0 h, 193.0 km from nearest seen port</span></div>`)[0];
+                popup_d18cf2278845a01aabd496767d108265.setContent(html_7918f4b9060540b272660cdcf4aade32);
+            
+        
+
+        circle_marker_565e35d655c65b85a80c909e4a5d6c05.bindPopup(popup_d18cf2278845a01aabd496767d108265)
+        ;
+
+        
+    
+    
+            var circle_marker_4cb56c2faa09c68feffae549883b878c = L.circleMarker(
+                [34.1467, 33.5264],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_38b12079b3dde64f72e0818a2f837176 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6689beeb7be281468731eb9436dd0999 = $(`<div id="html_6689beeb7be281468731eb9436dd0999" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-05-29 12:57 → 2025-05-30 05:51 UTC<br>16.9 h<br><span style='color:#d7301f'>⚑ 16.9 h, 179.0 km from nearest seen port</span></div>`)[0];
+                popup_38b12079b3dde64f72e0818a2f837176.setContent(html_6689beeb7be281468731eb9436dd0999);
+            
+        
+
+        circle_marker_4cb56c2faa09c68feffae549883b878c.bindPopup(popup_38b12079b3dde64f72e0818a2f837176)
+        ;
+
+        
+    
+    
+            var circle_marker_39a67d18a3d4a22faa9f3f03c0ce968d = L.circleMarker(
+                [33.3237, 33.1731],
+                {"bubblingMouseEvents": true, "color": "#7b3294", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7b3294", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2b029dce5e2f9836dde124b0e3114853);
+        
+    
+        var popup_4a32c60ee73a6607b6c9d82ddeb667ba = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5da4af0d3a34ef9ef405479924a9e187 = $(`<div id="html_5da4af0d3a34ef9ef405479924a9e187" style="width: 100.0%; height: 100.0%;"><b>loitering</b><br>2025-05-30 11:56 → 2025-05-30 18:52 UTC<br>6.9 h<br><span style='color:#d7301f'>⚑ 6.9 h, 201.0 km from nearest seen port</span></div>`)[0];
+                popup_4a32c60ee73a6607b6c9d82ddeb667ba.setContent(html_5da4af0d3a34ef9ef405479924a9e187);
+            
+        
+
+        circle_marker_39a67d18a3d4a22faa9f3f03c0ce968d.bindPopup(popup_4a32c60ee73a6607b6c9d82ddeb667ba)
+        ;
+
+        
+    
+    
+            feature_group_2b029dce5e2f9836dde124b0e3114853.addTo(map_020d826eaef4ce877ce22d144f3d2fa2);
+        
+    
+            var feature_group_987a662281009caff1dc5751e1c6e867 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b6bfa9404d5a08dbbf8db264b6729ef6 = L.marker(
+                [36.136, 14.9114],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_798e661e431825ce825d73f0078563b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2ae2dc4770983b3af2399cfa66d0dfdb = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_eab803b16417e11d3a5b2b41b8e9cca1 = $(`<div id="html_eab803b16417e11d3a5b2b41b8e9cca1" style="width: 100.0%; height: 100.0%;"><b>BEKS BEBEK</b> (MHL, IMO ?, OTHER_NON_FISHING)<br>14.0 h overlap, 0.04 km apart<br>2024-01-11<br><b>ALONGSIDE</b> (≤ 0.5 km)</div>`)[0];
+                popup_2ae2dc4770983b3af2399cfa66d0dfdb.setContent(html_eab803b16417e11d3a5b2b41b8e9cca1);
+            
+        
+
+        marker_b6bfa9404d5a08dbbf8db264b6729ef6.bindPopup(popup_2ae2dc4770983b3af2399cfa66d0dfdb)
+        ;
+
+        
+    
+    
+                marker_b6bfa9404d5a08dbbf8db264b6729ef6.setIcon(icon_798e661e431825ce825d73f0078563b3);
+            
+    
+            var marker_fa3398ad8c2bdd036c1d23464c62a0a4 = L.marker(
+                [37.3625, 15.9495],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_b849e435d2ad324a87a356778745bf57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea6c947005fab0ecb487fbda14f903c3 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_27584271148b4ca319f1bb6003899747 = $(`<div id="html_27584271148b4ca319f1bb6003899747" style="width: 100.0%; height: 100.0%;"><b>OSCAR</b> (LBR, IMO 9365386, OTHER_NON_FISHING)<br>5.0 h overlap, 3.11 km apart<br>2024-01-18</div>`)[0];
+                popup_ea6c947005fab0ecb487fbda14f903c3.setContent(html_27584271148b4ca319f1bb6003899747);
+            
+        
+
+        marker_fa3398ad8c2bdd036c1d23464c62a0a4.bindPopup(popup_ea6c947005fab0ecb487fbda14f903c3)
+        ;
+
+        
+    
+    
+                marker_fa3398ad8c2bdd036c1d23464c62a0a4.setIcon(icon_b849e435d2ad324a87a356778745bf57);
+            
+    
+            var marker_e79ab10a4dae4917088fcb2a6e383e0a = L.marker(
+                [37.171, 15.7105],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_f50b700100359ad8e9d5abbe6f7ced28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_034a25849d627be90eb7b38602e82cec = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_96ee0749637014e9dad4a9eea7078c01 = $(`<div id="html_96ee0749637014e9dad4a9eea7078c01" style="width: 100.0%; height: 100.0%;"><b>OSCAR</b> (LBR, IMO 9365386, OTHER_NON_FISHING)<br>20.0 h overlap, 4.03 km apart<br>2024-01-22</div>`)[0];
+                popup_034a25849d627be90eb7b38602e82cec.setContent(html_96ee0749637014e9dad4a9eea7078c01);
+            
+        
+
+        marker_e79ab10a4dae4917088fcb2a6e383e0a.bindPopup(popup_034a25849d627be90eb7b38602e82cec)
+        ;
+
+        
+    
+    
+                marker_e79ab10a4dae4917088fcb2a6e383e0a.setIcon(icon_f50b700100359ad8e9d5abbe6f7ced28);
+            
+    
+            var marker_74a8f7a400ccfa910802ecb873c4b99c = L.marker(
+                [37.171, 15.7105],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_dfc14b9760dd00965a0cd11b0058ddab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9b9ed3f25fdcf2154a53a33ad00ca78 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_690cdd8a2364a51d149595a9f5814863 = $(`<div id="html_690cdd8a2364a51d149595a9f5814863" style="width: 100.0%; height: 100.0%;"><b>SAUGER</b> (MHL, IMO 9273442, OTHER_NON_FISHING)<br>20.0 h overlap, 4.06 km apart<br>2024-01-22<br><b style='color:#d7301f'>LISTED</b></div>`)[0];
+                popup_a9b9ed3f25fdcf2154a53a33ad00ca78.setContent(html_690cdd8a2364a51d149595a9f5814863);
+            
+        
+
+        marker_74a8f7a400ccfa910802ecb873c4b99c.bindPopup(popup_a9b9ed3f25fdcf2154a53a33ad00ca78)
+        ;
+
+        
+    
+    
+                marker_74a8f7a400ccfa910802ecb873c4b99c.setIcon(icon_dfc14b9760dd00965a0cd11b0058ddab);
+            
+    
+            var marker_6e47ad55897340a5c7b3bfa41f4d0eb1 = L.marker(
+                [37.3044, 15.6547],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_8679eaa034ca565c8ef61733bf14a85c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_390d1124fa69b7aff58ca40e7df6dfe0 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8e65d20fba148da96c1e935242d2b837 = $(`<div id="html_8e65d20fba148da96c1e935242d2b837" style="width: 100.0%; height: 100.0%;"><b>MOUNT OLYMPUS</b> (MHL, IMO 9260081, INSUFFICIENT_DATA,OTHER_NON_FISHING)<br>40.0 h overlap, 3.84 km apart<br>2024-01-24</div>`)[0];
+                popup_390d1124fa69b7aff58ca40e7df6dfe0.setContent(html_8e65d20fba148da96c1e935242d2b837);
+            
+        
+
+        marker_6e47ad55897340a5c7b3bfa41f4d0eb1.bindPopup(popup_390d1124fa69b7aff58ca40e7df6dfe0)
+        ;
+
+        
+    
+    
+                marker_6e47ad55897340a5c7b3bfa41f4d0eb1.setIcon(icon_8679eaa034ca565c8ef61733bf14a85c);
+            
+    
+            var marker_dc558625f93674609365700b8b103b25 = L.marker(
+                [37.3044, 15.6547],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_e5b8714de0ca56f2249345f638e18e90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b20a03ce934f4c34fa10ff168882b7db = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5e0bdfb72b05b8aca37164c7fa2bcd3b = $(`<div id="html_5e0bdfb72b05b8aca37164c7fa2bcd3b" style="width: 100.0%; height: 100.0%;"><b>MOUNT OLYMPUS</b> (MHL, IMO 9260081, INSUFFICIENT_DATA,OTHER_NON_FISHING)<br>12.0 h overlap, 4.64 km apart<br>2024-01-24</div>`)[0];
+                popup_b20a03ce934f4c34fa10ff168882b7db.setContent(html_5e0bdfb72b05b8aca37164c7fa2bcd3b);
+            
+        
+
+        marker_dc558625f93674609365700b8b103b25.bindPopup(popup_b20a03ce934f4c34fa10ff168882b7db)
+        ;
+
+        
+    
+    
+                marker_dc558625f93674609365700b8b103b25.setIcon(icon_e5b8714de0ca56f2249345f638e18e90);
+            
+    
+            var marker_260f24c7562fbba1da5532fd179c1e65 = L.marker(
+                [37.1856, 15.7348],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_789a7313e38c835e30f5624e2bc8b91c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29f1abb019ea3d2642e3ed5e6f8b0fd2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_11885a1039be976f96f0737b0de65da8 = $(`<div id="html_11885a1039be976f96f0737b0de65da8" style="width: 100.0%; height: 100.0%;"><b>ORIZZONTE</b> (ITA, IMO ?, FISHING)<br>7.7 h overlap, 3.36 km apart<br>2024-02-06</div>`)[0];
+                popup_29f1abb019ea3d2642e3ed5e6f8b0fd2.setContent(html_11885a1039be976f96f0737b0de65da8);
+            
+        
+
+        marker_260f24c7562fbba1da5532fd179c1e65.bindPopup(popup_29f1abb019ea3d2642e3ed5e6f8b0fd2)
+        ;
+
+        
+    
+    
+                marker_260f24c7562fbba1da5532fd179c1e65.setIcon(icon_789a7313e38c835e30f5624e2bc8b91c);
+            
+    
+            var marker_6e6b6b931592408a1eedae8e8401645a = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_8cce541db531788482775d6c86fdc28d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e8c264f7a0a424047c067658c125602 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0755db52b877702e684bb950093bb727 = $(`<div id="html_0755db52b877702e684bb950093bb727" style="width: 100.0%; height: 100.0%;"><b>CHIOS</b> (COM, IMO 7113375, OTHER_NON_FISHING)<br>52.1 h overlap, 3.54 km apart<br>2025-03-25<br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_2e8c264f7a0a424047c067658c125602.setContent(html_0755db52b877702e684bb950093bb727);
+            
+        
+
+        marker_6e6b6b931592408a1eedae8e8401645a.bindPopup(popup_2e8c264f7a0a424047c067658c125602)
+        ;
+
+        
+    
+    
+                marker_6e6b6b931592408a1eedae8e8401645a.setIcon(icon_8cce541db531788482775d6c86fdc28d);
+            
+    
+            var marker_c4e88bc1bec2713027dd675abcb5bf2a = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_83c6b81fc2ac44c3dbd14335da52cfe0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3dc123045d7248f9dd6899429d07c638 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b45cf6f892ff2e8ec77781311f4e65f8 = $(`<div id="html_b45cf6f892ff2e8ec77781311f4e65f8" style="width: 100.0%; height: 100.0%;"><b>GEN. POLAD HASHIMOV</b> (LBR, IMO 9575307, OTHER_NON_FISHING)<br>15.0 h overlap, 4.05 km apart<br>2025-03-25<br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_3dc123045d7248f9dd6899429d07c638.setContent(html_b45cf6f892ff2e8ec77781311f4e65f8);
+            
+        
+
+        marker_c4e88bc1bec2713027dd675abcb5bf2a.bindPopup(popup_3dc123045d7248f9dd6899429d07c638)
+        ;
+
+        
+    
+    
+                marker_c4e88bc1bec2713027dd675abcb5bf2a.setIcon(icon_83c6b81fc2ac44c3dbd14335da52cfe0);
+            
+    
+            var marker_2b11d129a2b74f60d96b24483fbc6c8e = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_c26b507cd40d21dca12523806a199a68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55c96cfec57bced591182194cd8a06fd = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f3280c3b67d442d7024b038b6b9f8d61 = $(`<div id="html_f3280c3b67d442d7024b038b6b9f8d61" style="width: 100.0%; height: 100.0%;"><b>ARCADIA</b> (OMN, IMO 9413573, OTHER_NON_FISHING)<br>16.0 h overlap, 1.38 km apart<br>2025-03-25<br><b style='color:#d7301f'>LISTED</b><br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_55c96cfec57bced591182194cd8a06fd.setContent(html_f3280c3b67d442d7024b038b6b9f8d61);
+            
+        
+
+        marker_2b11d129a2b74f60d96b24483fbc6c8e.bindPopup(popup_55c96cfec57bced591182194cd8a06fd)
+        ;
+
+        
+    
+    
+                marker_2b11d129a2b74f60d96b24483fbc6c8e.setIcon(icon_c26b507cd40d21dca12523806a199a68);
+            
+    
+            var marker_20bb9039a868dca0a20266bb352f7451 = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_caaaf7b4840dddb320f87b1dbccdaee1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee2861173358897becf6c855dba2c581 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_821d988d55f10db722f1c9bce223156a = $(`<div id="html_821d988d55f10db722f1c9bce223156a" style="width: 100.0%; height: 100.0%;"><b>RINA</b> (COM, IMO 9118159, OTHER_NON_FISHING)<br>21.0 h overlap, 3.97 km apart<br>2025-03-25<br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_ee2861173358897becf6c855dba2c581.setContent(html_821d988d55f10db722f1c9bce223156a);
+            
+        
+
+        marker_20bb9039a868dca0a20266bb352f7451.bindPopup(popup_ee2861173358897becf6c855dba2c581)
+        ;
+
+        
+    
+    
+                marker_20bb9039a868dca0a20266bb352f7451.setIcon(icon_caaaf7b4840dddb320f87b1dbccdaee1);
+            
+    
+            var marker_bf86646b91e3ef8df7fdb8fe64b8e232 = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_47fb1eb53387ab962db3da5706644ee2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9c49edb1ded57e164eeb5e828e0570b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4c5e3372772de670799cc24334792efc = $(`<div id="html_4c5e3372772de670799cc24334792efc" style="width: 100.0%; height: 100.0%;"><b>SEA BREEZE</b> (PLW, IMO 7116781, CARGO)<br>2.9 h overlap, 3.08 km apart<br>2025-03-25<br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_d9c49edb1ded57e164eeb5e828e0570b.setContent(html_4c5e3372772de670799cc24334792efc);
+            
+        
+
+        marker_bf86646b91e3ef8df7fdb8fe64b8e232.bindPopup(popup_d9c49edb1ded57e164eeb5e828e0570b)
+        ;
+
+        
+    
+    
+                marker_bf86646b91e3ef8df7fdb8fe64b8e232.setIcon(icon_47fb1eb53387ab962db3da5706644ee2);
+            
+    
+            var marker_64c6e5f09220f673039348f160e89b8a = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_082ae64c25998148e9046febe3ef85ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8790fd43a2c3a173e69fb963e5c83f2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_4c76a9ee369bb01946a0c1cecf07f8b1 = $(`<div id="html_4c76a9ee369bb01946a0c1cecf07f8b1" style="width: 100.0%; height: 100.0%;"><b>LEGACY</b> (COM, IMO 9339337, OTHER_NON_FISHING)<br>129.5 h overlap, 2.9 km apart<br>2025-03-25<br><b style='color:#d7301f'>LISTED</b><br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_c8790fd43a2c3a173e69fb963e5c83f2.setContent(html_4c76a9ee369bb01946a0c1cecf07f8b1);
+            
+        
+
+        marker_64c6e5f09220f673039348f160e89b8a.bindPopup(popup_c8790fd43a2c3a173e69fb963e5c83f2)
+        ;
+
+        
+    
+    
+                marker_64c6e5f09220f673039348f160e89b8a.setIcon(icon_082ae64c25998148e9046febe3ef85ac);
+            
+    
+            var marker_4a956f76e7d7a363824b1e94281377a3 = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_fefff8398f04afc50e04cf128d193805 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd3adeddd7327bc0a6e9d2e30cee39c2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5df06000f9c82f9d752b4d574a2fc080 = $(`<div id="html_5df06000f9c82f9d752b4d574a2fc080" style="width: 100.0%; height: 100.0%;"><b>ARCADIA</b> (OMN, IMO 9413573, OTHER_NON_FISHING)<br>66.0 h overlap, 2.67 km apart<br>2025-03-25<br><b style='color:#d7301f'>LISTED</b><br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_cd3adeddd7327bc0a6e9d2e30cee39c2.setContent(html_5df06000f9c82f9d752b4d574a2fc080);
+            
+        
+
+        marker_4a956f76e7d7a363824b1e94281377a3.bindPopup(popup_cd3adeddd7327bc0a6e9d2e30cee39c2)
+        ;
+
+        
+    
+    
+                marker_4a956f76e7d7a363824b1e94281377a3.setIcon(icon_fefff8398f04afc50e04cf128d193805);
+            
+    
+            var marker_8ebd292901b8f43b4ef0571415b1d8fc = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_357b8e2ec64d917538a58fadcfd857a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cdc8803f15dcc98d588b24bf8546957 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_237292d6520731be1bd281cbcc0e1da1 = $(`<div id="html_237292d6520731be1bd281cbcc0e1da1" style="width: 100.0%; height: 100.0%;"><b>CHEM ABBEY</b> (LBR, IMO 9937971, OTHER_NON_FISHING)<br>37.0 h overlap, 2.11 km apart<br>2025-03-25<br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_7cdc8803f15dcc98d588b24bf8546957.setContent(html_237292d6520731be1bd281cbcc0e1da1);
+            
+        
+
+        marker_8ebd292901b8f43b4ef0571415b1d8fc.bindPopup(popup_7cdc8803f15dcc98d588b24bf8546957)
+        ;
+
+        
+    
+    
+                marker_8ebd292901b8f43b4ef0571415b1d8fc.setIcon(icon_357b8e2ec64d917538a58fadcfd857a3);
+            
+    
+            var marker_71be60cf4973fc3d45ba595031e7b7fa = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_942c1aff0fe583fb1424e994429a1083 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ef1dc28cef049c7a290e51b3fa872e5 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7a2416d5fcdf980e1e3594c0f0fed695 = $(`<div id="html_7a2416d5fcdf980e1e3594c0f0fed695" style="width: 100.0%; height: 100.0%;"><b>AILAMA</b> (GMB, IMO 9232888, OTHER_NON_FISHING)<br>9.0 h overlap, 4.88 km apart<br>2025-03-25<br><b style='color:#d7301f'>LISTED</b><br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_0ef1dc28cef049c7a290e51b3fa872e5.setContent(html_7a2416d5fcdf980e1e3594c0f0fed695);
+            
+        
+
+        marker_71be60cf4973fc3d45ba595031e7b7fa.bindPopup(popup_0ef1dc28cef049c7a290e51b3fa872e5)
+        ;
+
+        
+    
+    
+                marker_71be60cf4973fc3d45ba595031e7b7fa.setIcon(icon_942c1aff0fe583fb1424e994429a1083);
+            
+    
+            var marker_926e2143af2988832211dc241aed9fd7 = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_cbeaf0ee4b4b5e708f23d8d7f634b121 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2363e631724b18e199e0dbb5ad744c1c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3e6142d73e937917a8b17144249a4e5e = $(`<div id="html_3e6142d73e937917a8b17144249a4e5e" style="width: 100.0%; height: 100.0%;"><b>SEA ARGUS</b> (GMB, IMO 9004815, OTHER_NON_FISHING)<br>11.0 h overlap, 3.7 km apart<br>2025-03-25<br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_2363e631724b18e199e0dbb5ad744c1c.setContent(html_3e6142d73e937917a8b17144249a4e5e);
+            
+        
+
+        marker_926e2143af2988832211dc241aed9fd7.bindPopup(popup_2363e631724b18e199e0dbb5ad744c1c)
+        ;
+
+        
+    
+    
+                marker_926e2143af2988832211dc241aed9fd7.setIcon(icon_cbeaf0ee4b4b5e708f23d8d7f634b121);
+            
+    
+            var marker_dd2f26f17c9f4e36ee7b139109ae97b1 = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_f9c4bc5a3c1a8ac5b28ea9c7ce79d614 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_784a45b7a35ea2a6c65e54524398986c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c0f705f55742ff48d78c136d8e911218 = $(`<div id="html_c0f705f55742ff48d78c136d8e911218" style="width: 100.0%; height: 100.0%;"><b>SILVAR</b> (PAN, IMO 9291262, OTHER_NON_FISHING)<br>15.0 h overlap, 2.52 km apart<br>2025-03-25<br><b style='color:#d7301f'>LISTED</b><br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_784a45b7a35ea2a6c65e54524398986c.setContent(html_c0f705f55742ff48d78c136d8e911218);
+            
+        
+
+        marker_dd2f26f17c9f4e36ee7b139109ae97b1.bindPopup(popup_784a45b7a35ea2a6c65e54524398986c)
+        ;
+
+        
+    
+    
+                marker_dd2f26f17c9f4e36ee7b139109ae97b1.setIcon(icon_f9c4bc5a3c1a8ac5b28ea9c7ce79d614);
+            
+    
+            var marker_171ebc497999075b1d668425b5d098b7 = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_c59f53dd0a86dd13a116a3c3133c4f5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31c56d34680cb643c8298a275a3a06cd = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_fd2ad4d465391a6ecdd5592627da046c = $(`<div id="html_fd2ad4d465391a6ecdd5592627da046c" style="width: 100.0%; height: 100.0%;"><b>MARIDIVE  601</b> (BLZ, IMO 9643374, OTHER_NON_FISHING)<br>3.1 h overlap, 2.55 km apart<br>2025-03-25<br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_31c56d34680cb643c8298a275a3a06cd.setContent(html_fd2ad4d465391a6ecdd5592627da046c);
+            
+        
+
+        marker_171ebc497999075b1d668425b5d098b7.bindPopup(popup_31c56d34680cb643c8298a275a3a06cd)
+        ;
+
+        
+    
+    
+                marker_171ebc497999075b1d668425b5d098b7.setIcon(icon_c59f53dd0a86dd13a116a3c3133c4f5c);
+            
+    
+            var marker_2a52a899329c755e5a72bc0eb6d9c969 = L.marker(
+                [31.7424, 32.2629],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_7281651a154736889c4768cda12f33e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_472f65ab16a2e0a455434e29b54ff562 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6bf6b120ff606d55a80819f67de2fe71 = $(`<div id="html_6bf6b120ff606d55a80819f67de2fe71" style="width: 100.0%; height: 100.0%;"><b>FU HAI WAN</b> (PAN, IMO 9368235, OTHER_NON_FISHING)<br>8.0 h overlap, 4.59 km apart<br>2025-03-25<br><b style='color:#d7301f'>LISTED</b><br>crowded area: 12 ships (probably anchorage/queue)</div>`)[0];
+                popup_472f65ab16a2e0a455434e29b54ff562.setContent(html_6bf6b120ff606d55a80819f67de2fe71);
+            
+        
+
+        marker_2a52a899329c755e5a72bc0eb6d9c969.bindPopup(popup_472f65ab16a2e0a455434e29b54ff562)
+        ;
+
+        
+    
+    
+                marker_2a52a899329c755e5a72bc0eb6d9c969.setIcon(icon_7281651a154736889c4768cda12f33e2);
+            
+    
+            var marker_22babd48b48d4a1718666e3b23ca8b69 = L.marker(
+                [31.7412, 32.2638],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_a1b16717ec31820b2446446063661085 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2798a9590fb340a5d5aeb4727d8fdc5 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7e31d831f00ce4de622c90ef44e40a55 = $(`<div id="html_7e31d831f00ce4de622c90ef44e40a55" style="width: 100.0%; height: 100.0%;"><b>ARCADIA</b> (OMN, IMO 9413573, OTHER_NON_FISHING)<br>104.0 h overlap, 2.79 km apart<br>2025-03-31<br><b style='color:#d7301f'>LISTED</b><br>crowded area: 6 ships (probably anchorage/queue)</div>`)[0];
+                popup_f2798a9590fb340a5d5aeb4727d8fdc5.setContent(html_7e31d831f00ce4de622c90ef44e40a55);
+            
+        
+
+        marker_22babd48b48d4a1718666e3b23ca8b69.bindPopup(popup_f2798a9590fb340a5d5aeb4727d8fdc5)
+        ;
+
+        
+    
+    
+                marker_22babd48b48d4a1718666e3b23ca8b69.setIcon(icon_a1b16717ec31820b2446446063661085);
+            
+    
+            var marker_d6b7bb3b20008ddf48d45f487d441cbf = L.marker(
+                [31.7412, 32.2638],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_e2fef0d0d878889c6f7a62e0dfb51e8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_963cca118a7a13ae49d9e3fe27770020 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_444d3bceab809a09aecb928735a679f5 = $(`<div id="html_444d3bceab809a09aecb928735a679f5" style="width: 100.0%; height: 100.0%;"><b>CHIOS</b> (COM, IMO 7113375, OTHER_NON_FISHING)<br>179.0 h overlap, 2.76 km apart<br>2025-03-31<br>crowded area: 6 ships (probably anchorage/queue)</div>`)[0];
+                popup_963cca118a7a13ae49d9e3fe27770020.setContent(html_444d3bceab809a09aecb928735a679f5);
+            
+        
+
+        marker_d6b7bb3b20008ddf48d45f487d441cbf.bindPopup(popup_963cca118a7a13ae49d9e3fe27770020)
+        ;
+
+        
+    
+    
+                marker_d6b7bb3b20008ddf48d45f487d441cbf.setIcon(icon_e2fef0d0d878889c6f7a62e0dfb51e8e);
+            
+    
+            var marker_0c321ad8b1fafbdb74c279b1bf8ab613 = L.marker(
+                [31.7412, 32.2638],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_81280c8b9294f1d9ebed5daf82b02eac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f330502bb469da9e965f4aad3935d7c4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_85bfb208b225e9b0a10c1f275162fc17 = $(`<div id="html_85bfb208b225e9b0a10c1f275162fc17" style="width: 100.0%; height: 100.0%;"><b>IZOLA</b> (BRB, IMO 9249312, OTHER_NON_FISHING)<br>27.0 h overlap, 4.15 km apart<br>2025-03-31<br><b style='color:#d7301f'>LISTED</b><br>crowded area: 6 ships (probably anchorage/queue)</div>`)[0];
+                popup_f330502bb469da9e965f4aad3935d7c4.setContent(html_85bfb208b225e9b0a10c1f275162fc17);
+            
+        
+
+        marker_0c321ad8b1fafbdb74c279b1bf8ab613.bindPopup(popup_f330502bb469da9e965f4aad3935d7c4)
+        ;
+
+        
+    
+    
+                marker_0c321ad8b1fafbdb74c279b1bf8ab613.setIcon(icon_81280c8b9294f1d9ebed5daf82b02eac);
+            
+    
+            var marker_6f18485f7ec95f8078d5db13c53c23cf = L.marker(
+                [31.7412, 32.2638],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_768b62ea58fc0bf5919570a4ebb40027 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a4c222619772575d217fda67ebd2e84 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e4a4c8f170732d8c2a975345b4afd234 = $(`<div id="html_e4a4c8f170732d8c2a975345b4afd234" style="width: 100.0%; height: 100.0%;"><b>GOLD PEARL</b> (VNM, IMO 9292187, OTHER_NON_FISHING)<br>51.0 h overlap, 4.75 km apart<br>2025-03-31<br><b style='color:#d7301f'>LISTED</b><br>crowded area: 6 ships (probably anchorage/queue)</div>`)[0];
+                popup_9a4c222619772575d217fda67ebd2e84.setContent(html_e4a4c8f170732d8c2a975345b4afd234);
+            
+        
+
+        marker_6f18485f7ec95f8078d5db13c53c23cf.bindPopup(popup_9a4c222619772575d217fda67ebd2e84)
+        ;
+
+        
+    
+    
+                marker_6f18485f7ec95f8078d5db13c53c23cf.setIcon(icon_768b62ea58fc0bf5919570a4ebb40027);
+            
+    
+            var marker_9b31f94fc09cc24d2ce56ac0b3191b73 = L.marker(
+                [31.7412, 32.2638],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_5850d73264fa8a5c0cd25a61e40591e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgray",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_948dd0869f89b055d046dbf4d7492b3e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_fd0168578177650bbfc498cc69bc0e16 = $(`<div id="html_fd0168578177650bbfc498cc69bc0e16" style="width: 100.0%; height: 100.0%;"><b>NEAMAH MEN ALLAH ELP</b> (EGY, IMO ?, PASSENGER)<br>2.9 h overlap, 4.24 km apart<br>2025-03-31<br>crowded area: 6 ships (probably anchorage/queue)</div>`)[0];
+                popup_948dd0869f89b055d046dbf4d7492b3e.setContent(html_fd0168578177650bbfc498cc69bc0e16);
+            
+        
+
+        marker_9b31f94fc09cc24d2ce56ac0b3191b73.bindPopup(popup_948dd0869f89b055d046dbf4d7492b3e)
+        ;
+
+        
+    
+    
+                marker_9b31f94fc09cc24d2ce56ac0b3191b73.setIcon(icon_5850d73264fa8a5c0cd25a61e40591e7);
+            
+    
+            var marker_7524823f4ce7136881dec6df28d858c8 = L.marker(
+                [31.7412, 32.2638],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_36466050e3530fd118a4a6ca5be32648 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_100f8df409eb588eb196649307011a63 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_13b98a9bd4ccaefcc539d98437d280ac = $(`<div id="html_13b98a9bd4ccaefcc539d98437d280ac" style="width: 100.0%; height: 100.0%;"><b>N CERNA</b> (STP, IMO 9289520, OTHER_NON_FISHING)<br>6.1 h overlap, 2.4 km apart<br>2025-03-31<br><b style='color:#d7301f'>LISTED</b><br>crowded area: 6 ships (probably anchorage/queue)</div>`)[0];
+                popup_100f8df409eb588eb196649307011a63.setContent(html_13b98a9bd4ccaefcc539d98437d280ac);
+            
+        
+
+        marker_7524823f4ce7136881dec6df28d858c8.bindPopup(popup_100f8df409eb588eb196649307011a63)
+        ;
+
+        
+    
+    
+                marker_7524823f4ce7136881dec6df28d858c8.setIcon(icon_36466050e3530fd118a4a6ca5be32648);
+            
+    
+            var marker_d02caf7d4bc6b576f04cd7c85417d681 = L.marker(
+                [34.2565, 33.1009],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_040aa3bfdebb833a5c3f4f72d8858465 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fba37c3f07e24b446605b2af98319477 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_135ddb01f51d8f123d65244a9a5cac11 = $(`<div id="html_135ddb01f51d8f123d65244a9a5cac11" style="width: 100.0%; height: 100.0%;"><b>RCC PASSION</b> (BHS, IMO 9453107, CARGO)<br>6.0 h overlap, 4.52 km apart<br>2025-04-19</div>`)[0];
+                popup_fba37c3f07e24b446605b2af98319477.setContent(html_135ddb01f51d8f123d65244a9a5cac11);
+            
+        
+
+        marker_d02caf7d4bc6b576f04cd7c85417d681.bindPopup(popup_fba37c3f07e24b446605b2af98319477)
+        ;
+
+        
+    
+    
+                marker_d02caf7d4bc6b576f04cd7c85417d681.setIcon(icon_040aa3bfdebb833a5c3f4f72d8858465);
+            
+    
+            var marker_00389acea0e1ec7ad23d9e60e6cf8b43 = L.marker(
+                [34.2719, 33.4539],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_e4e5b7a44dacfd1fafe871386d5f67b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e9371de95c644fd0c7ed5bd3c392683 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c54db47fea755d3fd294ea43602b6417 = $(`<div id="html_c54db47fea755d3fd294ea43602b6417" style="width: 100.0%; height: 100.0%;"><b>C VIKING</b> (SLE, IMO 9261657, OTHER_NON_FISHING)<br>45.0 h overlap, 2.96 km apart<br>2025-05-24<br><b style='color:#d7301f'>LISTED</b></div>`)[0];
+                popup_5e9371de95c644fd0c7ed5bd3c392683.setContent(html_c54db47fea755d3fd294ea43602b6417);
+            
+        
+
+        marker_00389acea0e1ec7ad23d9e60e6cf8b43.bindPopup(popup_5e9371de95c644fd0c7ed5bd3c392683)
+        ;
+
+        
+    
+    
+                marker_00389acea0e1ec7ad23d9e60e6cf8b43.setIcon(icon_e4e5b7a44dacfd1fafe871386d5f67b0);
+            
+    
+            var marker_3f0d96f497bd2e6ab60a11e6504d623d = L.marker(
+                [34.1954, 33.2659],
+                {
+}
+            ).addTo(feature_group_987a662281009caff1dc5751e1c6e867);
+        
+    
+            var icon_bda946704c98a3fc5cd7c8180b4d7fc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "random",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bd96dd635ce7d8ce5528943c60e0029 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d9c49393365041014148284a571a5994 = $(`<div id="html_d9c49393365041014148284a571a5994" style="width: 100.0%; height: 100.0%;"><b>INDRAS</b> (PAN, IMO 9314894, OTHER_NON_FISHING)<br>27.0 h overlap, 2.43 km apart<br>2025-05-27<br><b style='color:#d7301f'>LISTED</b></div>`)[0];
+                popup_3bd96dd635ce7d8ce5528943c60e0029.setContent(html_d9c49393365041014148284a571a5994);
+            
+        
+
+        marker_3f0d96f497bd2e6ab60a11e6504d623d.bindPopup(popup_3bd96dd635ce7d8ce5528943c60e0029)
+        ;
+
+        
+    
+    
+                marker_3f0d96f497bd2e6ab60a11e6504d623d.setIcon(icon_bda946704c98a3fc5cd7c8180b4d7fc3);
+            
+    
+            feature_group_987a662281009caff1dc5751e1c6e867.addTo(map_020d826eaef4ce877ce22d144f3d2fa2);
+        
+    
+            var feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_7cc717d776ce727c6c975c6485c53c97 = L.circle(
+                [36.55, 22.7],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#444", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 1}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            circle_7cc717d776ce727c6c975c6485c53c97.bindTooltip(
+                `<div>
+                     STS area: Laconian Gulf (GR)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_af31727e06713ebcc04485da89e8b041 = L.circle(
+                [36.9, 22.0],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#444", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 1}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            circle_af31727e06713ebcc04485da89e8b041.bindTooltip(
+                `<div>
+                     STS area: Messinian Gulf / Kalamata (GR)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_47757fb486d06a584974783aa9ab207a = L.circle(
+                [35.9, -5.25],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#444", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 1}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            circle_47757fb486d06a584974783aa9ab207a.bindTooltip(
+                `<div>
+                     STS area: Off Ceuta (Strait of Gibraltar)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_6d43dd5a3dc48d98632b8addf9fc8607 = L.circle(
+                [1.3, 104.55],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#444", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 1}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            circle_6d43dd5a3dc48d98632b8addf9fc8607.bindTooltip(
+                `<div>
+                     STS area: Eastern OPL off Johor (MY)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_b2f15cd888c333d4b3147dc139a659a9 = L.circle(
+                [6.0, 1.3],
+                {"bubblingMouseEvents": true, "color": "#444", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#444", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 1}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            circle_b2f15cd888c333d4b3147dc139a659a9.bindTooltip(
+                `<div>
+                     STS area: Off Lomé (TG)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0cb9492c27371ba7ac204b55bcad136f = L.marker(
+                [60.35, 28.67],
+                {
+}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            var icon_23c53e66f80e5fd914f777d49d9d78bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0cb9492c27371ba7ac204b55bcad136f.bindTooltip(
+                `<div>
+                     Terminal: Primorsk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0cb9492c27371ba7ac204b55bcad136f.setIcon(icon_23c53e66f80e5fd914f777d49d9d78bc);
+            
+    
+            var marker_fd76227aa692661c88e7c76a99949a92 = L.marker(
+                [59.68, 28.4],
+                {
+}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            var icon_664097a26b05577e6c7d5699d8ea252f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_fd76227aa692661c88e7c76a99949a92.bindTooltip(
+                `<div>
+                     Terminal: Ust-Luga
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd76227aa692661c88e7c76a99949a92.setIcon(icon_664097a26b05577e6c7d5699d8ea252f);
+            
+    
+            var marker_ca30dc657a4bbbbc09d79a57ca77bfcf = L.marker(
+                [44.68, 37.79],
+                {
+}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            var icon_aba9e02be60a6582fb0e8ed978910085 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ca30dc657a4bbbbc09d79a57ca77bfcf.bindTooltip(
+                `<div>
+                     Terminal: Novorossiysk (Sheskharis)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca30dc657a4bbbbc09d79a57ca77bfcf.setIcon(icon_aba9e02be60a6582fb0e8ed978910085);
+            
+    
+            var marker_c1d9e30542aa82fd46ab21b296fd73d0 = L.marker(
+                [44.09, 39.07],
+                {
+}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            var icon_5b96eb66636576139b823ad7895de6ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c1d9e30542aa82fd46ab21b296fd73d0.bindTooltip(
+                `<div>
+                     Terminal: Tuapse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c1d9e30542aa82fd46ab21b296fd73d0.setIcon(icon_5b96eb66636576139b823ad7895de6ae);
+            
+    
+            var marker_dffba114293839b694a5ed0654572e53 = L.marker(
+                [68.97, 33.08],
+                {
+}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            var icon_b9f67c1ad4e5dcfdd23a8269ba920655 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dffba114293839b694a5ed0654572e53.bindTooltip(
+                `<div>
+                     Terminal: Murmansk
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dffba114293839b694a5ed0654572e53.setIcon(icon_b9f67c1ad4e5dcfdd23a8269ba920655);
+            
+    
+            var marker_ab47f00a69b3060c566f91d21aee3fef = L.marker(
+                [42.73, 133.08],
+                {
+}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            var icon_6d912a2885c6ebd8a0ca50aee5f2f50d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ab47f00a69b3060c566f91d21aee3fef.bindTooltip(
+                `<div>
+                     Terminal: Kozmino
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab47f00a69b3060c566f91d21aee3fef.setIcon(icon_6d912a2885c6ebd8a0ca50aee5f2f50d);
+            
+    
+            var marker_1022c5879bbb84f38c4590b03aaf756e = L.marker(
+                [51.47, 140.78],
+                {
+}
+            ).addTo(feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7);
+        
+    
+            var icon_1d6f62587ac7acdb748de9d782bff6aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1022c5879bbb84f38c4590b03aaf756e.bindTooltip(
+                `<div>
+                     Terminal: De-Kastri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1022c5879bbb84f38c4590b03aaf756e.setIcon(icon_1d6f62587ac7acdb748de9d782bff6aa);
+            
+    
+            feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7.addTo(map_020d826eaef4ce877ce22d144f3d2fa2);
+        
+    
+            var layer_control_d0e97115aa8761e7aba08c24788c59ca_layers = {
+                base_layers : {
+                    "Esri light grey" : tile_layer_5f16eb40282ffe4932dff767cef3ab3a,
+                },
+                overlays :  {
+                    "port visit" : feature_group_daa57c59d5571e700a49c5203c76f7d5,
+                    "gap" : feature_group_701ff13ef7cd110e6eb3cbbac962ede7,
+                    "encounter" : feature_group_f75f12dc08101e6ec18a6ef21977de4c,
+                    "loitering" : feature_group_2b029dce5e2f9836dde124b0e3114853,
+                    "co-located ships (candidate meetings)" : feature_group_987a662281009caff1dc5751e1c6e867,
+                    "STS hotspots \u0026 RU terminals (approx.)" : feature_group_129f5b7b74c55fe0ff62ae62f3e3cee7,
+                },
+            };
+            let layer_control_d0e97115aa8761e7aba08c24788c59ca = L.control.layers(
+                layer_control_d0e97115aa8761e7aba08c24788c59ca_layers.base_layers,
+                layer_control_d0e97115aa8761e7aba08c24788c59ca_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_020d826eaef4ce877ce22d144f3d2fa2);
+
+        
+    
+            map_020d826eaef4ce877ce22d144f3d2fa2.fitBounds(
+                [[-31.6348, -25.0139], [60.5374, 69.9469]],
+                {}
+            );
+        
+</script>
+</html>

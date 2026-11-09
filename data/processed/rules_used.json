@@ -6,5 +6,8 @@
   "loiter_min_h": 6.0,
   "loiter_min_port_dist_km": 20.0,
   "alongside_km": 0.5,
-  "crowd_max_partners": 4
+  "crowd_max_partners": 4,
+  "long_port_visit_days": 30.0,
+  "silence_min_days": 7.0,
+  "silence_max_knots": 1.5
 }
