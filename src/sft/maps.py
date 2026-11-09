@@ -36,7 +36,8 @@ def _popup(row: pd.Series, flagged: dict[str, str]) -> str:
     return "<br>".join(x for x in lines if x)
 
 
-def vessel_map(ev: pd.DataFrame, flags: pd.DataFrame, title: str) -> folium.Map:
+def vessel_map(ev: pd.DataFrame, flags: pd.DataFrame, title: str,
+               partners: pd.DataFrame | None = None) -> folium.Map:
     pts = ev[["lat", "lon"]].dropna()
     center = [pts["lat"].mean(), pts["lon"].mean()] if not pts.empty else [45, 20]
     m = folium.Map(location=center, zoom_start=4, tiles=None)
@@ -64,6 +65,22 @@ def vessel_map(ev: pd.DataFrame, flags: pd.DataFrame, title: str) -> folium.Map:
                                     popup=popup).add_to(layer)
         layer.add_to(m)
 
+    if partners is not None and not partners.empty:
+        layer = folium.FeatureGroup(name="co-located ships (candidate meetings)")
+        for _, p in partners.iterrows():
+            listed = bool(p.get("partner_listed"))
+
+            def s(col, default="?", p=p):
+                return html.escape(str(p[col])) if pd.notna(p.get(col)) else default
+            text = (f"<b>{s('partner_name')}</b> "
+                    f"({s('partner_flag')}, IMO {s('partner_imo')}, {s('partner_type', 'type ?')})<br>"
+                    f"{p['overlap_h']} h overlap, {p['dist_km']} km apart<br>"
+                    f"{p['start']:%Y-%m-%d}" + ("<br><b style='color:#d7301f'>LISTED</b>" if listed else ""))
+            folium.Marker((p["lat"], p["lon"]), popup=folium.Popup(text, max_width=320),
+                          icon=folium.Icon(color="red" if listed else "orange",
+                                           icon="random")).add_to(layer)
+        layer.add_to(m)
+
     ref = folium.FeatureGroup(name="STS hotspots & RU terminals (approx.)")
     for name, (la, lo) in STS_HOTSPOTS.items():
         folium.Circle((la, lo), radius=50_000, color="#444", fill=False, weight=1,
@@ -83,14 +100,18 @@ def vessel_map(ev: pd.DataFrame, flags: pd.DataFrame, title: str) -> folium.Map:
 
 
 def run(events: pd.DataFrame, flags: pd.DataFrame, vessels: pd.DataFrame,
-        summary: pd.DataFrame | None = None, out: Path = SITE) -> Path:
+        summary: pd.DataFrame | None = None, out: Path = SITE,
+        partners: pd.DataFrame | None = None) -> Path:
     out.mkdir(parents=True, exist_ok=True)
+    if partners is None:
+        partners = pd.DataFrame(columns=["imo"])
     names = vessels.set_index("imo")["name"].to_dict()
     groups = vessels.set_index("imo")["group"].to_dict()
     items = []
     for imo, ev in events.groupby("imo"):
         title = f"{names.get(imo, '')} (IMO {imo})"
-        vessel_map(ev, flags[flags["imo"] == imo], title).save(out / f"{imo}.html")
+        vessel_map(ev, flags[flags["imo"] == imo], title,
+                   partners[partners["imo"] == imo]).save(out / f"{imo}.html")
         n_flags = int((flags["imo"] == imo).sum())
         items.append(f"<tr><td><a href='{imo}.html'>{html.escape(title)}</a></td>"
                      f"<td>{html.escape(str(groups.get(imo, '')))}</td>"

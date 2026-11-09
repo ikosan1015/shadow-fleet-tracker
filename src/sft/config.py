@@ -13,6 +13,16 @@ RAW = DATA / "raw"
 PROCESSED = DATA / "processed"
 VESSELS_CSV = DATA / "vessels.csv"
 OWNERSHIP_CSV = DATA / "ownership.csv"
+WATCHLIST_CSV = DATA / "watchlist.csv"
+
+# Danish Maritime Authority historical AIS (free; daily files incl. draught).
+# Files are ~0.5-1 GB each. If the URL pattern changes, download by hand and put
+# the .zip or .csv in data/raw/dma/ — local files are used first.
+DMA_URLS = [
+    "http://web.ais.dk/aisdata/aisdk-{day}.zip",
+    "http://aisdata.ais.dk/aisdk-{day}.zip",
+]
+DMA_DIR = RAW / "dma"
 SITE = ROOT / "dashboard" / "site"
 
 API_BASE = "https://gateway.api.globalfishingwatch.org/v3"

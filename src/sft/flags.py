@@ -116,23 +116,67 @@ def open_sea_loitering(ev: pd.DataFrame, r: Rules) -> pd.DataFrame:
                  + d["port_km"].round(0).astype(str) + " km from nearest seen port")
 
 
-# ------------------------------------------------------------------ pipeline
-def apply_all(ev: pd.DataFrame, vessels: pd.DataFrame,
-              identities: pd.DataFrame | None = None, rules: Rules = Rules()) -> pd.DataFrame:
+def colocated_loitering(partners: pd.DataFrame) -> pd.DataFrame:
+    """From partners.parquet: our loitering overlapped another ship's, a few km apart."""
+    if partners is None or partners.empty:
+        return pd.DataFrame(columns=FLAG_COLUMNS)
+    rows = []
+    for (imo, eid), g in partners.groupby(["imo", "event_id"]):
+        listed = g[g["partner_listed"].fillna(False).astype(bool)]
+        best = (listed if not listed.empty else g).sort_values("overlap_h").iloc[-1]
+        name = best["partner_name"] if pd.notna(best["partner_name"]) else "?"
+        flag = best["partner_flag"] if pd.notna(best["partner_flag"]) else "?"
+        who = f"{name} ({flag})"
+        detail = (f"co-located with {who}: {best['overlap_h']} h overlap, {best['dist_km']} km"
+                  + (f" (+{len(g) - 1} more)" if len(g) > 1 else ""))
+        rule = "colocated_with_listed" if not listed.empty else "colocated_loitering"
+        rows.append({"imo": imo, "event_id": eid, "rule": rule, "start": best["start"],
+                     "lat": best["lat"], "lon": best["lon"], "detail": detail})
+    return pd.DataFrame(rows, columns=FLAG_COLUMNS)
+
+
+def load_watchlist(path=None) -> pd.DataFrame:
+    """Optional data/watchlist.csv (imo,name,list): ALL listed ships, not just the ones
+    you study, so meetings with any sanctioned vessel get recognised."""
+    from .config import WATCHLIST_CSV
+    path = path or WATCHLIST_CSV
+    if not path.exists():
+        return pd.DataFrame(columns=["imo", "name", "list"])
+    return pd.read_csv(path, comment="#", dtype=str).fillna("")
+
+
+def watch_sets(vessels: pd.DataFrame, identities: pd.DataFrame | None = None
+               ) -> tuple[set[str], set[str], set[str]]:
+    """(IMOs, normalised names, GFW vessel ids) treated as sanctioned."""
     sanctioned = vessels[vessels["group"].str.lower() == "sanctioned"]
-    watch_names = {norm_name(n) for n in sanctioned["name"] if n}
-    watch_ids: set[str] = set()
+    wl = load_watchlist()
+    imos = set(sanctioned["imo"]) | set(wl["imo"])
+    names = {norm_name(n) for n in list(sanctioned["name"]) + list(wl["name"]) if n}
+    ids: set[str] = set()
     if identities is not None and not identities.empty:
         sid = identities[identities["imo"].isin(sanctioned["imo"])]
-        watch_names |= {norm_name(n) for n in sid["shipname"].dropna()}
-        watch_ids |= set(sid["vessel_id"].dropna())
+        names |= {norm_name(n) for n in sid["shipname"].dropna()}
+        ids |= set(sid["vessel_id"].dropna())
+    names.discard("")
+    return imos, names, ids
+
+
+# ------------------------------------------------------------------ pipeline
+def apply_all(ev: pd.DataFrame, vessels: pd.DataFrame,
+              identities: pd.DataFrame | None = None, rules: Rules = Rules(),
+              partners: pd.DataFrame | None = None,
+              draught_flags: pd.DataFrame | None = None) -> pd.DataFrame:
+    _, watch_names, watch_ids = watch_sets(vessels, identities)
     parts = [
         long_gaps(ev, rules),
         gaps_near_hotspots(ev, rules),
         gaps_after_russian_terminal(ev, rules),
         encounters_with_listed(ev, watch_names, watch_ids),
         open_sea_loitering(ev, rules),
+        colocated_loitering(partners),
     ]
+    if draught_flags is not None and not draught_flags.empty:
+        parts.append(draught_flags.reindex(columns=FLAG_COLUMNS))
     parts = [p for p in parts if not p.empty]
     if not parts:
         return pd.DataFrame(columns=FLAG_COLUMNS)

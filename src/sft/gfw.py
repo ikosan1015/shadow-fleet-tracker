@@ -37,10 +37,20 @@ class GFWClient:
 
     # -- low level -----------------------------------------------------------
     def _get(self, path: str, params: list[tuple[str, str]]) -> dict:
+        return self._request("GET", path, params)
+
+    def _post(self, path: str, params: list[tuple[str, str]], body: dict) -> dict:
+        return self._request("POST", path, params, body)
+
+    def _request(self, method: str, path: str, params: list[tuple[str, str]],
+                 body: dict | None = None) -> dict:
         # keep [] and : readable, as in GFW's own examples
         url = f"{self.base}{path}?{urlencode(params, safe='[]:')}"
         for attempt in range(self.max_retries):
-            r = self.session.get(url, timeout=60)
+            if method == "POST":
+                r = self.session.post(url, json=body, timeout=60)
+            else:
+                r = self.session.get(url, timeout=60)
             if r.status_code == 429 or r.status_code >= 500:
                 wait = float(r.headers.get("Retry-After", 2 ** attempt))
                 time.sleep(wait)
@@ -61,6 +71,29 @@ class GFWClient:
         params += _indexed("datasets", [IDENTITY_DATASET])
         params += _indexed("includes", ["MATCH_CRITERIA", "OWNERSHIP"])
         return self._get("/vessels/search", params)
+
+    def get_vessel(self, vessel_id: str) -> dict:
+        """Identity record for one GFW vessel id (used to look up encounter partners)."""
+        return self._get(f"/vessels/{vessel_id}", [("dataset", IDENTITY_DATASET)])
+
+    def events_in_area(self, dataset: str, start: str, end: str, geometry: dict,
+                       limit: int = 200) -> list[dict]:
+        """All events of one type, by ANY vessel, inside a GeoJSON polygon.
+
+        This is how we find ships that GFW's encounter model misses, e.g. a
+        second tanker loitering at the same spot at the same time.
+        """
+        out: list[dict] = []
+        offset = 0
+        body = {"datasets": [dataset], "startDate": start, "endDate": end, "geometry": geometry}
+        while True:
+            page = self._post("/events", [("limit", str(limit)), ("offset", str(offset))], body)
+            entries = page.get("entries", [])
+            out.extend(entries)
+            nxt = page.get("nextOffset")
+            if not entries or nxt is None or nxt <= offset:
+                return out
+            offset = nxt
 
     # -- events --------------------------------------------------------------
     def events(self, vessel_ids: list[str], dataset: str, start: str, end: str,

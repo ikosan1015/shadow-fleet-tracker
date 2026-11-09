@@ -1,0 +1,5 @@
+imo,name,list
+# OPTIONAL: every listed ship you can find (EU annex, UK Sanctions List, OpenSanctions export),
+# not just the ones you study. Used to recognise meetings with ANY sanctioned vessel.
+# Example rows:
+# 9329760,EAGLE S,EU

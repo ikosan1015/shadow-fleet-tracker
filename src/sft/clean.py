@@ -27,6 +27,9 @@ EVENT_COLUMNS = [
     "loiter_distance_km", "loiter_avg_speed_kn",
     # port visit
     "port_name", "port_flag", "port_anchorage_id", "port_confidence",
+    "port_start_name", "port_start_flag", "port_end_name", "port_end_flag",
+    # distances GFW reports at the start of the event
+    "dist_shore_km", "dist_port_km",
 ]
 
 
@@ -102,6 +105,8 @@ def parse_event(e: dict, imo: str) -> dict:
         "vessel_id": _g(e, "vessel", "id"),
         "vessel_name": _g(e, "vessel", "name"),
         "vessel_flag": _g(e, "vessel", "flag"),
+        "dist_shore_km": _g(e, "distances", "startDistanceFromShoreKm"),
+        "dist_port_km": _g(e, "distances", "startDistanceFromPortKm"),
     }
     if etype == "gap":
         gap = e.get("gap", {}) or {}
@@ -136,6 +141,12 @@ def parse_event(e: dict, imo: str) -> dict:
             "port_flag": anch.get("flag"),
             "port_anchorage_id": anch.get("anchorageId") or anch.get("id"),
             "port_confidence": pv.get("confidence"),
+            # a long "visit" whose start and end anchorages differ is suspicious:
+            # it may be two stays merged into one event
+            "port_start_name": _g(pv, "startAnchorage", "name"),
+            "port_start_flag": _g(pv, "startAnchorage", "flag"),
+            "port_end_name": _g(pv, "endAnchorage", "name"),
+            "port_end_flag": _g(pv, "endAnchorage", "flag"),
         })
     return row
 

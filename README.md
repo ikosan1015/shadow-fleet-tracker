@@ -102,7 +102,7 @@ Requires [uv](https://docs.astral.sh/uv/) (`curl -LsSf https://astral.sh/uv/inst
 cp .env.example .env   # paste your GFW token
 make setup             # creates .venv with all dependencies
 # edit data/vessels.csv with your IMOs (group = sanctioned | control)
-make all               # fetch -> clean -> flags -> maps
+make all               # fetch -> clean -> partners -> flags -> maps
 make test              # unit tests on hand-made toy data (no API needed)
 ```
 
@@ -110,7 +110,10 @@ make test              # unit tests on hand-made toy data (no API needed)
 |---|---|---|
 | `make fetch` | GFW identity search + 4 event types per IMO | `data/raw/<date>/` (gitignored) |
 | `make clean-data` | raw JSON → tidy tables | `data/processed/events.parquet`, `identities.parquet` |
-| `make flags` | anomaly rules from `src/sft/flags.py` | `flags.parquet`, `flag_summary.csv`, `rules_used.json` |
+| `make partners` | other ships loitering at the same place and time (inferred meetings) | `partners.parquet` |
+| `uv run sft draught --suggest` | list days each ship was probably in Danish waters | (prints) |
+| `make draught` | draught snapshots from Danish AIS (≈0.5–1 GB download per day, deleted after filtering) | `draught_passages.csv`, `draught_flags.parquet` |
+| `make flags` | anomaly rules from `src/sft/flags.py` (uses partners + draught if present) | `flags.parquet`, `flag_summary.csv`, `rules_used.json` |
 | `make maps` | one Folium map per vessel + index | `dashboard/site/` |
 | `make publish` | copy maps to what GitHub Pages serves | `dashboard/public/` |
 
