@@ -1,2 +1,2 @@
-imo,name,group,days_observed,open_sea_loitering,open_sea_loitering_per30d
-9329760,EAGLE S,sanctioned,770.4369907407407,27,1.05
+imo,name,group,days_observed,alongside_meeting,colocated_loitering,colocated_with_listed,listed_nearby_in_anchorage,open_sea_loitering,alongside_meeting_per30d,colocated_loitering_per30d,colocated_with_listed_per30d,listed_nearby_in_anchorage_per30d,open_sea_loitering_per30d
+9329760,EAGLE S,sanctioned,770.4369907407407,1,4,3,2,27,0.04,0.16,0.12,0.08,1.05

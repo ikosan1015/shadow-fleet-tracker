@@ -23,6 +23,8 @@ class Rules:
     gap_after_terminal_h: float = 72.0
     loiter_min_h: float = 6.0
     loiter_min_port_dist_km: float = 20.0
+    alongside_km: float = 0.5        # partner this close = physically alongside
+    crowd_max_partners: int = 4      # more distinct ships than this = anchorage / queue
 
 
 FLAG_COLUMNS = ["imo", "event_id", "rule", "start", "lat", "lon", "detail"]
@@ -116,33 +118,77 @@ def open_sea_loitering(ev: pd.DataFrame, r: Rules) -> pd.DataFrame:
                  + d["port_km"].round(0).astype(str) + " km from nearest seen port")
 
 
-def colocated_loitering(partners: pd.DataFrame) -> pd.DataFrame:
-    """From partners.parquet: our loitering overlapped another ship's, a few km apart."""
+def annotate_partners(partners: pd.DataFrame | None, imos: set[str], names: set[str],
+                      rules: Rules = Rules()) -> pd.DataFrame | None:
+    """Add partner_listed / alongside / crowd_n / crowded to partners.parquet rows.
+
+    Listed status is recomputed from the CURRENT watchlist, so updating the
+    watchlist (e.g. `sft sanctions update`) never requires re-querying GFW.
+    """
+    if partners is None or partners.empty:
+        return partners
+    p = partners.copy()
+    p["partner_listed"] = (p["partner_imo"].astype(str).isin(imos)
+                           | p["partner_name"].map(norm_name).isin(names))
+    p["alongside"] = p["dist_km"] <= rules.alongside_km
+    crowd = p.groupby(["imo", "event_id"])["partner_vessel_id"].nunique().rename("crowd_n")
+    p = p.drop(columns=["crowd_n"], errors="ignore").join(crowd, on=["imo", "event_id"])
+    p["crowded"] = p["crowd_n"] > rules.crowd_max_partners
+    return p
+
+
+def colocated_loitering(partners: pd.DataFrame | None, rules: Rules = Rules()) -> pd.DataFrame:
+    """One flag per loitering event of ours that had company, strongest kind first.
+
+    alongside_listed            partner <= 0.5 km AND on the watchlist
+    alongside_meeting           partner <= 0.5 km (hulls practically touching)
+    colocated_with_listed       listed partner within 5 km, not a crowded anchorage
+    colocated_loitering         unlisted partner within 5 km, not a crowded anchorage
+    listed_nearby_in_anchorage  listed partner in a crowded anchorage (weak: may be queuing)
+    Crowded anchorages with no listed or alongside partner are not flagged.
+    """
     if partners is None or partners.empty:
         return pd.DataFrame(columns=FLAG_COLUMNS)
+    if "alongside" not in partners:
+        partners = annotate_partners(partners, set(), set(), rules)
     rows = []
     for (imo, eid), g in partners.groupby(["imo", "event_id"]):
-        listed = g[g["partner_listed"].fillna(False).astype(bool)]
-        best = (listed if not listed.empty else g).sort_values("overlap_h").iloc[-1]
+        crowded = bool(g["crowded"].iloc[0])
+        n = int(g["crowd_n"].iloc[0])
+        listed = g["partner_listed"].fillna(False).astype(bool)
+        along = g["alongside"].fillna(False).astype(bool)
+        if (along & listed).any():
+            rule, pick = "alongside_listed", g[along & listed]
+        elif along.any():
+            rule, pick = "alongside_meeting", g[along]
+        elif listed.any():
+            rule = "listed_nearby_in_anchorage" if crowded else "colocated_with_listed"
+            pick = g[listed]
+        elif not crowded:
+            rule, pick = "colocated_loitering", g
+        else:
+            continue  # busy anchorage, nobody listed or alongside: almost certainly queuing
+        best = pick.sort_values(["dist_km", "overlap_h"], ascending=[True, False]).iloc[0]
         name = best["partner_name"] if pd.notna(best["partner_name"]) else "?"
         flag = best["partner_flag"] if pd.notna(best["partner_flag"]) else "?"
-        who = f"{name} ({flag})"
-        detail = (f"co-located with {who}: {best['overlap_h']} h overlap, {best['dist_km']} km"
-                  + (f" (+{len(g) - 1} more)" if len(g) > 1 else ""))
-        rule = "colocated_with_listed" if not listed.empty else "colocated_loitering"
+        detail = (f"{name} ({flag}): {best['overlap_h']} h overlap, {best['dist_km']} km apart"
+                  + (f"; crowded area, {n} ships" if crowded else
+                     f"; +{n - 1} other ship(s)" if n > 1 else ""))
         rows.append({"imo": imo, "event_id": eid, "rule": rule, "start": best["start"],
                      "lat": best["lat"], "lon": best["lon"], "detail": detail})
     return pd.DataFrame(rows, columns=FLAG_COLUMNS)
 
 
 def load_watchlist(path=None) -> pd.DataFrame:
-    """Optional data/watchlist.csv (imo,name,list): ALL listed ships, not just the ones
-    you study, so meetings with any sanctioned vessel get recognised."""
-    from .config import WATCHLIST_CSV
-    path = path or WATCHLIST_CSV
-    if not path.exists():
-        return pd.DataFrame(columns=["imo", "name", "list"])
-    return pd.read_csv(path, comment="#", dtype=str).fillna("")
+    """Watchlist = your manual data/watchlist.csv + the OpenSanctions vessel list
+    (data/raw/opensanctions/watchlist.csv, built by `sft sanctions update`)."""
+    from .config import OS_WATCHLIST, WATCHLIST_CSV
+    cols = ["imo", "name", "aliases", "list"]
+    paths = [path] if path else [WATCHLIST_CSV, OS_WATCHLIST]
+    frames = [pd.read_csv(p, comment="#", dtype=str).fillna("") for p in paths if p.exists()]
+    if not frames:
+        return pd.DataFrame(columns=cols)
+    return pd.concat(frames, ignore_index=True).reindex(columns=cols).fillna("")
 
 
 def watch_sets(vessels: pd.DataFrame, identities: pd.DataFrame | None = None
@@ -150,8 +196,10 @@ def watch_sets(vessels: pd.DataFrame, identities: pd.DataFrame | None = None
     """(IMOs, normalised names, GFW vessel ids) treated as sanctioned."""
     sanctioned = vessels[vessels["group"].str.lower() == "sanctioned"]
     wl = load_watchlist()
-    imos = set(sanctioned["imo"]) | set(wl["imo"])
+    imos = (set(sanctioned["imo"]) | set(wl["imo"])) - {""}
     names = {norm_name(n) for n in list(sanctioned["name"]) + list(wl["name"]) if n}
+    for a in wl["aliases"]:
+        names |= {norm_name(x) for x in str(a).split(";") if x.strip()}
     ids: set[str] = set()
     if identities is not None and not identities.empty:
         sid = identities[identities["imo"].isin(sanctioned["imo"])]
@@ -166,14 +214,15 @@ def apply_all(ev: pd.DataFrame, vessels: pd.DataFrame,
               identities: pd.DataFrame | None = None, rules: Rules = Rules(),
               partners: pd.DataFrame | None = None,
               draught_flags: pd.DataFrame | None = None) -> pd.DataFrame:
-    _, watch_names, watch_ids = watch_sets(vessels, identities)
+    watch_imos, watch_names, watch_ids = watch_sets(vessels, identities)
+    partners = annotate_partners(partners, watch_imos, watch_names, rules)
     parts = [
         long_gaps(ev, rules),
         gaps_near_hotspots(ev, rules),
         gaps_after_russian_terminal(ev, rules),
         encounters_with_listed(ev, watch_names, watch_ids),
         open_sea_loitering(ev, rules),
-        colocated_loitering(partners),
+        colocated_loitering(partners, rules),
     ]
     if draught_flags is not None and not draught_flags.empty:
         parts.append(draught_flags.reindex(columns=FLAG_COLUMNS))

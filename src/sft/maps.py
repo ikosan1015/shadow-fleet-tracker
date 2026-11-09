@@ -76,9 +76,16 @@ def vessel_map(ev: pd.DataFrame, flags: pd.DataFrame, title: str,
                     f"({s('partner_flag')}, IMO {s('partner_imo')}, {s('partner_type', 'type ?')})<br>"
                     f"{p['overlap_h']} h overlap, {p['dist_km']} km apart<br>"
                     f"{p['start']:%Y-%m-%d}" + ("<br><b style='color:#d7301f'>LISTED</b>" if listed else ""))
+            along = bool(p.get("alongside")) if pd.notna(p.get("alongside")) else False
+            crowded = bool(p.get("crowded")) if pd.notna(p.get("crowded")) else False
+            if along:
+                text += "<br><b>ALONGSIDE</b> (≤ 0.5 km)"
+            if crowded:
+                text += f"<br>crowded area: {int(p['crowd_n'])} ships (probably anchorage/queue)"
+            color = ("red" if listed else "purple" if along else
+                     "lightgray" if crowded else "orange")
             folium.Marker((p["lat"], p["lon"]), popup=folium.Popup(text, max_width=320),
-                          icon=folium.Icon(color="red" if listed else "orange",
-                                           icon="random")).add_to(layer)
+                          icon=folium.Icon(color=color, icon="random")).add_to(layer)
         layer.add_to(m)
 
     ref = folium.FeatureGroup(name="STS hotspots & RU terminals (approx.)")

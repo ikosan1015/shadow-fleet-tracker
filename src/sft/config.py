@@ -23,6 +23,19 @@ DMA_URLS = [
     "http://aisdata.ais.dk/aisdk-{day}.zip",
 ]
 DMA_DIR = RAW / "dma"
+
+# OpenSanctions (free for non-commercial use, CC BY-NC 4.0 — attribute in the report)
+OS_DIR = RAW / "opensanctions"
+OS_WATCHLIST = OS_DIR / "watchlist.csv"
+OS_MARITIME_INDEX = "https://data.opensanctions.org/datasets/latest/maritime/index.json"
+OS_MARITIME_FALLBACK = "https://data.opensanctions.org/datasets/latest/maritime/maritime.csv"
+OS_API = "https://api.opensanctions.org"
+
+
+def get_optional(name: str) -> str | None:
+    """An optional secret from .env (e.g. OPENSANCTIONS_API_KEY); None if unset."""
+    load_dotenv(ROOT / ".env")
+    return os.getenv(name, "").strip() or None
 SITE = ROOT / "dashboard" / "site"
 
 API_BASE = "https://gateway.api.globalfishingwatch.org/v3"

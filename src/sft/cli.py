@@ -1,4 +1,4 @@
-"""Command line: `sft fetch | clean | partners | draught | flags | maps | all`."""
+"""Command line: `sft fetch | clean | partners | draught | sanctions | flags | maps | all`."""
 
 from __future__ import annotations
 
@@ -38,6 +38,14 @@ def cmd_draught(args):
     draught.run(ev, ids, days=args.days, max_days=args.max_days, keep_files=args.keep_files)
 
 
+def cmd_sanctions(args):
+    from . import sanctions
+    if args.action == "update":
+        sanctions.update(file=args.file)
+    else:
+        sanctions.run_check(fetch.load_vessels(), _optional("partners.parquet"))
+
+
 def cmd_flags(_args=None):
     ev, ids = _load_processed()
     vessels = fetch.load_vessels()
@@ -55,7 +63,11 @@ def cmd_maps(_args=None):
     ev, _ = _load_processed()
     fl = pd.read_parquet(PROCESSED / "flags.parquet")
     summary = pd.read_csv(PROCESSED / "flag_summary.csv", dtype={"imo": str})
-    maps.run(ev, fl, fetch.load_vessels(), summary, partners=_optional("partners.parquet"))
+    vessels = fetch.load_vessels()
+    _, ids = _load_processed()
+    imos, names, _ = flags.watch_sets(vessels, ids)
+    partners = flags.annotate_partners(_optional("partners.parquet"), imos, names)
+    maps.run(ev, fl, vessels, summary, partners=partners)
 
 
 def main(argv=None):
@@ -71,6 +83,10 @@ def main(argv=None):
     d.add_argument("--days", nargs="+", help="specific days, e.g. 2024-07-04 2024-07-05")
     d.add_argument("--max-days", type=int, default=6, help="cap on days fetched (default 6)")
     d.add_argument("--keep-files", action="store_true", help="keep the big DMA files")
+    sc = sub.add_parser("sanctions", help="OpenSanctions: update watchlist / check ships")
+    sc.add_argument("action", choices=["update", "check"],
+                    help="update = download vessel list; check = look up studied ships + partners")
+    sc.add_argument("--file", help="use a maritime.csv you downloaded by hand (update only)")
     sub.add_parser("flags", help="apply anomaly rules")
     sub.add_parser("maps", help="build HTML maps")
     a = sub.add_parser("all", help="fetch + clean + partners + flags + maps (not draught)")
@@ -86,6 +102,8 @@ def main(argv=None):
         cmd_partners(args)
     if args.cmd == "draught":
         cmd_draught(args)
+    if args.cmd == "sanctions":
+        cmd_sanctions(args)
     if args.cmd in ("flags", "all"):
         cmd_flags()
     if args.cmd in ("maps", "all"):

@@ -30,8 +30,11 @@ this project. Data caveats: <https://globalfishingwatch.org/our-apis/documentati
 | `gap_after_russian_terminal` | gap starts ≤ 72 h after leaving a Russian oil terminal | _TBD_ |
 | `encounter_with_listed` | encounter partner's IMO / name is on the watchlist | _TBD_ |
 | `open_sea_loitering` | loitering ≥ 6 h, ≥ 20 km from any port anchorage | _TBD_ |
-| `colocated_loitering` | another vessel loitering ≤ 5 km away, overlapping ≥ 2 h and ≥ 50 % of the shorter event | see 3a |
-| `colocated_with_listed` | as above, and the other vessel is on the watchlist | see 3a |
+| `alongside_listed` | a watchlisted vessel loitering ≤ 0.5 km away with overlapping time | see 3a |
+| `alongside_meeting` | any vessel ≤ 0.5 km away (hulls practically touching) | see 3a |
+| `colocated_with_listed` | a watchlisted vessel ≤ 5 km away, not in a crowded anchorage | see 3a |
+| `colocated_loitering` | an unlisted vessel ≤ 5 km away, not in a crowded anchorage | see 3a |
+| `listed_nearby_in_anchorage` | a watchlisted vessel ≤ 5 km away in a crowded anchorage (weak: may just be queuing) | see 3a |
 | `unloaded_without_port_call` | draught fell ≥ 2 m between two passages, no non-Russian port stay ≥ 12 h in between | see 3b |
 | `loaded_without_port_call` | draught rose ≥ 2 m between two passages, no port stay ≥ 12 h in between | see 3b |
 
@@ -46,6 +49,26 @@ vessel inside a ±10 km box over the same dates, and keep those within 5 km that
 overlap in time as set out above. Partner identity (IMO, flag, ship type) comes from the
 GFW Vessels API. A match is evidence *consistent with* a meeting at sea, not proof
 of a cargo transfer. Raw API answers are cached in `data/raw/<date>/partners/`.
+
+Two refinements separate strong from weak matches:
+
+- **Alongside vs nearby.** A partner ≤ 0.5 km away is effectively alongside (a large tanker
+  is ~40–60 m wide); 0.5–5 km is only "in the same area".
+- **Crowded anchorages.** If more than 4 distinct vessels loitered around one of our events
+  (e.g. the Suez Canal waiting area off Port Said), the spot is treated as an anchorage or
+  queue. Such events are flagged only if a partner was alongside or watchlisted, and then
+  with the crowd size in the flag detail.
+
+### 3d. Sanctions status (`src/sft/sanctions.py`)
+
+Listing status comes from OpenSanctions (free for non-commercial use; data CC BY-NC 4.0).
+`sft sanctions update` downloads the daily maritime file and keeps vessels with a
+**direct** sanction listing as the watchlist (vessels only *linked* to sanctioned parties
+are excluded but still reported by `sft sanctions check`). Matches are by IMO; name-only
+matches are marked "VERIFY" because ship names are not unique. With an API key, ships not
+matched by IMO are also sent to the OpenSanctions matching API (threshold 0.8).
+Every match used in the report is checked against the original source list (EU Official
+Journal, UK Sanctions List) linked from the OpenSanctions profile.
 
 ### 3b. Draught snapshots from Danish AIS (`src/sft/draught.py`)
 

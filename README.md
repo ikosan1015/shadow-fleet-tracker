@@ -113,6 +113,8 @@ make test              # unit tests on hand-made toy data (no API needed)
 | `make partners` | other ships loitering at the same place and time (inferred meetings) | `partners.parquet` |
 | `uv run sft draught --suggest` | list days each ship was probably in Danish waters | (prints) |
 | `make draught` | draught snapshots from Danish AIS (≈0.5–1 GB download per day, deleted after filtering) | `draught_passages.csv`, `draught_flags.parquet` |
+| `uv run sft sanctions update` | download OpenSanctions' daily vessel list → watchlist | `data/raw/opensanctions/` |
+| `uv run sft sanctions check` | look up studied ships + partners in OpenSanctions | `sanctions_check.csv` |
 | `make flags` | anomaly rules from `src/sft/flags.py` (uses partners + draught if present) | `flags.parquet`, `flag_summary.csv`, `rules_used.json` |
 | `make maps` | one Folium map per vessel + index | `dashboard/site/` |
 | `make publish` | copy maps to what GitHub Pages serves | `dashboard/public/` |
