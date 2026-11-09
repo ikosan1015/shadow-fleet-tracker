@@ -39,7 +39,12 @@ def _popup(row: pd.Series, flagged: dict[str, str]) -> str:
 def vessel_map(ev: pd.DataFrame, flags: pd.DataFrame, title: str) -> folium.Map:
     pts = ev[["lat", "lon"]].dropna()
     center = [pts["lat"].mean(), pts["lon"].mean()] if not pts.empty else [45, 20]
-    m = folium.Map(location=center, zoom_start=4, tiles="OpenStreetMap")
+    m = folium.Map(location=center, zoom_start=4, tiles=None)
+    folium.TileLayer(
+        tiles="https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/"
+              "World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+        attr="Tiles &copy; Esri", name="Esri light grey", max_zoom=16,
+    ).add_to(m)
     flagged = (flags.groupby("event_id")["detail"]
                .apply(lambda s: "; ".join(map(str, s))).to_dict())
 
