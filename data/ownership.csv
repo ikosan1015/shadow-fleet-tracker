@@ -1,0 +1,4 @@
+imo,role,entity,country,address,date_from,date_to,source_id,grade,note
+# Fill by hand from public records. role: registered_owner | beneficial_owner | manager | ism_manager | p&i_insurer | class_society | flag
+# Every row needs a source_id from SOURCES.md. Example:
+# 0000000,manager,EXAMPLE SHIPMANAGEMENT LLC,AE,"Office 1, Example Tower, Dubai",2024-03-01,,S6,B2,

@@ -1,0 +1,4 @@
+imo,name,group,eu_listed,uk_listed,eu_listing_date,uk_listing_date,selection_note
+# Replace the example rows below with your real picks. group = sanctioned | control
+# 0000000,EXAMPLE TANKER,sanctioned,yes,yes,2025-05-20,2025-05-09,dual-listed; good AIS coverage
+# 0000001,EXAMPLE CONTROL,control,no,no,,,similar DWT and build year

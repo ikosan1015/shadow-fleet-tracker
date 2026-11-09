@@ -1,0 +1,49 @@
+[project]
+name = "shadow-fleet-tracker"
+version = "0.1.0"
+description = "Reconstructing sanctioned tankers' voyages from Global Fishing Watch AIS events"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "python-dotenv>=1.0",
+    "pandas>=2.1",
+    "pyarrow>=14",
+    "numpy>=1.26",
+    "folium>=0.15",
+    "plotly>=5.18",
+    "networkx>=3.2",
+    "scikit-learn>=1.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.5",
+    "jupyterlab>=4",
+    "nbstripout>=0.7",
+]
+
+[project.scripts]
+sft = "sft.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sft"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+# B008: Rules() is a frozen dataclass, safe as a default. B905: zip(strict=) not needed here.
+ignore = ["B008", "B905"]

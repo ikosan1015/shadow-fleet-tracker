@@ -1,0 +1,26 @@
+# secrets
+.env
+
+# raw API responses (re-fetchable; check GFW terms before publishing extracts)
+data/raw/
+data/processed/*.parquet
+!data/processed/.gitkeep
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# build outputs
+dashboard/site/
+report/_output/
+report/*.pdf
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/

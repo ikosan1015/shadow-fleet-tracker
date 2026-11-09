@@ -1,0 +1,30 @@
+# Publishes dashboard/site/ to GitHub Pages.
+# Build the site locally (`make all`), then commit dashboard/public/ (see README) or
+# switch this to build in CI once you add GFW_TOKEN as a repository secret.
+name: dashboard
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["dashboard/public/**"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard/public
+      - id: deployment
+        uses: actions/deploy-pages@v4
